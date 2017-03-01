@@ -194,8 +194,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                     print("got an error: \(error)")
                     return
                 }
-                let resp = response.data
-                print("completed: \(resp)")
+                let resp = response
+                let json = try? JSONSerialization.jsonObject(with: resp.data, options: [])
+                print("completed: \(json)")
             }
             
         } catch let error {
