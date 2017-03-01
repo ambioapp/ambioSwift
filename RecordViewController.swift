@@ -8,14 +8,17 @@
 
 import UIKit
 import AVFoundation
+import SwiftHTTP
+
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
-    
     
     var stackView: UIStackView!
     
     var recordButton: UIButton!
     var playButton: UIButton!
+    
+    var colorButton: UIButton!
     
     var recordingSession: AVAudioSession!
     var Recorder: AVAudioRecorder!
@@ -62,7 +65,17 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         playButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
         playButton.addTarget(self, action: #selector(playTapped), for: .touchUpInside)
         stackView.addArrangedSubview(playButton)
-    }
+
+    
+        colorButton = UIButton()
+        colorButton.translatesAutoresizingMaskIntoConstraints = false
+        colorButton.setTitle("Mood Example", for: .normal)
+        colorButton.isHidden = true
+        colorButton.alpha = 0
+        colorButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
+        colorButton.addTarget(self, action: #selector(colorTapped), for: .touchUpInside)
+        stackView.addArrangedSubview(playButton)
+}
     
     func loadFailUI() {
         let failLabel = UILabel()
@@ -108,7 +121,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM-dd-yyyy-hh-mm-a-zz"
         let timeStamp = formatter.string(from: date)
-        return getDocumentsDirectory().appendingPathComponent("\(timeStamp).wav")
+        let name = "test"
+        return getDocumentsDirectory().appendingPathComponent("\(name).wav")
     }
     
     //start recording 
@@ -125,23 +139,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         
         // 4
         let settings = [
-            /*AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 12000,
-            AVNumberOfChannelsKey: 1,
-            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue*/
-            
             AVFormatIDKey:Int(kAudioFormatLinearPCM),
-            
             AVSampleRateKey:44100.0,
-            
             AVNumberOfChannelsKey:1,
-            
             AVLinearPCMBitDepthKey:8,
-            
             AVLinearPCMIsFloatKey:false,
-            
             AVLinearPCMIsBigEndianKey:false,
-            
             AVEncoderAudioQualityKey:AVAudioQuality.max.rawValue
 
         ] as [String : Any]
@@ -181,9 +184,26 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
+    //send to server
     func nextTapped() {
-        let audioURL = RecordViewController.getURL()
+        let fileURL = RecordViewController.getURL()
+        do {
+            let opt = try HTTP.POST("http://localhost:3000/getBeyondVerbal", parameters: ["file": Upload(fileUrl: fileURL)])
+            opt.start { response in
+                if let error = response.error {
+                    print("got an error: \(error)")
+                    return
+                }
+                let resp = response.data
+                print("completed: \(resp)")
+            }
+            
+        } catch let error {
+            print("got an error creating the request: \(error)")
+        }
     }
+    
+    
     
     //button for recording or stopping
     func recordTapped() {
@@ -219,5 +239,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
+    }
+    
+    //fake emotion
+    func colorTapped() {
+        
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_ambio {
+  umbrella header "Pods-ambio-umbrella.h"
+
+  export *
+  module * { export * }
+}

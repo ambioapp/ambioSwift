@@ -14,6 +14,7 @@
 		13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC4D1E5DEF2700E6CDC7 /* LaunchScreen.storyboard */; };
 		13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */; };
 		13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */; };
+		7318D5B4372814DDB4D8EC86 /* Pods_ambio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E90A5B24F39B6E00970398 /* Pods_ambio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		13B2EC501E5DEF2700E6CDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
 		13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecordViewController.xib; path = ../RecordViewController.xib; sourceTree = "<group>"; };
+		45E90A5B24F39B6E00970398 /* Pods_ambio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ambio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7442E1865041C5AD583571CC /* Pods-ambio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E00306F4256531E4A2A505 /* Pods-ambio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7318D5B4372814DDB4D8EC86 /* Pods_ambio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				13B2EC431E5DEF2700E6CDC7 /* ambio */,
 				13B2EC421E5DEF2700E6CDC7 /* Products */,
+				6590EE0BEE593CBB7481FFAB /* Pods */,
+				C629064C58EEF21A4BC25956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = ambio;
 			sourceTree = "<group>";
 		};
+		6590EE0BEE593CBB7481FFAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7442E1865041C5AD583571CC /* Pods-ambio.debug.xcconfig */,
+				C4E00306F4256531E4A2A505 /* Pods-ambio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C629064C58EEF21A4BC25956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45E90A5B24F39B6E00970398 /* Pods_ambio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B2EC531E5DEF2700E6CDC7 /* Build configuration list for PBXNativeTarget "ambio" */;
 			buildPhases = (
+				7EF048A1C903F4551DB0A110 /* [CP] Check Pods Manifest.lock */,
 				13B2EC3D1E5DEF2700E6CDC7 /* Sources */,
 				13B2EC3E1E5DEF2700E6CDC7 /* Frameworks */,
 				13B2EC3F1E5DEF2700E6CDC7 /* Resources */,
+				969BADCE92B76F7167F60DF7 /* [CP] Embed Pods Frameworks */,
+				7CFC1F4DD06E976BB3B2A5D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CFC1F4DD06E976BB3B2A5D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ambio/Pods-ambio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF048A1C903F4551DB0A110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		969BADCE92B76F7167F60DF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ambio/Pods-ambio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13B2EC3D1E5DEF2700E6CDC7 /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		13B2EC541E5DEF2700E6CDC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7442E1865041C5AD583571CC /* Pods-ambio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Z9L4R4J82;
@@ -278,6 +354,7 @@
 		};
 		13B2EC551E5DEF2700E6CDC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E00306F4256531E4A2A505 /* Pods-ambio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Z9L4R4J82;
@@ -308,6 +385,7 @@
 				13B2EC551E5DEF2700E6CDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
