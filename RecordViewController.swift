@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 import SwiftHTTP
-
+import Alamofire
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
@@ -187,7 +187,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //send to server
     func nextTapped() {
         let fileURL = RecordViewController.getURL()
-        do {
+        /*do {
             let opt = try HTTP.POST("http://localhost:3000/getBeyondVerbal", parameters: ["file": Upload(fileUrl: fileURL)])
             opt.start { response in
                 if let error = response.error {
@@ -201,7 +201,25 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             
         } catch let error {
             print("got an error creating the request: \(error)")
+        }*/
+        
+        
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(fileURL, withName: "test")
+        },
+            to: "http://localhost:3000/getBeyondVerbal",
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        debugPrint(response)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
         }
+        )
     }
     
     
