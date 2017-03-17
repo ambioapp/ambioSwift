@@ -187,8 +187,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //send to server
     func nextTapped() {
         let fileURL = RecordViewController.getURL()
+        let serverURL = "http://localhost:3000/getBeyondVerbal"
         /*do {
-            let opt = try HTTP.POST("http://localhost:3000/getBeyondVerbal", parameters: ["file": Upload(fileUrl: fileURL)])
+            let opt = try HTTP.POST(serverURL, parameters: ["file": Upload(fileUrl: fileURL)])
             opt.start { response in
                 if let error = response.error {
                     print("got an error: \(error)")
@@ -208,7 +209,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             multipartFormData: { multipartFormData in
                 multipartFormData.append(fileURL, withName: "test")
         },
-            to: "http://localhost:3000/getBeyondVerbal",
+            to: serverURL,
             encodingCompletion: { encodingResult in
                 switch encodingResult {
                 case .success(let upload, _, _):

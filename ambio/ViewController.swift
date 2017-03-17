@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     var moodState = 1
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +18,10 @@ class ViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         
-        moodColor()
+        
+        //check which mood to display
+        loadMood()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,14 +33,20 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func moodColor(){
+    func loadMood(){
+        let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
+        self.view.addSubview(myWebView)
         if (moodState == 1)
         {
-            view.backgroundColor = UIColor.black
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/calm")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
         }
         if (moodState == 2)
         {
-            view.backgroundColor = UIColor.blue
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/angry")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
         }
         if (moodState == 3)
         {
