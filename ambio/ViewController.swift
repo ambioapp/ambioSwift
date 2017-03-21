@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     var moodState = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Ambio"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
-        
         
         //check which mood to display
         loadMood()

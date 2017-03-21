@@ -11,7 +11,10 @@ import AVFoundation
 import SwiftHTTP
 import Alamofire
 
+
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
+    
+    var moodType = 0
     
     var stackView: UIStackView!
     
@@ -188,22 +191,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     func nextTapped() {
         let fileURL = RecordViewController.getURL()
         let serverURL = "http://localhost:3000/getBeyondVerbal"
-        /*do {
-            let opt = try HTTP.POST(serverURL, parameters: ["file": Upload(fileUrl: fileURL)])
-            opt.start { response in
-                if let error = response.error {
-                    print("got an error: \(error)")
-                    return
-                }
-                let resp = response
-                let json = try? JSONSerialization.jsonObject(with: resp.data, options: [])
-                print("completed: \(json)")
-            }
-            
-        } catch let error {
-            print("got an error creating the request: \(error)")
-        }*/
-        
         
         Alamofire.upload(
             multipartFormData: { multipartFormData in
@@ -214,7 +201,15 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                 switch encodingResult {
                 case .success(let upload, _, _):
                     upload.responseJSON { response in
-                        debugPrint(response)
+                        //debugPrint(response)
+                        //print(response.result)   // result of response serialization
+                        
+                        if let json = response.result.value as? [String: Any] {
+                            //print(json["moodID"])
+                            self.moodType = json["moodID"] as! Int
+                            print(self.moodType)
+                            
+                        }
                     }
                 case .failure(let encodingError):
                     print(encodingError)
@@ -265,4 +260,5 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     func colorTapped() {
         
     }
+    
 }
