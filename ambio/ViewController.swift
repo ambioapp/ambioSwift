@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController{
     
-    var moodState = 1
+    var moodState = MyAppData.sharedData.moodTotal
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Ambio"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "update", style: .plain, target: self, action: #selector(loadMood))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         
         //check which mood to display
@@ -34,8 +35,14 @@ class ViewController: UIViewController{
     }
     
     func loadMood(){
+        moodState = MyAppData.sharedData.moodTotal
+        print(moodState)
         let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
         self.view.addSubview(myWebView)
+        if (moodState == 0)
+        {
+            
+        }
         if (moodState == 1)
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/calm")

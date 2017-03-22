@@ -11,10 +11,7 @@ import AVFoundation
 import SwiftHTTP
 import Alamofire
 
-
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
-    
-    var moodType = 0
     
     var stackView: UIStackView!
     
@@ -206,10 +203,11 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                         
                         if let json = response.result.value as? [String: Any] {
                             //print(json["moodID"])
-                            self.moodType = json["moodID"] as! Int
-                            print(self.moodType)
-                            
+                            var moodType = json["moodID"] as! Int
+                            print(moodType)
+                            MyAppData.sharedData.moodTotal = moodType
                         }
+                        _ = self.navigationController?.popToRootViewController(animated: true)
                     }
                 case .failure(let encodingError):
                     print(encodingError)
