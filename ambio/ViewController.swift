@@ -38,6 +38,8 @@ class ViewController: UIViewController{
         moodState = MyAppData.sharedData.moodTotal
         print(moodState)
         let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
+        myWebView.scrollView.isScrollEnabled = false;
+        myWebView.scrollView.bounces = false;
         self.view.addSubview(myWebView)
         if (moodState == 0)
         {
