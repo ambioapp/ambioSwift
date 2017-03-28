@@ -15,10 +15,19 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Ambio"
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "logo-white.png")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "update", style: .plain, target: self, action: #selector(loadMood))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
         
         //check which mood to display
         loadMood()
@@ -47,7 +56,7 @@ class ViewController: UIViewController{
         }
         if (moodState == 1)
         {
-            let myURL = URL(string: "http://chasbrouck.io/moodNoise/calm")
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             myWebView.loadRequest(myURLRequest)
         }
