@@ -15,19 +15,18 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "logo-white.png")
-        imageView.image = image
-        navigationItem.titleView = imageView
+        //logo title and set color of nav
+        let titleView = UIView(frame: CGRect(x:0, y:0, width: 100, height:40))
+        let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
+        titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
+        titleView.addSubview(titleImageView)
+        navigationItem.titleView = titleView
         
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "update", style: .plain, target: self, action: #selector(loadMood))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
-        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = UIColor.white;
         
         //check which mood to display
         loadMood()
@@ -78,6 +77,11 @@ class ViewController: UIViewController{
         {
             view.backgroundColor = UIColor.red
         }
+    }
+    
+    //hide status bar
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
 }

@@ -27,8 +27,15 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Record Vocal"
+        //logo title and set color of nav
+        let titleView = UIView(frame: CGRect(x:0, y:0, width: 180, height:40))
+        let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
+        titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
+        titleView.addSubview(titleImageView)
+        navigationItem.titleView = titleView
+        
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Record", style: .plain, target: nil, action: nil)
+         self.navigationController?.navigationBar.tintColor = UIColor.white;
         
         recordingSession = AVAudioSession.sharedInstance()
         
@@ -169,6 +176,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         if success {
             recordButton.setTitle("Tap to Re-record", for: .normal)
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         } else {
             recordButton.setTitle("Tap to Record", for: .normal)
             
@@ -257,6 +265,11 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //fake emotion
     func colorTapped() {
         
+    }
+    
+    //hide status bar
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
 }
