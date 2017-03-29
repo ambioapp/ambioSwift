@@ -49,33 +49,65 @@ class ViewController: UIViewController{
         myWebView.scrollView.isScrollEnabled = false;
         myWebView.scrollView.bounces = false;
         self.view.addSubview(myWebView)
-        if (moodState == 0)
-        {
-            
-        }
-        if (moodState == 1)
-        {
-            let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
-            let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
-        }
-        if (moodState == 2)
+        if (moodState == "angry")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/angry")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             myWebView.loadRequest(myURLRequest)
         }
-        if (moodState == 3)
+        if (moodState == "content")
         {
-            view.backgroundColor = UIColor.green
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
         }
-        if (moodState == 4)
+        if (moodState == "depressed")
         {
-            view.backgroundColor = UIColor.yellow
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/depressed")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
         }
-        if (moodState == 5)
+        if (moodState == "focus")
         {
-            view.backgroundColor = UIColor.red
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/focus")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "fustrated")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/fustrated")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "inconsolable")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/inconsolable")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "joyful")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/joyful")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "relaxed")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "restless")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
+        }
+        if (moodState == "stressed")
+        {
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/stressed")
+            let myURLRequest:URLRequest = URLRequest(url: myURL!)
+            myWebView.loadRequest(myURLRequest)
         }
     }
     

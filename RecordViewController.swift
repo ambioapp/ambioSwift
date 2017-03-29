@@ -28,7 +28,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewDidLoad()
         
         //logo title and set color of nav
-        let titleView = UIView(frame: CGRect(x:0, y:0, width: 180, height:40))
+        let titleView = UIView(frame: CGRect(x:0, y:0, width: 100, height:40))
         let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
         titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
         titleView.addSubview(titleImageView)
@@ -211,9 +211,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                         
                         if let json = response.result.value as? [String: Any] {
                             //print(json["moodID"])
-                            var moodType = json["moodID"] as! Int
+                            let moodType = json["moodID"]
                             print(moodType)
-                            MyAppData.sharedData.moodTotal = moodType
+                            MyAppData.sharedData.moodTotal = moodType as! String
                         }
                         _ = self.navigationController?.popToRootViewController(animated: true)
                     }
