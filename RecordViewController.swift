@@ -195,7 +195,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //send to server
     func nextTapped() {
         let fileURL = RecordViewController.getURL()
-        let serverURL = "http://localhost:3000/getBeyondVerbal"
+        let serverURL = "https://ambio-node-v1.herokuapp.com/getBeyondVerbal"
         
         Alamofire.upload(
             multipartFormData: { multipartFormData in

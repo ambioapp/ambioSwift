@@ -27,6 +27,12 @@ class MyAppData{
     
     private func readDeafultsData(){
         let defaults = UserDefaults.standard
-        moodTotal = defaults.string(forKey: moodKey)!
+        //moodTotal = defaults.string(forKey: moodKey)!
+        
+        if let s = defaults.object(forKey: moodKey){
+            moodTotal = s as! String
+        }else{
+            moodTotal = "default"
+        }
     }
 }
