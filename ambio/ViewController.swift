@@ -27,6 +27,7 @@ class ViewController: UIViewController{
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = UIColor.white;
         
+        self.view.backgroundColor = UIColor.black
         //check which mood to display
         loadMood()
         
@@ -66,7 +67,7 @@ class ViewController: UIViewController{
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             myWebView.loadRequest(myURLRequest)
         }
-        if (moodState == "focus")
+        if (moodState == "focused")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/focus")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
