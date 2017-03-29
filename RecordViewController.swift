@@ -127,7 +127,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "MM-dd-yyyy-hh-mm-a-zz"
-        let timeStamp = formatter.string(from: date)
+        //let timeStamp = formatter.string(from: date)
         let name = "test"
         return getDocumentsDirectory().appendingPathComponent("\(name).wav")
     }
@@ -210,9 +210,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                         //print(response.result)   // result of response serialization
                         
                         if let json = response.result.value as? [String: Any] {
-                            //print(json["moodID"])
                             let moodType = json["moodID"]
-                            print(moodType)
+                            //print(moodType)
                             MyAppData.sharedData.moodTotal = moodType as! String
                         }
                         _ = self.navigationController?.popToRootViewController(animated: true)

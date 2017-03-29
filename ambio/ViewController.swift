@@ -24,7 +24,6 @@ class ViewController: UIViewController{
         
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "update", style: .plain, target: self, action: #selector(loadMood))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = UIColor.white;
         
@@ -114,6 +113,11 @@ class ViewController: UIViewController{
     //hide status bar
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loadMood()
     }
 
 }
