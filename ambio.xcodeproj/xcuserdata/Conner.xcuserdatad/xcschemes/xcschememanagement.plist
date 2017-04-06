@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ambioWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ambioWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1374F8671E95C83E005E4A2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>13B2EC401E5DEF2700E6CDC7</key>
 		<dict>
 			<key>primary</key>

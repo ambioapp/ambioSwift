@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController{
+
+class ViewController: UIViewController, WCSessionDelegate{
     
+    var session: WCSession!
     var moodState = MyAppData.sharedData.moodTotal
     
     override func viewDidLoad() {
@@ -31,6 +34,12 @@ class ViewController: UIViewController{
         //check which mood to display
         loadMood()
         
+        if (WCSession.isSupported()) {
+            session = WCSession.default()
+            session.delegate = self;
+            session.activate()
+            print("WCSession is activated")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +49,7 @@ class ViewController: UIViewController{
     func addRecording() {
         let vc = RecordViewController()
         navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     func loadMood(){
@@ -119,7 +129,36 @@ class ViewController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
+        watchMood()
     }
+    
+    //protocals for watch session
+    func session(_ session: WCSession,
+                 activationDidCompleteWith activationState: WCSessionActivationState,
+                 error: Error?){
+        
+    }
+    func sessionDidBecomeInactive(_ session: WCSession){
+        
+    }
+    func sessionDidDeactivate(_ session: WCSession){
+        
+    }
+    
+    //send mood to watch
+    func watchMood() {
+    
+        // send a message to the watch if it's reachable
+        let messageToSend = ["Mood":MyAppData.sharedData.moodTotal]
+        session.sendMessage(messageToSend, replyHandler: { replyMessage in
+            //handle and present the message on screen
+            let value = replyMessage["Value"] as? String
+        }, errorHandler: {error in
+            // catch any errors here
+            print(error)
+        })
 
+
+    }
 }
 

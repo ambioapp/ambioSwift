@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
+		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
+		1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86D1E95C83E005E4A2A /* Assets.xcassets */; };
+		1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87B1E95C83E005E4A2A /* InterfaceController.swift */; };
+		1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */; };
+		1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87F1E95C83E005E4A2A /* NotificationController.swift */; };
+		1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F8811E95C83E005E4A2A /* Assets.xcassets */; };
+		1374F8861E95C83E005E4A2A /* ambioWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1374F8681E95C83E005E4A2A /* ambioWatch.app */; };
 		13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */; };
 		13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */; };
 		13B2EC4A1E5DEF2700E6CDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */; };
@@ -18,8 +26,61 @@
 		7318D5B4372814DDB4D8EC86 /* Pods_ambio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E90A5B24F39B6E00970398 /* Pods_ambio.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1374F8761E95C83E005E4A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B2EC391E5DEF2700E6CDC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1374F8731E95C83E005E4A2A;
+			remoteInfo = "ambioWatch Extension";
+		};
+		1374F8841E95C83E005E4A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B2EC391E5DEF2700E6CDC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1374F8671E95C83E005E4A2A;
+			remoteInfo = ambioWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1374F88C1E95C83E005E4A2A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1374F88E1E95C83E005E4A2A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1374F8861E95C83E005E4A2A /* ambioWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
+		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1374F86F1E95C83E005E4A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ambioWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1374F87A1E95C83E005E4A2A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1374F87B1E95C83E005E4A2A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1374F87F1E95C83E005E4A2A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1374F8811E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1374F8831E95C83E005E4A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B2EC411E5DEF2700E6CDC7 /* ambio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1374F8711E95C83E005E4A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B2EC3E1E5DEF2700E6CDC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +139,43 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
+		1374F8691E95C83E005E4A2A /* ambioWatch */ = {
+			isa = PBXGroup;
+			children = (
+				1374F86A1E95C83E005E4A2A /* Interface.storyboard */,
+				1374F86D1E95C83E005E4A2A /* Assets.xcassets */,
+				1374F86F1E95C83E005E4A2A /* Info.plist */,
+			);
+			path = ambioWatch;
+			sourceTree = "<group>";
+		};
+		1374F8781E95C83E005E4A2A /* ambioWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
+				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
+				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
+				1374F8811E95C83E005E4A2A /* Assets.xcassets */,
+				1374F8831E95C83E005E4A2A /* Info.plist */,
+				1374F8791E95C83E005E4A2A /* Supporting Files */,
+			);
+			path = "ambioWatch Extension";
+			sourceTree = "<group>";
+		};
+		1374F8791E95C83E005E4A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1374F87A1E95C83E005E4A2A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		13B2EC381E5DEF2700E6CDC7 = {
 			isa = PBXGroup;
 			children = (
 				13B2EC431E5DEF2700E6CDC7 /* ambio */,
+				1374F8691E95C83E005E4A2A /* ambioWatch */,
+				1374F8781E95C83E005E4A2A /* ambioWatch Extension */,
 				13B2EC421E5DEF2700E6CDC7 /* Products */,
 				6590EE0BEE593CBB7481FFAB /* Pods */,
 				C629064C58EEF21A4BC25956 /* Frameworks */,
@@ -85,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				13B2EC411E5DEF2700E6CDC7 /* ambio.app */,
+				1374F8681E95C83E005E4A2A /* ambioWatch.app */,
+				1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +227,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1374F8671E95C83E005E4A2A /* ambioWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1374F88D1E95C83E005E4A2A /* Build configuration list for PBXNativeTarget "ambioWatch" */;
+			buildPhases = (
+				1374F8661E95C83E005E4A2A /* Resources */,
+				1374F88C1E95C83E005E4A2A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1374F8771E95C83E005E4A2A /* PBXTargetDependency */,
+			);
+			name = ambioWatch;
+			productName = ambioWatch;
+			productReference = 1374F8681E95C83E005E4A2A /* ambioWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1374F8731E95C83E005E4A2A /* ambioWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1374F88B1E95C83E005E4A2A /* Build configuration list for PBXNativeTarget "ambioWatch Extension" */;
+			buildPhases = (
+				1374F8701E95C83E005E4A2A /* Sources */,
+				1374F8711E95C83E005E4A2A /* Frameworks */,
+				1374F8721E95C83E005E4A2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ambioWatch Extension";
+			productName = "ambioWatch Extension";
+			productReference = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		13B2EC401E5DEF2700E6CDC7 /* ambio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B2EC531E5DEF2700E6CDC7 /* Build configuration list for PBXNativeTarget "ambio" */;
@@ -134,10 +271,12 @@
 				13B2EC3F1E5DEF2700E6CDC7 /* Resources */,
 				969BADCE92B76F7167F60DF7 /* [CP] Embed Pods Frameworks */,
 				7CFC1F4DD06E976BB3B2A5D3 /* [CP] Copy Pods Resources */,
+				1374F88E1E95C83E005E4A2A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1374F8851E95C83E005E4A2A /* PBXTargetDependency */,
 			);
 			name = ambio;
 			productName = ambio;
@@ -150,10 +289,20 @@
 		13B2EC391E5DEF2700E6CDC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Conner Hasbrouck";
 				TargetAttributes = {
+					1374F8671E95C83E005E4A2A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9Z9L4R4J82;
+						ProvisioningStyle = Automatic;
+					};
+					1374F8731E95C83E005E4A2A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9Z9L4R4J82;
+						ProvisioningStyle = Automatic;
+					};
 					13B2EC401E5DEF2700E6CDC7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9Z9L4R4J82;
@@ -175,11 +324,30 @@
 			projectRoot = "";
 			targets = (
 				13B2EC401E5DEF2700E6CDC7 /* ambio */,
+				1374F8671E95C83E005E4A2A /* ambioWatch */,
+				1374F8731E95C83E005E4A2A /* ambioWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1374F8661E95C83E005E4A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */,
+				1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1374F8721E95C83E005E4A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B2EC3F1E5DEF2700E6CDC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +410,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1374F8701E95C83E005E4A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
+				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
+				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B2EC3D1E5DEF2700E6CDC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,7 +433,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1374F8771E95C83E005E4A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1374F8731E95C83E005E4A2A /* ambioWatch Extension */;
+			targetProxy = 1374F8761E95C83E005E4A2A /* PBXContainerItemProxy */;
+		};
+		1374F8851E95C83E005E4A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1374F8671E95C83E005E4A2A /* ambioWatch */;
+			targetProxy = 1374F8841E95C83E005E4A2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1374F86A1E95C83E005E4A2A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1374F86B1E95C83E005E4A2A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +474,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1374F8871E95C83E005E4A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 9Z9L4R4J82;
+				IBSC_MODULE = ambioWatch_Extension;
+				INFOPLIST_FILE = ambioWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chasbrouck.ambio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1374F8881E95C83E005E4A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 9Z9L4R4J82;
+				IBSC_MODULE = ambioWatch_Extension;
+				INFOPLIST_FILE = ambioWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chasbrouck.ambio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		1374F8891E95C83E005E4A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 9Z9L4R4J82;
+				INFOPLIST_FILE = "ambioWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chasbrouck.ambio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1374F88A1E95C83E005E4A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 9Z9L4R4J82;
+				INFOPLIST_FILE = "ambioWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.chasbrouck.ambio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 		13B2EC511E5DEF2700E6CDC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +672,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1374F88B1E95C83E005E4A2A /* Build configuration list for PBXNativeTarget "ambioWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1374F8891E95C83E005E4A2A /* Debug */,
+				1374F88A1E95C83E005E4A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1374F88D1E95C83E005E4A2A /* Build configuration list for PBXNativeTarget "ambioWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1374F8871E95C83E005E4A2A /* Debug */,
+				1374F8881E95C83E005E4A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		13B2EC3C1E5DEF2700E6CDC7 /* Build configuration list for PBXProject "ambio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

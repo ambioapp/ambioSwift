@@ -21,7 +21,6 @@ class MyAppData{
     }
 
     private init(){
-        print("Created MyAppData instance")
         readDeafultsData()
     }
     
