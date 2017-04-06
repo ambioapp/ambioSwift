@@ -15,14 +15,11 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="moodLabel" id="iGo-qp-Qks"/>
-                        <button width="1" alignment="left" title="Request Info" id="yE3-zF-k2A">
-                            <connections>
-                                <action selector="button" destination="AgC-eL-Hgc" id="3hi-Ap-1om"/>
-                            </connections>
-                        </button>
+                        <inlineMovie width="1" height="100" alignment="left" id="CJw-le-yYM"/>
                     </items>
                     <connections>
-                        <outlet property="moodLabel" destination="iGo-qp-Qks" id="ECK-N4-3Sa"/>
+                        <outlet property="moodLabel" destination="iGo-qp-Qks" id="sWz-vD-z0W"/>
+                        <outlet property="moodVideo" destination="CJw-le-yYM" id="l94-RF-tvM"/>
                     </connections>
                 </controller>
             </objects>

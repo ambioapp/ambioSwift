@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
+		13398D9A1E96720400D05F07 /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = 13398D991E96720400D05F07 /* movieclip.mov */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
 		1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86D1E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
+		13398D991E96720400D05F07 /* movieclip.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movieclip.mov; sourceTree = "<group>"; };
 		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
 				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
+				13398D991E96720400D05F07 /* movieclip.mov */,
 				1374F8811E95C83E005E4A2A /* Assets.xcassets */,
 				1374F8831E95C83E005E4A2A /* Info.plist */,
 				1374F8791E95C83E005E4A2A /* Supporting Files */,
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */,
+				13398D9A1E96720400D05F07 /* movieclip.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +683,7 @@
 				1374F88A1E95C83E005E4A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1374F88D1E95C83E005E4A2A /* Build configuration list for PBXNativeTarget "ambioWatch" */ = {
 			isa = XCConfigurationList;
@@ -687,6 +692,7 @@
 				1374F8881E95C83E005E4A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B2EC3C1E5DEF2700E6CDC7 /* Build configuration list for PBXProject "ambio" */ = {
 			isa = XCConfigurationList;

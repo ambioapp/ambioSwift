@@ -15,6 +15,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     var session : WCSession!
     
     @IBOutlet var moodLabel: WKInterfaceLabel!
+    @IBOutlet var moodVideo: WKInterfaceInlineMovie!
+    
+    
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -32,6 +35,16 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             session.activate()
             print("WCSession activated")
         }
+        
+        let url = Bundle.main.url(forResource: "movieclip", withExtension: "mov")
+        
+        //let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
+        
+        //moodVideo.setMovieURL(url!)
+        moodVideo.setMovieURL(url!)
+        moodVideo.setLoops(true)
+        moodVideo.play()
+        
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -62,5 +75,4 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         let mood = message["Mood"] as? String
         self.moodLabel.setText(mood)
     }
-
 }
