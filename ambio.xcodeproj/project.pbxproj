@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
-		13398D9A1E96720400D05F07 /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = 13398D991E96720400D05F07 /* movieclip.mov */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
 		1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86D1E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -17,6 +16,11 @@
 		1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87F1E95C83E005E4A2A /* NotificationController.swift */; };
 		1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F8811E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8861E95C83E005E4A2A /* ambioWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1374F8681E95C83E005E4A2A /* ambioWatch.app */; };
+		139CC9A21E9C012300F8B894 /* l_angry.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC99E1E9C012300F8B894 /* l_angry.mov */; };
+		139CC9A31E9C012300F8B894 /* l_sad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC99F1E9C012300F8B894 /* l_sad.mov */; };
+		139CC9A41E9C012300F8B894 /* p_angry.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC9A01E9C012300F8B894 /* p_angry.mov */; };
+		139CC9A51E9C012300F8B894 /* p_sad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC9A11E9C012300F8B894 /* p_sad.mov */; };
+		139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CC9A61E9C035D00F8B894 /* watchAppData.swift */; };
 		13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */; };
 		13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */; };
 		13B2EC4A1E5DEF2700E6CDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */; };
@@ -71,7 +75,6 @@
 
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
-		13398D991E96720400D05F07 /* movieclip.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movieclip.mov; sourceTree = "<group>"; };
 		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +86,11 @@
 		1374F87F1E95C83E005E4A2A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1374F8811E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1374F8831E95C83E005E4A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139CC99E1E9C012300F8B894 /* l_angry.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = l_angry.mov; sourceTree = "<group>"; };
+		139CC99F1E9C012300F8B894 /* l_sad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = l_sad.mov; sourceTree = "<group>"; };
+		139CC9A01E9C012300F8B894 /* p_angry.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = p_angry.mov; sourceTree = "<group>"; };
+		139CC9A11E9C012300F8B894 /* p_sad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = p_sad.mov; sourceTree = "<group>"; };
+		139CC9A61E9C035D00F8B894 /* watchAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = watchAppData.swift; sourceTree = "<group>"; };
 		13B2EC411E5DEF2700E6CDC7 /* ambio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,10 +162,11 @@
 		1374F8781E95C83E005E4A2A /* ambioWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				139CC9A91E9C0A6400F8B894 /* moodMov */,
+				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
 				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
-				13398D991E96720400D05F07 /* movieclip.mov */,
 				1374F8811E95C83E005E4A2A /* Assets.xcassets */,
 				1374F8831E95C83E005E4A2A /* Info.plist */,
 				1374F8791E95C83E005E4A2A /* Supporting Files */,
@@ -171,6 +180,25 @@
 				1374F87A1E95C83E005E4A2A /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		139CC9A81E9C03B100F8B894 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				139CC9A61E9C035D00F8B894 /* watchAppData.swift */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		139CC9A91E9C0A6400F8B894 /* moodMov */ = {
+			isa = PBXGroup;
+			children = (
+				139CC99E1E9C012300F8B894 /* l_angry.mov */,
+				139CC99F1E9C012300F8B894 /* l_sad.mov */,
+				139CC9A01E9C012300F8B894 /* p_angry.mov */,
+				139CC9A11E9C012300F8B894 /* p_sad.mov */,
+			);
+			name = moodMov;
 			sourceTree = "<group>";
 		};
 		13B2EC381E5DEF2700E6CDC7 = {
@@ -347,8 +375,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139CC9A31E9C012300F8B894 /* l_sad.mov in Resources */,
 				1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */,
-				13398D9A1E96720400D05F07 /* movieclip.mov in Resources */,
+				139CC9A51E9C012300F8B894 /* p_sad.mov in Resources */,
+				139CC9A41E9C012300F8B894 /* p_angry.mov in Resources */,
+				139CC9A21E9C012300F8B894 /* l_angry.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +452,7 @@
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
 				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
+				139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
