@@ -46,8 +46,8 @@
             <objects>
                 <controller id="Ilg-HL-J6Q" userLabel="Example Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
                     <items>
-                        <inlineMovie width="1" height="95" alignment="center" id="816-Tz-Wtf"/>
-                        <label width="53" alignment="center" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
+                        <inlineMovie width="1" height="102" alignment="center" id="816-Tz-Wtf"/>
+                        <label width="53" alignment="center" verticalAlignment="bottom" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
                         <group width="136" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
                             <items>
                                 <button width="20" height="20" alignment="left" verticalAlignment="bottom" backgroundImage="gear" id="ngk-2l-8Wy">
