@@ -33,5 +33,6 @@ class watchAppData{
         }else{
             moodTotal = "default"
         }
+        
     }
 }

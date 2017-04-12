@@ -14,16 +14,58 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="moodLabel" id="iGo-qp-Qks"/>
+                        <label alignment="center" text="moodLabel" id="iGo-qp-Qks"/>
                         <inlineMovie width="1" height="100" alignment="left" id="Eh3-fH-h2e"/>
                     </items>
                     <connections>
                         <outlet property="moodLabel" destination="iGo-qp-Qks" id="sWz-vD-z0W"/>
                         <outlet property="moodVideo" destination="Eh3-fH-h2e" id="OE4-ey-kYR"/>
+                        <segue destination="Ilg-HL-J6Q" kind="relationship" relationship="nextPage" id="1xf-Xe-2sx"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Setting Controller-->
+        <scene sceneID="QKm-Hc-aeh">
+            <objects>
+                <controller id="Cqv-r0-k6o" userLabel="Setting Controller">
+                    <items>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="iBW-GL-blb"/>
+                        <label alignment="center" text="Adjust Privacy" id="VNN-Ka-1kg"/>
+                        <separator alignment="left" verticalAlignment="center" id="Sb5-mE-fZ5"/>
+                        <button width="31" height="33" alignment="center" verticalAlignment="bottom" alpha="0.69999999999999996" backgroundImage="tv" id="TiW-1v-chY"/>
+                        <label height="20" alignment="center" verticalAlignment="bottom" text="Airplay" id="Mb7-AQ-fh5"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="754" y="37"/>
+        </scene>
+        <!--Example Controller-->
+        <scene sceneID="Gtk-kI-Y8y">
+            <objects>
+                <controller id="Ilg-HL-J6Q" userLabel="Example Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="95" alignment="center" id="816-Tz-Wtf"/>
+                        <label width="53" alignment="center" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
+                        <group width="136" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
+                            <items>
+                                <button width="20" height="20" alignment="left" verticalAlignment="bottom" backgroundImage="gear" id="ngk-2l-8Wy">
+                                    <connections>
+                                        <segue destination="Cqv-r0-k6o" kind="modal" id="DiS-4Z-hpu"/>
+                                    </connections>
+                                </button>
+                                <button width="21" height="24" alignment="right" verticalAlignment="bottom" backgroundImage="weath" id="1GJ-3h-7Zs"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodVideo" destination="816-Tz-Wtf" id="7bg-50-gw2"/>
+                        <outlet property="nameLabel" destination="Mir-1R-JDL" id="MnK-s3-6fu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="453" y="339"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

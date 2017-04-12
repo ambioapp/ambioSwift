@@ -28,6 +28,10 @@
 		13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC4D1E5DEF2700E6CDC7 /* LaunchScreen.storyboard */; };
 		13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */; };
 		13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */; };
+		13B85D081E9DBBE00052A4C2 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B85D071E9DBBE00052A4C2 /* ExampleController.swift */; };
+		13B85D0B1E9DC1120052A4C2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0A1E9DC1120052A4C2 /* gear.png */; };
+		13B85D0F1E9DC4130052A4C2 /* weath.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0E1E9DC4130052A4C2 /* weath.png */; };
+		13B85D111E9DC5970052A4C2 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D101E9DC5970052A4C2 /* tv.png */; };
 		7318D5B4372814DDB4D8EC86 /* Pods_ambio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E90A5B24F39B6E00970398 /* Pods_ambio.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +104,10 @@
 		13B2EC501E5DEF2700E6CDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
 		13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecordViewController.xib; path = ../RecordViewController.xib; sourceTree = "<group>"; };
+		13B85D071E9DBBE00052A4C2 /* ExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleController.swift; path = Assets.xcassets/ExampleController.swift; sourceTree = "<group>"; };
+		13B85D0A1E9DC1120052A4C2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		13B85D0E1E9DC4130052A4C2 /* weath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weath.png; sourceTree = "<group>"; };
+		13B85D101E9DC5970052A4C2 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
 		45E90A5B24F39B6E00970398 /* Pods_ambio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ambio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7442E1865041C5AD583571CC /* Pods-ambio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.debug.xcconfig"; sourceTree = "<group>"; };
 		C4E00306F4256531E4A2A505 /* Pods-ambio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		1374F8691E95C83E005E4A2A /* ambioWatch */ = {
 			isa = PBXGroup;
 			children = (
+				13B85D091E9DC06F0052A4C2 /* icons */,
 				1374F86A1E95C83E005E4A2A /* Interface.storyboard */,
 				1374F86D1E95C83E005E4A2A /* Assets.xcassets */,
 				1374F86F1E95C83E005E4A2A /* Info.plist */,
@@ -165,6 +174,7 @@
 				139CC9A91E9C0A6400F8B894 /* moodMov */,
 				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
+				13B85D071E9DBBE00052A4C2 /* ExampleController.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
 				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
 				1374F8811E95C83E005E4A2A /* Assets.xcassets */,
@@ -236,6 +246,16 @@
 				13B2EC501E5DEF2700E6CDC7 /* Info.plist */,
 			);
 			path = ambio;
+			sourceTree = "<group>";
+		};
+		13B85D091E9DC06F0052A4C2 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				13B85D0A1E9DC1120052A4C2 /* gear.png */,
+				13B85D0E1E9DC4130052A4C2 /* weath.png */,
+				13B85D101E9DC5970052A4C2 /* tv.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 		6590EE0BEE593CBB7481FFAB /* Pods */ = {
@@ -366,8 +386,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B85D111E9DC5970052A4C2 /* tv.png in Resources */,
 				1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */,
+				13B85D0F1E9DC4130052A4C2 /* weath.png in Resources */,
 				1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */,
+				13B85D0B1E9DC1120052A4C2 /* gear.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +475,7 @@
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
 				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
+				13B85D081E9DBBE00052A4C2 /* ExampleController.swift in Sources */,
 				139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
