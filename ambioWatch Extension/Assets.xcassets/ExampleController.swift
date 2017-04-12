@@ -115,7 +115,7 @@ class ExampleController: WKInterfaceController, WCSessionDelegate {
     
     func playVideo() {
         //setURL()
-        url2 = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url2 = Bundle.main.url(forResource: "p_sad", withExtension: "mov")
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)

@@ -15,7 +15,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
                         <label alignment="center" text="moodLabel" id="iGo-qp-Qks"/>
-                        <inlineMovie width="1" height="100" alignment="left" id="Eh3-fH-h2e"/>
+                        <inlineMovie width="1" height="100" alignment="left" loops="YES" videoGravity="resizeAspectFill" id="Eh3-fH-h2e"/>
                     </items>
                     <connections>
                         <outlet property="moodLabel" destination="iGo-qp-Qks" id="sWz-vD-z0W"/>
@@ -46,15 +46,15 @@
             <objects>
                 <controller id="Ilg-HL-J6Q" userLabel="Example Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
                     <items>
-                        <inlineMovie width="1" height="102" alignment="center" id="816-Tz-Wtf"/>
-                        <label width="53" alignment="center" verticalAlignment="bottom" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
-                        <group width="136" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
+                        <inlineMovie width="1" height="116" alignment="center" loops="YES" videoGravity="resizeAspectFill" id="816-Tz-Wtf"/>
+                        <group width="1" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
                             <items>
-                                <button width="20" height="20" alignment="left" verticalAlignment="bottom" backgroundImage="gear" id="ngk-2l-8Wy">
+                                <button width="20" height="20" alignment="left" verticalAlignment="bottom" alpha="0.80000000000000004" backgroundImage="gear" id="ngk-2l-8Wy">
                                     <connections>
                                         <segue destination="Cqv-r0-k6o" kind="modal" id="DiS-4Z-hpu"/>
                                     </connections>
                                 </button>
+                                <label width="53" alignment="center" verticalAlignment="bottom" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
                                 <button width="21" height="24" alignment="right" verticalAlignment="bottom" backgroundImage="weath" id="1GJ-3h-7Zs"/>
                             </items>
                         </group>

@@ -135,7 +135,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //start recording 
     func startRecording() {
         // 1
-        view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
+        view.backgroundColor = UIColor(red: 1.0, green: 0.3, blue: 0.3, alpha: 1)
         
         // 2
         recordButton.setTitle("Tap to Stop", for: .normal)
@@ -168,7 +168,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     //stop recording
     func finishRecording(success: Bool) {
-        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
+        view.backgroundColor = UIColor(red: 0, green: 0.8, blue: 0.6, alpha: 1)
         
         Recorder.stop()
         Recorder = nil
@@ -196,7 +196,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     func nextTapped() {
         let fileURL = RecordViewController.getURL()
         let serverURL = "https://ambio-node-v1.herokuapp.com/getBeyondVerbal"
-        
+        showActivity()
         Alamofire.upload(
             multipartFormData: { multipartFormData in
                 multipartFormData.append(fileURL, withName: "test")
@@ -269,6 +269,13 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     //hide status bar
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    func showActivity(){
+        var myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        myActivityIndicator.center = view.center
+        myActivityIndicator.startAnimating()
+        view.addSubview(myActivityIndicator)
     }
     
 }
