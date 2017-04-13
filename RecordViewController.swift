@@ -101,7 +101,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     override func loadView() {
         super.loadView()
         
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.black
         
         stackView = UIStackView()
         stackView.spacing = 30
@@ -124,7 +124,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     class func getURL() -> URL {
-        let date = Date()
+        _ = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "MM-dd-yyyy-hh-mm-a-zz"
         //let timeStamp = formatter.string(from: date)
@@ -272,7 +272,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func showActivity(){
-        var myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         myActivityIndicator.center = view.center
         myActivityIndicator.startAnimating()
         view.addSubview(myActivityIndicator)

@@ -10,10 +10,24 @@ import UIKit
 import WatchConnectivity
 
 
+//border botto extension
+extension UIImage {
+    class func imageWithColor(color: UIColor) -> UIImage {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 2.0)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
+
 class ViewController: UIViewController, WCSessionDelegate{
     
     var session: WCSession!
     var moodState = MyAppData.sharedData.moodTotal
+    let ambioPurple = UIColor(red: 144/255, green: 13/255, blue: 254/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +38,15 @@ class ViewController: UIViewController, WCSessionDelegate{
         titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
         titleView.addSubview(titleImageView)
         navigationItem.titleView = titleView
-        
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = UIColor.white;
-        
         self.view.backgroundColor = UIColor.black
+        
+        // nav border bottom
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: ambioPurple)
+        
         //check which mood to display
         loadMood()
         
@@ -152,7 +168,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         let messageToSend = ["Mood":MyAppData.sharedData.moodTotal]
         session.sendMessage(messageToSend, replyHandler: { replyMessage in
             //handle and present the message on screen
-            let value = replyMessage["Value"] as? String
+            _ = replyMessage["Value"] as? String
         }, errorHandler: {error in
             // catch any errors here
             print(error)
