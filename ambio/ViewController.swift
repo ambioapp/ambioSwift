@@ -29,6 +29,9 @@ class ViewController: UIViewController, WCSessionDelegate{
     var moodState = MyAppData.sharedData.moodTotal
     let ambioPurple = UIColor(red: 144/255, green: 13/255, blue: 254/255, alpha: 1)
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var moodVideo: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +52,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         
         //check which mood to display
         loadMood()
-        
+        nameLabel.layer.zPosition = 10
         if (WCSession.isSupported()) {
             session = WCSession.default()
             session.delegate = self;
@@ -71,69 +74,82 @@ class ViewController: UIViewController, WCSessionDelegate{
     func loadMood(){
         moodState = MyAppData.sharedData.moodTotal
         print(moodState)
-        let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
-        myWebView.scrollView.isScrollEnabled = false;
-        myWebView.scrollView.bounces = false;
-        self.view.addSubview(myWebView)
+        //let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
+        //myWebView.scrollView.isScrollEnabled = false;
+        //myWebView.scrollView.bounces = false;
+        moodVideo.scrollView.isScrollEnabled = false;
+        moodVideo.scrollView.bounces = false;
+        
+        self.view.addSubview(moodVideo)
         if (moodState == "angry")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/angry")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 1, green: 0.16, blue: 0.16, alpha: 1)
         }
         if (moodState == "content")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.07, alpha: 1)
         }
         if (moodState == "depressed")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/depressed")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 0.08, green: 0, blue: 1, alpha: 1)
         }
         if (moodState == "focused")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/focus")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 0.4, green: 1, blue: 0.76, alpha: 1)
         }
         if (moodState == "fustrated")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/fustrated")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+             nameLabel.textColor = UIColor(red: 1, green: 0.16, blue: 0.16, alpha: 1)
         }
         if (moodState == "inconsolable")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/inconsolable")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 0.08, green: 0, blue: 1, alpha: 1)
         }
         if (moodState == "joyful")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/joyful")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.07, alpha: 1)
         }
         if (moodState == "relaxed")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 0.4, green: 1, blue: 0.76, alpha: 1)
         }
         if (moodState == "restless")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
         }
         if (moodState == "stressed")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/stressed")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
-            myWebView.loadRequest(myURLRequest)
+            moodVideo.loadRequest(myURLRequest)
+            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
         }
     }
     

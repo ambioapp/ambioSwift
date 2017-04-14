@@ -79,6 +79,10 @@
 
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
+		135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
+		135BC7761EA152F100CF90F9 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
+		135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
+		135BC7781EA1567200CF90F9 /* SFText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Heavy.otf"; sourceTree = "<group>"; };
 		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +159,24 @@
 			children = (
 			);
 			name = extensions;
+			sourceTree = "<group>";
+		};
+		135BC7731EA152A400CF90F9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		135BC7741EA152AB00CF90F9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				135BC7761EA152F100CF90F9 /* SFText-Regular.otf */,
+				135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */,
+				135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */,
+				135BC7781EA1567200CF90F9 /* SFText-Heavy.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		1374F8691E95C83E005E4A2A /* ambioWatch */ = {
@@ -236,6 +258,8 @@
 		13B2EC431E5DEF2700E6CDC7 /* ambio */ = {
 			isa = PBXGroup;
 			children = (
+				135BC7741EA152AB00CF90F9 /* fonts */,
+				135BC7731EA152A400CF90F9 /* New Group */,
 				131CF9711E82F6BC00E0D240 /* lib */,
 				132FA9B11E82EC840067EE2F /* extensions */,
 				132FA9B01E82EC7B0067EE2F /* vc */,

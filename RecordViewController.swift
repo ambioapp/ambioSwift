@@ -276,6 +276,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         myActivityIndicator.center = view.center
         myActivityIndicator.startAnimating()
         view.addSubview(myActivityIndicator)
+        recordButton.setTitle("Analyzing Mood", for: .normal)
+        playButton.setTitle("", for: .normal)
     }
     
 }
