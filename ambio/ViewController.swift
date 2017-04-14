@@ -38,7 +38,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
         titleView.addSubview(titleImageView)
         navigationItem.titleView = titleView
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.tintColor = UIColor.white;
         self.view.backgroundColor = UIColor.black
@@ -63,8 +63,8 @@ class ViewController: UIViewController, WCSessionDelegate{
         // Dispose of any resources that can be recreated.
     }
     func addRecording() {
-        let vc = RecordViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        //let vc = RecordViewController()
+        //navigationController?.pushViewController(vc, animated: true)
         
     }
     

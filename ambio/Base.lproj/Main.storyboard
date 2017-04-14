@@ -22,18 +22,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xGp-c5-CES"/>
+                    <navigationItem key="navigationItem" id="xGp-c5-CES">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="pBf-HS-sbn">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Hid-Pa-YAv" kind="push" id="gdC-LL-Ujs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="108.39580209895054"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="4Q9-KM-UQz">
+            <objects>
+                <viewController id="Hid-Pa-YAv" userLabel="Record View Controller" customClass="RecordViewController" customModule="ambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6A0-JV-MsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jsu-nO-NoY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44p-zg-5Sa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ydf-k8-q4H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZ1-tF-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ki2-Mm-YeS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
