@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
+		135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */; };
+		135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135BC77D1EA1650A00CF90F9 /* Assets.xcassets */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
 		1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86D1E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -24,7 +26,6 @@
 		13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */; };
 		13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */; };
 		13B2EC4A1E5DEF2700E6CDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */; };
-		13B2EC4C1E5DEF2700E6CDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC4B1E5DEF2700E6CDC7 /* Assets.xcassets */; };
 		13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC4D1E5DEF2700E6CDC7 /* LaunchScreen.storyboard */; };
 		13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */; };
 		13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */; };
@@ -83,6 +84,8 @@
 		135BC7761EA152F100CF90F9 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
 		135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
 		135BC7781EA1567200CF90F9 /* SFText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Heavy.otf"; sourceTree = "<group>"; };
+		135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		135BC77D1EA1650A00CF90F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 		13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13B2EC491E5DEF2700E6CDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13B2EC4B1E5DEF2700E6CDC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13B2EC4E1E5DEF2700E6CDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13B2EC501E5DEF2700E6CDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */,
 				13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */,
 				13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */,
+				135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 		13B2EC431E5DEF2700E6CDC7 /* ambio */ = {
 			isa = PBXGroup;
 			children = (
+				135BC77D1EA1650A00CF90F9 /* Assets.xcassets */,
 				135BC7741EA152AB00CF90F9 /* fonts */,
 				135BC7731EA152A400CF90F9 /* New Group */,
 				131CF9711E82F6BC00E0D240 /* lib */,
@@ -265,7 +269,6 @@
 				132FA9B01E82EC7B0067EE2F /* vc */,
 				13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */,
 				13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */,
-				13B2EC4B1E5DEF2700E6CDC7 /* Assets.xcassets */,
 				13B2EC4D1E5DEF2700E6CDC7 /* LaunchScreen.storyboard */,
 				13B2EC501E5DEF2700E6CDC7 /* Info.plist */,
 			);
@@ -435,8 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */,
-				13B2EC4C1E5DEF2700E6CDC7 /* Assets.xcassets in Resources */,
 				13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */,
+				135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */,
 				13B2EC4A1E5DEF2700E6CDC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +514,7 @@
 				13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */,
 				13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */,
 				13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */,
+				135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */,
 				131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
