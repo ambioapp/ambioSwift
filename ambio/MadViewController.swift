@@ -32,7 +32,7 @@ class MadViewController: UIViewController {
         //video
         webView.scrollView.isScrollEnabled = false;
         webView.scrollView.bounces = false;
-        let myURL = URL(string: "http://chasbrouck.io/moodNoise/frustrated")
+        let myURL = URL(string: "http://chasbrouck.io/moodNoise/fustrated")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
         
