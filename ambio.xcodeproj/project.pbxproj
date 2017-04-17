@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
+		132095021EA50B270062CCC0 /* Connection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132095011EA50B270062CCC0 /* Connection2ViewController.swift */; };
 		132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281611EA42A9F000E3D16 /* AnxiousViewController.swift */; };
 		132281641EA42D48000E3D16 /* SFText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7761EA152F100CF90F9 /* SFText-Regular.otf */; };
 		132281651EA42D4B000E3D16 /* SFText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */; };
@@ -89,6 +90,7 @@
 
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
+		132095011EA50B270062CCC0 /* Connection2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2ViewController.swift; sourceTree = "<group>"; };
 		132281611EA42A9F000E3D16 /* AnxiousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnxiousViewController.swift; sourceTree = "<group>"; };
 		132281681EA43C46000E3D16 /* HappyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyViewController.swift; sourceTree = "<group>"; };
 		1322816A1EA43E01000E3D16 /* SadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */,
 				13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */,
+				132095011EA50B270062CCC0 /* Connection2ViewController.swift */,
 				13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */,
 				135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */,
 			);
@@ -543,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				132281691EA43C46000E3D16 /* HappyViewController.swift in Sources */,
+				132095021EA50B270062CCC0 /* Connection2ViewController.swift in Sources */,
 				1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */,
 				132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */,
 				132281711EA44282000E3D16 /* CalmViewController.swift in Sources */,

@@ -193,6 +193,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="536"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XEO-Me-5IP" appends="YES" id="Ox1-Pd-imQ"/>
+                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
                                 <rect key="frame" x="111" y="608" width="153" height="39"/>
@@ -224,8 +228,59 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="XEO-Me-5IP">
+                    <connections>
+                        <segue destination="Sk2-w4-NqN" kind="push" id="GaF-Ro-3cL"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="609"/>
+        </scene>
+        <!--Connection 2 View Controller-->
+        <scene sceneID="G4H-qT-L3n">
+            <objects>
+                <viewController id="Sk2-w4-NqN" userLabel="Connection 2 View Controller" customClass="Connection2ViewController" customModule="ambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WKA-HN-YDi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mrO-Xg-wI1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S3v-Lt-qEs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djd-7f-q3k">
+                                <rect key="frame" x="0.0" y="59" width="375" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="luf-yw-SWz" appends="YES" id="69b-Wd-rYs"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
+                                <rect key="frame" x="111" y="608" width="153" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vx1-4f-BVt"/>
+                    <connections>
+                        <outlet property="moodVideo" destination="djd-7f-q3k" id="MOD-dV-9WF"/>
+                        <outlet property="nameLabel" destination="JBn-ub-doa" id="opd-GM-Ked"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5z-o1-B95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="luf-yw-SWz">
+                    <connections>
+                        <action selector="swipeRight:" destination="Sk2-w4-NqN" id="vjL-ia-n1L"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1879" y="613"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="4Q9-KM-UQz">
