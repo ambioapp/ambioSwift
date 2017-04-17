@@ -18,6 +18,8 @@ class CalmViewController: UIViewController {
     @IBAction func focused(_ sender: Any) {
         focused()
     }
+    @IBOutlet weak var relaxedButton: UIButton!
+    @IBOutlet weak var focusedButton: UIButton!
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,12 @@ class CalmViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "relaxed1.png")
+        relaxedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "focused2.png")
+        focusedButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,11 +55,23 @@ class CalmViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "relaxed1.png")
+        relaxedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "focused2.png")
+        focusedButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     func focused(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/focused")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "relaxed2.png")
+        relaxedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "focused1.png")
+        focusedButton.setBackgroundImage(image, for: UIControlState.normal)
     }
 
 }

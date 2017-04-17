@@ -13,7 +13,7 @@ class MyAppData{
     let moodKey = "counterKey"
     
     static let sharedData = MyAppData()
-    var moodTotal:String = "content"{
+    var moodTotal:String = "relaxed"{
         didSet{
             let defaults = UserDefaults.standard
             defaults.set(moodTotal, forKey: moodKey)
@@ -31,7 +31,7 @@ class MyAppData{
         if let s = defaults.object(forKey: moodKey){
             moodTotal = s as! String
         }else{
-            moodTotal = "default"
+            moodTotal = "relaxed"
         }
     }
 }

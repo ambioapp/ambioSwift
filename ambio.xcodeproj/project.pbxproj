@@ -193,13 +193,6 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
-		135BC7731EA152A400CF90F9 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		135BC7741EA152AB00CF90F9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +285,6 @@
 			children = (
 				135BC77D1EA1650A00CF90F9 /* Assets.xcassets */,
 				135BC7741EA152AB00CF90F9 /* fonts */,
-				135BC7731EA152A400CF90F9 /* New Group */,
 				131CF9711E82F6BC00E0D240 /* lib */,
 				132FA9B11E82EC840067EE2F /* extensions */,
 				132281631EA42AA4000E3D16 /* moodVC */,

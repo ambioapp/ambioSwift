@@ -38,7 +38,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="happyColor"/>
                                         <connections>
-                                            <segue destination="eu6-A1-nRS" kind="push" id="Nsq-Fe-ued"/>
+                                            <segue destination="eu6-A1-nRS" kind="show" id="Nsq-Fe-ued"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lg-ya-cE5">
@@ -48,7 +48,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="sadColor"/>
                                         <connections>
-                                            <segue destination="5R4-Ka-3uB" kind="push" id="E5f-Rf-p1i"/>
+                                            <segue destination="5R4-Ka-3uB" kind="show" id="E5f-Rf-p1i"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-TW-neU">
@@ -58,7 +58,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="madColor"/>
                                         <connections>
-                                            <segue destination="vJe-mS-adG" kind="push" id="pS0-tf-G9t"/>
+                                            <segue destination="vJe-mS-adG" kind="show" id="pS0-tf-G9t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-6K-9fO">
@@ -68,7 +68,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="anxiousColor"/>
                                         <connections>
-                                            <segue destination="Gv2-M1-TpT" kind="push" id="TmO-ot-r5t"/>
+                                            <segue destination="Gv2-M1-TpT" kind="show" id="TmO-ot-r5t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVG-0K-sLw">
@@ -78,7 +78,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="calmColor"/>
                                         <connections>
-                                            <segue destination="sOU-E5-UwQ" kind="push" id="m2w-ql-07t"/>
+                                            <segue destination="sOU-E5-UwQ" kind="show" id="m2w-ql-07t"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,9 +136,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-6f-7u0">
-                                <rect key="frame" x="101" y="85" width="58" height="30"/>
+                                <rect key="frame" x="188" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restless">
+                                <state key="normal" backgroundImage="restless2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -146,9 +146,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-Is-9kM">
-                                <rect key="frame" x="199" y="85" width="61" height="30"/>
+                                <rect key="frame" x="33" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stressed">
+                                <state key="normal" backgroundImage="stressed1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -160,6 +160,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Anxious" id="KtK-ET-IHN"/>
                     <connections>
+                        <outlet property="restlessButton" destination="lmk-6f-7u0" id="UUK-yH-Ila"/>
+                        <outlet property="stressedButton" destination="6jE-Is-9kM" id="2xi-e2-C6F"/>
                         <outlet property="webView" destination="295-ig-5su" id="Dcf-Th-26Q"/>
                     </connections>
                 </viewController>
@@ -212,13 +214,13 @@
                         <barButtonItem key="leftBarButtonItem" image="gear-ios-22" id="xbI-pq-n4x">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="80R-RC-d0W" kind="push" id="Xtz-oE-YRG"/>
+                                <segue destination="80R-RC-d0W" kind="show" id="Xtz-oE-YRG"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" id="pBf-HS-sbn">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="Hid-Pa-YAv" kind="push" id="gdC-LL-Ujs"/>
+                                <segue destination="Hid-Pa-YAv" kind="show" id="gdC-LL-Ujs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -230,7 +232,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="XEO-Me-5IP">
                     <connections>
-                        <segue destination="Sk2-w4-NqN" kind="push" id="GaF-Ro-3cL"/>
+                        <segue destination="Sk2-w4-NqN" kind="show" id="GaF-Ro-3cL"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -299,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ1-tF-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689" y="1367"/>
+            <point key="canvasLocation" x="1494" y="1469"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ki2-Mm-YeS">
@@ -337,24 +339,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
-                                <rect key="frame" x="101" y="85" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Content">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="content:" destination="eu6-A1-nRS" eventType="touchUpInside" id="w8L-eP-3f8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58b-2q-ITE">
-                                <rect key="frame" x="199" y="85" width="61" height="30"/>
+                                <rect key="frame" x="188" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Joyful">
+                                <state key="normal" backgroundImage="joyful2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="joyful:" destination="eu6-A1-nRS" eventType="touchUpInside" id="RGA-rJ-JIW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
+                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="content1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="content:" destination="eu6-A1-nRS" eventType="touchUpInside" id="w8L-eP-3f8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -362,6 +364,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Happy" id="Yth-0e-XLh"/>
                     <connections>
+                        <outlet property="contentButton" destination="s2C-Qf-vb0" id="OPb-nl-oBb"/>
+                        <outlet property="joyfulButton" destination="58b-2q-ITE" id="eHw-ff-UEk"/>
                         <outlet property="webView" destination="Cg2-ap-ONT" id="CVl-Pg-qfn"/>
                     </connections>
                 </viewController>
@@ -386,24 +390,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
-                                <rect key="frame" x="74" y="85" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Inconsolable">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="inconsolable:" destination="5R4-Ka-3uB" eventType="touchUpInside" id="v3v-3o-Mbz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-Xc-qBG">
-                                <rect key="frame" x="206" y="85" width="102" height="30"/>
+                                <rect key="frame" x="188" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Depressed">
+                                <state key="normal" backgroundImage="woeful2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="depressed:" destination="5R4-Ka-3uB" eventType="touchUpInside" id="ScH-jf-CuE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
+                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="gloomy1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="inconsolable:" destination="5R4-Ka-3uB" eventType="touchUpInside" id="v3v-3o-Mbz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -411,6 +415,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sad" id="dFM-bS-N2c"/>
                     <connections>
+                        <outlet property="depressedButton" destination="IMu-Xc-qBG" id="6wV-XD-cWf"/>
+                        <outlet property="inconsolableButton" destination="bJ0-jJ-M1k" id="TxK-3X-IMn"/>
                         <outlet property="webView" destination="1O6-N9-4eb" id="iKN-Xw-eeZ"/>
                     </connections>
                 </viewController>
@@ -435,24 +441,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2w-63-Wgv">
-                                <rect key="frame" x="199" y="85" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P87-rO-sgF">
+                                <rect key="frame" x="33" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Frustrated">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" backgroundImage="frustrated1"/>
                                 <connections>
-                                    <action selector="frustrated:" destination="vJe-mS-adG" eventType="touchUpInside" id="oId-f7-MGb"/>
+                                    <action selector="frustrated:" destination="vJe-mS-adG" eventType="touchUpInside" id="zbB-jE-O6e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="np4-Lj-7KA">
-                                <rect key="frame" x="107" y="85" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urO-ja-ih6">
+                                <rect key="frame" x="188" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Angry">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" backgroundImage="angry2"/>
                                 <connections>
-                                    <action selector="angry:" destination="vJe-mS-adG" eventType="touchUpInside" id="Y1f-5D-KcT"/>
+                                    <action selector="angry:" destination="vJe-mS-adG" eventType="touchUpInside" id="IsE-gi-dq3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -460,6 +462,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mad" id="aaj-kI-D8D"/>
                     <connections>
+                        <outlet property="angryButton" destination="urO-ja-ih6" id="bhk-7I-cxr"/>
+                        <outlet property="frustratedButton" destination="P87-rO-sgF" id="0Zb-i6-vSA"/>
                         <outlet property="webView" destination="pQo-uq-ax0" id="oay-my-ssM"/>
                     </connections>
                 </viewController>
@@ -485,9 +489,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-di-8xF">
-                                <rect key="frame" x="115" y="87" width="54" height="30"/>
+                                <rect key="frame" x="33" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Relaxed">
+                                <state key="normal" backgroundImage="relaxed1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -495,9 +499,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-Yx-0D5">
-                                <rect key="frame" x="201" y="87" width="59" height="30"/>
+                                <rect key="frame" x="188" y="80" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Focused">
+                                <state key="normal" backgroundImage="focused2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -509,6 +513,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calm" id="kZ2-ii-tQi"/>
                     <connections>
+                        <outlet property="focusedButton" destination="0Mw-Yx-0D5" id="M0o-7s-I5B"/>
+                        <outlet property="relaxedButton" destination="jrp-di-8xF" id="Cup-tF-R47"/>
                         <outlet property="webView" destination="saB-u4-UYh" id="gPY-4l-lft"/>
                     </connections>
                 </viewController>
@@ -518,11 +524,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="angry2" width="310" height="82"/>
         <image name="anxiousColor" width="281" height="281"/>
         <image name="calmColor" width="281" height="281"/>
+        <image name="content1" width="310" height="82"/>
+        <image name="focused2" width="310" height="82"/>
+        <image name="frustrated1" width="310" height="82"/>
         <image name="gear-ios-22" width="22" height="24"/>
+        <image name="gloomy1" width="310" height="82"/>
         <image name="happyColor" width="281" height="281"/>
+        <image name="joyful2" width="310" height="82"/>
         <image name="madColor" width="281" height="281"/>
+        <image name="relaxed1" width="310" height="82"/>
+        <image name="restless2" width="310" height="82"/>
         <image name="sadColor" width="281" height="281"/>
+        <image name="stressed1" width="310" height="82"/>
+        <image name="woeful2" width="310" height="82"/>
     </resources>
 </document>

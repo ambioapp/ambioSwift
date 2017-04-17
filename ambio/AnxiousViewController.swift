@@ -10,6 +10,8 @@ import UIKit
 
 class AnxiousViewController: UIViewController {
 
+    @IBOutlet weak var stressedButton: UIButton!
+    @IBOutlet weak var restlessButton: UIButton!
     @IBOutlet weak var webView: UIWebView!
     @IBAction func restless(_ sender: Any) {
         restless()
@@ -31,6 +33,12 @@ class AnxiousViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "stressed1.png")
+        stressedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "restless2.png")
+        restlessButton.setBackgroundImage(image, for: UIControlState.normal)
     
     }
     
@@ -48,11 +56,23 @@ class AnxiousViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "stressed2.png")
+        stressedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "restless1.png")
+        restlessButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     func stressed(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/stressed")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "stressed1.png")
+        stressedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "restless2.png")
+        restlessButton.setBackgroundImage(image, for: UIControlState.normal)
     }
 
 }

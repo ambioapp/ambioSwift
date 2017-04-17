@@ -12,6 +12,8 @@ class HappyViewController: UIViewController {
 
     
     
+    @IBOutlet weak var contentButton: UIButton!
+    @IBOutlet weak var joyfulButton: UIButton!
     @IBAction func content(_ sender: Any) {
         content()
     }
@@ -31,6 +33,12 @@ class HappyViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+      //button images default
+        var image = UIImage(named: "content1.png")
+        contentButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "joyful2.png")
+        joyfulButton.setBackgroundImage(image, for: UIControlState.normal)
 
     }
     
@@ -48,11 +56,19 @@ class HappyViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        var image = UIImage(named: "content1.png")
+        contentButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "joyful2.png")
+        joyfulButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     func joyful(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/joyful")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        var image = UIImage(named: "content2.png")
+        contentButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "joyful1.png")
+        joyfulButton.setBackgroundImage(image, for: UIControlState.normal)
     }
 
 }

@@ -12,12 +12,14 @@ class MadViewController: UIViewController {
 
 
 
+    @IBOutlet weak var frustratedButton: UIButton!
     
-    @IBAction func angry(_ sender: Any) {
-        angry()
-    }
     @IBAction func frustrated(_ sender: Any) {
         frustrated()
+    }
+    @IBOutlet weak var angryButton: UIButton!
+    @IBAction func angry(_ sender: Any) {
+        angry()
     }
   
     @IBOutlet weak var webView: UIWebView!
@@ -33,6 +35,12 @@ class MadViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/angry")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "frustrated1.png")
+        frustratedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "angry2.png")
+        angryButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,11 +57,23 @@ class MadViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/angry")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "frustrated2.png")
+        frustratedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "angry1.png")
+        angryButton.setBackgroundImage(image, for: UIControlState.normal)
     }
     func frustrated(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/fustrated")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
+        
+        //button images default
+        var image = UIImage(named: "frustrated1.png")
+        frustratedButton.setBackgroundImage(image, for: UIControlState.normal)
+        image = UIImage(named: "angry2.png")
+        angryButton.setBackgroundImage(image, for: UIControlState.normal)
     }
 
 }
