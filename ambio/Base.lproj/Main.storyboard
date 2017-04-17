@@ -217,7 +217,7 @@
                                 <segue destination="80R-RC-d0W" kind="show" id="Xtz-oE-YRG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="+" id="pBf-HS-sbn">
+                        <barButtonItem key="rightBarButtonItem" image="plus-22" id="pBf-HS-sbn">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Hid-Pa-YAv" kind="show" id="gdC-LL-Ujs"/>
@@ -308,7 +308,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -535,6 +535,7 @@
         <image name="happyColor" width="281" height="281"/>
         <image name="joyful2" width="310" height="82"/>
         <image name="madColor" width="281" height="281"/>
+        <image name="plus-22" width="22" height="22"/>
         <image name="relaxed1" width="310" height="82"/>
         <image name="restless2" width="310" height="82"/>
         <image name="sadColor" width="281" height="281"/>
