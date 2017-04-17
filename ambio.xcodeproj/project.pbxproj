@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
+		132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281611EA42A9F000E3D16 /* AnxiousViewController.swift */; };
+		132281641EA42D48000E3D16 /* SFText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7761EA152F100CF90F9 /* SFText-Regular.otf */; };
+		132281651EA42D4B000E3D16 /* SFText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */; };
+		132281661EA42D4D000E3D16 /* SFText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */; };
+		132281671EA42D4F000E3D16 /* SFText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 135BC7781EA1567200CF90F9 /* SFText-Heavy.otf */; };
+		132281691EA43C46000E3D16 /* HappyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281681EA43C46000E3D16 /* HappyViewController.swift */; };
+		1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816A1EA43E01000E3D16 /* SadViewController.swift */; };
+		1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816E1EA440D6000E3D16 /* MadViewController.swift */; };
+		132281711EA44282000E3D16 /* CalmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281701EA44282000E3D16 /* CalmViewController.swift */; };
 		135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */; };
 		135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135BC77D1EA1650A00CF90F9 /* Assets.xcassets */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
@@ -80,6 +89,11 @@
 
 /* Begin PBXFileReference section */
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
+		132281611EA42A9F000E3D16 /* AnxiousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnxiousViewController.swift; sourceTree = "<group>"; };
+		132281681EA43C46000E3D16 /* HappyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyViewController.swift; sourceTree = "<group>"; };
+		1322816A1EA43E01000E3D16 /* SadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
+		1322816E1EA440D6000E3D16 /* MadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadViewController.swift; sourceTree = "<group>"; };
+		132281701EA44282000E3D16 /* CalmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalmViewController.swift; sourceTree = "<group>"; };
 		135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
 		135BC7761EA152F100CF90F9 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
 		135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
@@ -144,6 +158,18 @@
 				131CF9721E82F6CC00E0D240 /* MyAppData.swift */,
 			);
 			name = lib;
+			sourceTree = "<group>";
+		};
+		132281631EA42AA4000E3D16 /* moodVC */ = {
+			isa = PBXGroup;
+			children = (
+				132281611EA42A9F000E3D16 /* AnxiousViewController.swift */,
+				132281681EA43C46000E3D16 /* HappyViewController.swift */,
+				1322816A1EA43E01000E3D16 /* SadViewController.swift */,
+				1322816E1EA440D6000E3D16 /* MadViewController.swift */,
+				132281701EA44282000E3D16 /* CalmViewController.swift */,
+			);
+			name = moodVC;
 			sourceTree = "<group>";
 		};
 		132FA9B01E82EC7B0067EE2F /* vc */ = {
@@ -266,6 +292,7 @@
 				135BC7731EA152A400CF90F9 /* New Group */,
 				131CF9711E82F6BC00E0D240 /* lib */,
 				132FA9B11E82EC840067EE2F /* extensions */,
+				132281631EA42AA4000E3D16 /* moodVC */,
 				132FA9B01E82EC7B0067EE2F /* vc */,
 				13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */,
 				13B2EC481E5DEF2700E6CDC7 /* Main.storyboard */,
@@ -439,8 +466,12 @@
 			files = (
 				13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */,
 				13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */,
+				132281651EA42D4B000E3D16 /* SFText-Semibold.otf in Resources */,
+				132281641EA42D48000E3D16 /* SFText-Regular.otf in Resources */,
 				135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */,
 				13B2EC4A1E5DEF2700E6CDC7 /* Main.storyboard in Resources */,
+				132281661EA42D4D000E3D16 /* SFText-Bold.otf in Resources */,
+				132281671EA42D4F000E3D16 /* SFText-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +542,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132281691EA43C46000E3D16 /* HappyViewController.swift in Sources */,
+				1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */,
+				132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */,
+				132281711EA44282000E3D16 /* CalmViewController.swift in Sources */,
+				1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */,
 				13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */,
 				13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */,
 				13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */,
