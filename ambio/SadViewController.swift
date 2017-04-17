@@ -11,7 +11,6 @@ import UIKit
 class SadViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
-    @IBOutlet weak var moodText: UILabel!
     @IBAction func inconsolable(_ sender: Any) {
         inconsolable()
     }
@@ -30,7 +29,6 @@ class SadViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/inconsolable")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
-        moodText.text = "Lorem ipsum dolor sit amet, ea ius meliore dolorem fabellas. Odio clita deleniti id his, dicam dolore numquam mea ut, his et aliquip consequat assueverit."
     }
     
     override func didReceiveMemoryWarning() {

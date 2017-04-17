@@ -10,9 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SFText-Regular.otf">
-            <string>SFUIText-Regular</string>
-        </array>
         <array key="SFText-Semibold.otf">
             <string>SFUIText-Semibold</string>
         </array>
@@ -31,11 +28,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exP-D8-9k8">
-                                <rect key="frame" x="77" y="52" width="220" height="1248"/>
+                                <rect key="frame" x="16" y="52" width="342" height="1248"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKx-7w-KK5">
-                                        <rect key="frame" x="20" y="0.0" width="180" height="180"/>
+                                        <rect key="frame" x="81" y="0.0" width="180" height="180"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="poW-Ec-IhV"/>
                                             <constraint firstAttribute="height" constant="180" id="wsg-R2-HB3"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="happyColor"/>
@@ -44,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lg-ya-cE5">
-                                        <rect key="frame" x="20" y="214" width="180" height="180"/>
+                                        <rect key="frame" x="81" y="214" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="UPV-Ca-jrR"/>
                                         </constraints>
@@ -54,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-TW-neU">
-                                        <rect key="frame" x="20" y="430" width="180" height="180"/>
+                                        <rect key="frame" x="81" y="430" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="DqT-eG-XnE"/>
                                         </constraints>
@@ -64,7 +62,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKh-6K-9fO">
-                                        <rect key="frame" x="20" y="644" width="180" height="180"/>
+                                        <rect key="frame" x="81" y="644" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="QYU-nA-nLy"/>
                                         </constraints>
@@ -74,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVG-0K-sLw">
-                                        <rect key="frame" x="20" y="864" width="180" height="180"/>
+                                        <rect key="frame" x="81" y="864" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="tgW-n4-aSc"/>
                                         </constraints>
@@ -85,20 +83,19 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="xVG-0K-sLw" secondAttribute="bottom" constant="-55" id="1zn-oY-CFj"/>
+                                    <constraint firstAttribute="bottom" secondItem="xVG-0K-sLw" secondAttribute="bottom" constant="140" id="1zn-oY-CFj"/>
                                     <constraint firstItem="nKx-7w-KK5" firstAttribute="top" secondItem="exP-D8-9k8" secondAttribute="top" id="49Q-F2-d6D"/>
                                     <constraint firstItem="DKh-6K-9fO" firstAttribute="top" secondItem="Ao3-TW-neU" secondAttribute="bottom" constant="34" id="Dqh-HW-v4i"/>
-                                    <constraint firstItem="nKx-7w-KK5" firstAttribute="centerX" secondItem="exP-D8-9k8" secondAttribute="centerX" id="GT3-aO-YVx"/>
                                     <constraint firstItem="nKx-7w-KK5" firstAttribute="leading" secondItem="7lg-ya-cE5" secondAttribute="leading" id="KCU-tX-diI"/>
                                     <constraint firstItem="7lg-ya-cE5" firstAttribute="top" secondItem="nKx-7w-KK5" secondAttribute="bottom" constant="34" id="LkF-G5-IaZ"/>
                                     <constraint firstItem="7lg-ya-cE5" firstAttribute="leading" secondItem="Ao3-TW-neU" secondAttribute="leading" id="NVR-Xu-xl0"/>
                                     <constraint firstItem="Ao3-TW-neU" firstAttribute="trailing" secondItem="DKh-6K-9fO" secondAttribute="trailing" id="OlG-bW-5ZC"/>
-                                    <constraint firstAttribute="trailing" secondItem="nKx-7w-KK5" secondAttribute="trailing" constant="20" id="SGk-YB-J1Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKx-7w-KK5" secondAttribute="trailing" constant="81" id="SGk-YB-J1Y"/>
                                     <constraint firstItem="7lg-ya-cE5" firstAttribute="trailing" secondItem="Ao3-TW-neU" secondAttribute="trailing" id="Tp5-cp-WMD"/>
                                     <constraint firstItem="Ao3-TW-neU" firstAttribute="top" secondItem="7lg-ya-cE5" secondAttribute="bottom" constant="36" id="aRy-Pp-Bzu"/>
                                     <constraint firstItem="nKx-7w-KK5" firstAttribute="trailing" secondItem="7lg-ya-cE5" secondAttribute="trailing" id="fib-5q-ubL"/>
                                     <constraint firstItem="DKh-6K-9fO" firstAttribute="trailing" secondItem="xVG-0K-sLw" secondAttribute="trailing" id="gjW-8S-khF"/>
-                                    <constraint firstItem="nKx-7w-KK5" firstAttribute="leading" secondItem="exP-D8-9k8" secondAttribute="leading" constant="20" id="hqJ-lR-dwZ"/>
+                                    <constraint firstItem="nKx-7w-KK5" firstAttribute="leading" secondItem="exP-D8-9k8" secondAttribute="leading" constant="81" id="hqJ-lR-dwZ"/>
                                     <constraint firstItem="DKh-6K-9fO" firstAttribute="leading" secondItem="xVG-0K-sLw" secondAttribute="leading" id="kLQ-rT-GLV"/>
                                     <constraint firstItem="Ao3-TW-neU" firstAttribute="leading" secondItem="DKh-6K-9fO" secondAttribute="leading" id="rVA-sG-dsO"/>
                                     <constraint firstItem="xVG-0K-sLw" firstAttribute="top" secondItem="DKh-6K-9fO" secondAttribute="bottom" constant="40" id="sgY-h3-WyQ"/>
@@ -108,12 +105,12 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="exP-D8-9k8" firstAttribute="centerX" secondItem="XOT-4r-uuv" secondAttribute="centerX" id="4DP-Co-SfI"/>
-                            <constraint firstItem="exP-D8-9k8" firstAttribute="leading" secondItem="XOT-4r-uuv" secondAttribute="leadingMargin" constant="61" id="XdP-vA-xRj"/>
+                            <constraint firstItem="exP-D8-9k8" firstAttribute="leading" secondItem="XOT-4r-uuv" secondAttribute="leadingMargin" id="XdP-vA-xRj"/>
                             <constraint firstItem="a3l-Kz-cEy" firstAttribute="top" secondItem="exP-D8-9k8" secondAttribute="bottom" id="ijb-vG-V2m"/>
                             <constraint firstItem="exP-D8-9k8" firstAttribute="top" secondItem="XOT-4r-uuv" secondAttribute="topMargin" constant="52" id="owq-Cr-SsZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uxm-rb-7ZW"/>
+                    <navigationItem key="navigationItem" title="Guide" id="uxm-rb-7ZW"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1300"/>
                 </viewController>
@@ -158,19 +155,11 @@
                                     <action selector="stressed:" destination="Gv2-M1-TpT" eventType="touchUpInside" id="fvV-UJ-r4c"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIk-fn-wac">
-                                <rect key="frame" x="36" y="529" width="302" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Anxious" id="KtK-ET-IHN"/>
                     <connections>
-                        <outlet property="moodText" destination="bIk-fn-wac" id="FO4-57-fhN"/>
                         <outlet property="webView" destination="295-ig-5su" id="Dcf-Th-26Q"/>
                     </connections>
                 </viewController>
@@ -181,10 +170,10 @@
         <!--Happy View Controller-->
         <scene sceneID="688-qH-uCB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aLV-2n-VHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="f8h-Et-Jrb" userLabel="Happy View Controller" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9nL-Aq-rjk"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLV-2n-VHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2745" y="-3504"/>
         </scene>
@@ -236,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="108.39580209895054"/>
+            <point key="canvasLocation" x="1076" y="609"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="4Q9-KM-UQz">
@@ -255,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ1-tF-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="878"/>
+            <point key="canvasLocation" x="2689" y="1367"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ki2-Mm-YeS">
@@ -274,7 +263,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yzj-6N-XD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="108"/>
+            <point key="canvasLocation" x="153" y="609"/>
         </scene>
         <!--Happy View Controller-->
         <scene sceneID="g91-Z2-5ha">
@@ -293,13 +282,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQw-6K-i1S">
-                                <rect key="frame" x="36" y="529" width="302" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
                                 <rect key="frame" x="101" y="85" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -325,7 +307,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Happy" id="Yth-0e-XLh"/>
                     <connections>
-                        <outlet property="moodText" destination="PQw-6K-i1S" id="XbN-dH-bN9"/>
                         <outlet property="webView" destination="Cg2-ap-ONT" id="CVl-Pg-qfn"/>
                     </connections>
                 </viewController>
@@ -350,13 +331,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkp-GS-fdT">
-                                <rect key="frame" x="36" y="529" width="302" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
                                 <rect key="frame" x="74" y="85" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -382,7 +356,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sad" id="dFM-bS-N2c"/>
                     <connections>
-                        <outlet property="moodText" destination="dkp-GS-fdT" id="hLO-lB-6Kz"/>
                         <outlet property="webView" destination="1O6-N9-4eb" id="iKN-Xw-eeZ"/>
                     </connections>
                 </viewController>
@@ -407,13 +380,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oA-VA-Y2B">
-                                <rect key="frame" x="36" y="529" width="302" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2w-63-Wgv">
                                 <rect key="frame" x="199" y="85" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -439,7 +405,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mad" id="aaj-kI-D8D"/>
                     <connections>
-                        <outlet property="moodText" destination="2oA-VA-Y2B" id="cTz-1u-S24"/>
                         <outlet property="webView" destination="pQo-uq-ax0" id="oay-my-ssM"/>
                     </connections>
                 </viewController>
@@ -464,13 +429,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-1a-mMm">
-                                <rect key="frame" x="36" y="529" width="302" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-di-8xF">
                                 <rect key="frame" x="115" y="87" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -496,7 +454,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calm" id="kZ2-ii-tQi"/>
                     <connections>
-                        <outlet property="moodText" destination="wbe-1a-mMm" id="1Rv-Kf-lgb"/>
                         <outlet property="webView" destination="saB-u4-UYh" id="gPY-4l-lft"/>
                     </connections>
                 </viewController>

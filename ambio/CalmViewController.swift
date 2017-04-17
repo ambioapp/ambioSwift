@@ -19,7 +19,6 @@ class CalmViewController: UIViewController {
         focused()
     }
     @IBOutlet weak var webView: UIWebView!
-    @IBOutlet weak var moodText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         //nav
@@ -32,7 +31,6 @@ class CalmViewController: UIViewController {
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
         webView.loadRequest(myURLRequest)
-        moodText.text = "Lorem ipsum dolor sit amet, ea ius meliore dolorem fabellas. Odio clita deleniti id his, dicam dolore numquam mea ut, his et aliquip consequat assueverit."
     }
     
     override func didReceiveMemoryWarning() {
