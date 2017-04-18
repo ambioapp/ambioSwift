@@ -131,12 +131,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="295-ig-5su">
-                                <rect key="frame" x="0.0" y="139" width="375" height="363"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-6f-7u0">
-                                <rect key="frame" x="188" y="80" width="155" height="41"/>
+                                <rect key="frame" x="188" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="restless2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-Is-9kM">
-                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <rect key="frame" x="33" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="stressed1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,16 +168,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZf-8p-5tg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4794" y="-794"/>
-        </scene>
-        <!--Happy View Controller-->
-        <scene sceneID="688-qH-uCB">
-            <objects>
-                <viewController id="f8h-Et-Jrb" userLabel="Happy View Controller" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9nL-Aq-rjk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aLV-2n-VHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2745" y="-3504"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -211,7 +201,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="xGp-c5-CES">
-                        <barButtonItem key="leftBarButtonItem" image="gear-ios-22" id="xbI-pq-n4x">
+                        <barButtonItem key="leftBarButtonItem" image="moods-icon" id="xbI-pq-n4x">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="80R-RC-d0W" kind="show" id="Xtz-oE-YRG"/>
@@ -308,7 +298,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -335,12 +325,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-ap-ONT">
-                                <rect key="frame" x="0.0" y="139" width="375" height="363"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58b-2q-ITE">
-                                <rect key="frame" x="188" y="80" width="155" height="41"/>
+                                <rect key="frame" x="188" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="joyful2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -350,7 +340,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
-                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <rect key="frame" x="33" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="content1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -386,12 +376,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1O6-N9-4eb">
-                                <rect key="frame" x="0.0" y="139" width="375" height="363"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-Xc-qBG">
-                                <rect key="frame" x="188" y="80" width="155" height="41"/>
+                                <rect key="frame" x="188" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="woeful2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -401,7 +391,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
-                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <rect key="frame" x="33" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="gloomy1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -437,12 +427,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQo-uq-ax0">
-                                <rect key="frame" x="0.0" y="139" width="375" height="363"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P87-rO-sgF">
-                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <rect key="frame" x="33" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="frustrated1"/>
                                 <connections>
@@ -450,7 +440,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urO-ja-ih6">
-                                <rect key="frame" x="188" y="80" width="155" height="41"/>
+                                <rect key="frame" x="188" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="angry2"/>
                                 <connections>
@@ -484,12 +474,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="saB-u4-UYh">
-                                <rect key="frame" x="0.0" y="139" width="375" height="363"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-di-8xF">
-                                <rect key="frame" x="33" y="80" width="155" height="41"/>
+                                <rect key="frame" x="32" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="relaxed1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -499,7 +489,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-Yx-0D5">
-                                <rect key="frame" x="188" y="80" width="155" height="41"/>
+                                <rect key="frame" x="187" y="600" width="155" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="focused2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -530,11 +520,11 @@
         <image name="content1" width="310" height="82"/>
         <image name="focused2" width="310" height="82"/>
         <image name="frustrated1" width="310" height="82"/>
-        <image name="gear-ios-22" width="22" height="24"/>
         <image name="gloomy1" width="310" height="82"/>
         <image name="happyColor" width="281" height="281"/>
         <image name="joyful2" width="310" height="82"/>
         <image name="madColor" width="281" height="281"/>
+        <image name="moods-icon" width="23" height="23"/>
         <image name="plus-22" width="22" height="22"/>
         <image name="relaxed1" width="310" height="82"/>
         <image name="restless2" width="310" height="82"/>

@@ -13,7 +13,7 @@ import WatchConnectivity
 //border botto extension
 extension UIImage {
     class func imageWithColor(color: UIColor) -> UIImage {
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 2.0)
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.5)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()
         UIRectFill(rect)
@@ -27,6 +27,7 @@ class ViewController: UIViewController, WCSessionDelegate{
     
     var session: WCSession!
     var moodState = MyAppData.sharedData.moodTotal
+    let whiteBar = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     let ambioPurple = UIColor(red: 144/255, green: 13/255, blue: 254/255, alpha: 1)
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -48,7 +49,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         
         // nav border bottom
         navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: ambioPurple)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
         
         //check which mood to display
         loadMood()
@@ -142,14 +143,14 @@ class ViewController: UIViewController, WCSessionDelegate{
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             moodVideo.loadRequest(myURLRequest)
-            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
+            nameLabel.textColor = UIColor(red: 0.60, green: 0.027, blue: 0.379, alpha: 1)
         }
         if (moodState == "stressed")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/stressed")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             moodVideo.loadRequest(myURLRequest)
-            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
+            nameLabel.textColor = UIColor(red: 0.60, green: 0.027, blue: 0.379, alpha: 1)
         }
     }
     

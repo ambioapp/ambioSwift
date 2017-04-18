@@ -134,14 +134,14 @@ class Connection2ViewController: UIViewController{
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/restless")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             moodVideo.loadRequest(myURLRequest)
-            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
+            nameLabel.textColor = UIColor(red: 0.60, green: 0.027, blue: 0.379, alpha: 1)
         }
         if (moodState == "stressed")
         {
             let myURL = URL(string: "http://chasbrouck.io/moodNoise/stressed")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             moodVideo.loadRequest(myURLRequest)
-            nameLabel.textColor = UIColor(red: 1, green: 0.75, blue: 0.71, alpha: 1)
+            nameLabel.textColor = UIColor(red: 0.60, green: 0.027, blue: 0.379, alpha: 1)
         }
     }
     
