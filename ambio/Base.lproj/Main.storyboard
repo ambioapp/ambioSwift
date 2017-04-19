@@ -181,14 +181,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uED-ED-7rd">
+                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uED-ED-7rd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="536"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="XEO-Me-5IP" appends="YES" id="Ox1-Pd-imQ"/>
-                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
                                 <rect key="frame" x="111" y="608" width="153" height="39"/>
@@ -199,6 +196,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="clM-aG-b6Y" appends="YES" id="cvC-AS-h4y"/>
+                            <outletCollection property="gestureRecognizers" destination="7Wv-wZ-bF2" appends="YES" id="OZx-yb-KVp"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="xGp-c5-CES">
                         <barButtonItem key="leftBarButtonItem" image="moods-icon" id="xbI-pq-n4x">
@@ -220,11 +222,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="XEO-Me-5IP">
+                <swipeGestureRecognizer direction="left" id="clM-aG-b6Y">
                     <connections>
-                        <segue destination="Sk2-w4-NqN" kind="show" id="GaF-Ro-3cL"/>
+                        <segue destination="Sk2-w4-NqN" kind="show" id="fjG-ks-etF"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer id="7Wv-wZ-bF2">
+                    <connections>
+                        <segue destination="kZO-RC-4q3" kind="show" id="We2-xP-VVc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="609"/>
         </scene>
@@ -240,14 +247,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djd-7f-q3k">
+                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djd-7f-q3k">
                                 <rect key="frame" x="0.0" y="59" width="375" height="536"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="luf-yw-SWz" appends="YES" id="69b-Wd-rYs"/>
-                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
                                 <rect key="frame" x="111" y="608" width="153" height="41"/>
@@ -258,6 +262,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lCw-DU-f6K" appends="YES" id="y0D-dt-cwJ"/>
+                            <outletCollection property="gestureRecognizers" destination="6NP-jV-Wft" appends="YES" id="ccz-Qa-Fxt"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="vx1-4f-BVt"/>
                     <connections>
@@ -266,9 +275,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5z-o1-B95" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="luf-yw-SWz">
+                <tapGestureRecognizer id="lCw-DU-f6K">
                     <connections>
-                        <action selector="swipeRight:" destination="Sk2-w4-NqN" id="vjL-ia-n1L"/>
+                        <segue destination="uY8-gE-Svm" kind="show" id="Yjg-Z4-cnc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="6NP-jV-Wft">
+                    <connections>
+                        <action selector="swipeRight:" destination="Sk2-w4-NqN" id="4cW-Sy-ZGK"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -291,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ1-tF-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="1469"/>
+            <point key="canvasLocation" x="153" y="1460"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ki2-Mm-YeS">
@@ -512,14 +526,113 @@
             </objects>
             <point key="canvasLocation" x="5498" y="-794"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="OJA-Pq-5MW">
+            <objects>
+                <viewController id="kZO-RC-4q3" userLabel="Detail View Controller" customClass="DetailController" customModule="ambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="faC-UF-oVi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mLn-jh-u9R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V5t-PD-Z6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-pg-tOu">
+                                <rect key="frame" x="0.0" y="59" width="375" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG6-Ko-XbE" userLabel="contactButton">
+                                <rect key="frame" x="169" y="619" width="36" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="contact-icon"/>
+                                <connections>
+                                    <action selector="contact:" destination="kZO-RC-4q3" eventType="touchUpInside" id="tcY-K6-K7j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuT-Vu-Tb3" userLabel="settingIcon">
+                                <rect key="frame" x="269" y="617" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="gear-ios-22"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LK-Sf-ip4">
+                                <rect key="frame" x="69" y="617" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="display-icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Conner" id="47J-JU-lxQ"/>
+                    <connections>
+                        <outlet property="moodVideo" destination="bXX-pg-tOu" id="NdH-Yj-Te0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Dh-wL-rq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="1459.52023988006"/>
+        </scene>
+        <!--Connection Detail View Controller-->
+        <scene sceneID="mqQ-V1-Zhg">
+            <objects>
+                <viewController id="uY8-gE-Svm" userLabel="Connection Detail View Controller" customClass="ConnectionDetailViewController" customModule="ambio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nvY-9e-U4b"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzJ-7w-8Ee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PtG-Pl-Cy6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-Zt-13L">
+                                <rect key="frame" x="0.0" y="59" width="375" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Z-pT-FUZ" userLabel="contactButton">
+                                <rect key="frame" x="169" y="619" width="36" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="contact-icon"/>
+                                <connections>
+                                    <action selector="contact:" destination="uY8-gE-Svm" eventType="touchUpInside" id="CJ7-XL-aU6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qD-Mb-7r8" userLabel="settingIcon">
+                                <rect key="frame" x="269" y="617" width="28" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="gear-ios-22"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OF-fh-3Tq">
+                                <rect key="frame" x="69" y="617" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="display-icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Julianne" id="nxz-1b-8mR"/>
+                    <connections>
+                        <outlet property="moodVideo" destination="Zac-Zt-13L" id="ym6-0G-hcj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SL0-MO-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="1450"/>
+        </scene>
     </scenes>
     <resources>
         <image name="angry2" width="310" height="82"/>
         <image name="anxiousColor" width="281" height="281"/>
         <image name="calmColor" width="281" height="281"/>
+        <image name="contact-icon" width="76" height="60"/>
         <image name="content1" width="310" height="82"/>
+        <image name="display-icon" width="80" height="60"/>
         <image name="focused2" width="310" height="82"/>
         <image name="frustrated1" width="310" height="82"/>
+        <image name="gear-ios-22" width="22" height="24"/>
         <image name="gloomy1" width="310" height="82"/>
         <image name="happyColor" width="281" height="281"/>
         <image name="joyful2" width="310" height="82"/>

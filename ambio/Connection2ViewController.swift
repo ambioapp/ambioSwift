@@ -19,9 +19,11 @@ class Connection2ViewController: UIViewController{
     
     @IBOutlet weak var moodVideo: UIWebView!
     @IBOutlet weak var nameLabel: UILabel!
+    
     @IBAction func swipeRight(_ sender: Any) {
-        _ = self.navigationController?.popToRootViewController(animated: true)
+         _ = self.navigationController?.popToRootViewController(animated: true)
     }
+
    
     
     override func viewDidLoad() {

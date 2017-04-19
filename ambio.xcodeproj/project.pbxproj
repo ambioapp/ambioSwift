@@ -18,6 +18,8 @@
 		1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816A1EA43E01000E3D16 /* SadViewController.swift */; };
 		1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816E1EA440D6000E3D16 /* MadViewController.swift */; };
 		132281711EA44282000E3D16 /* CalmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281701EA44282000E3D16 /* CalmViewController.swift */; };
+		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
+		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
 		135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */; };
 		135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135BC77D1EA1650A00CF90F9 /* Assets.xcassets */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
@@ -96,6 +98,8 @@
 		1322816A1EA43E01000E3D16 /* SadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
 		1322816E1EA440D6000E3D16 /* MadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadViewController.swift; sourceTree = "<group>"; };
 		132281701EA44282000E3D16 /* CalmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalmViewController.swift; sourceTree = "<group>"; };
+		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
 		135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
 		135BC7761EA152F100CF90F9 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
 		135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				132095011EA50B270062CCC0 /* Connection2ViewController.swift */,
 				13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */,
 				135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */,
+				1345CB1B1EA804DF00BF22BA /* DetailController.swift */,
+				1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -541,11 +547,13 @@
 				132095021EA50B270062CCC0 /* Connection2ViewController.swift in Sources */,
 				1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */,
 				132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */,
+				1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */,
 				132281711EA44282000E3D16 /* CalmViewController.swift in Sources */,
 				1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */,
 				13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */,
 				13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */,
 				13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */,
+				1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */,
 				135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */,
 				131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */,
 			);
