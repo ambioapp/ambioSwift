@@ -20,12 +20,6 @@ class ConnectionDetailViewController: UIViewController {
         super.viewDidLoad()
         
         //logo title and set color of nav
-        //logo title and set color of nav
-        let titleView = UIView(frame: CGRect(x:0, y:0, width: 100, height:40))
-        let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
-        titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
-        titleView.addSubview(titleImageView)
-        navigationItem.titleView = titleView
         
         self.navigationController?.navigationBar.tintColor = UIColor.white;
         

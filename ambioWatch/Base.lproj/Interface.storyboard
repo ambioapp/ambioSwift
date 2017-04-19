@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jeq-7D-zuy">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,77 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Guide Controller-->
+        <scene sceneID="YP7-6Z-TTh">
+            <objects>
+                <controller id="jeq-7D-zuy" userLabel="Guide Controller">
+                    <items>
+                        <button width="1" alignment="left" backgroundImage="happyColor" id="RoA-2L-55o">
+                            <connections>
+                                <segue destination="ncd-JR-g0X" kind="push" id="5iW-xs-837"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" backgroundImage="madColor" id="bdE-Ng-boz">
+                            <connections>
+                                <segue destination="ngg-AK-WxZ" kind="push" id="ZnQ-RG-3at"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" backgroundImage="sadColor" id="8ar-mD-rw2">
+                            <connections>
+                                <segue destination="NFp-cA-7cp" kind="push" id="NJu-Mb-Atb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" backgroundImage="anxiousColor" id="WtC-nm-Pfd">
+                            <connections>
+                                <segue destination="BX1-st-hzA" kind="push" id="yP6-gd-GTs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" backgroundImage="calmColor" id="bpN-m9-REF">
+                            <connections>
+                                <segue destination="r45-Yi-vYA" kind="push" id="I7n-Fb-hte"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="258" y="-311"/>
+        </scene>
+        <!--Mad Controller-->
+        <scene sceneID="5Rs-4L-XsT">
+            <objects>
+                <controller id="ngg-AK-WxZ" userLabel="Mad Controller"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-787"/>
+        </scene>
+        <!--Sad Controller-->
+        <scene sceneID="RSq-pD-Gh0">
+            <objects>
+                <controller id="NFp-cA-7cp" userLabel="Sad Controller"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-513"/>
+        </scene>
+        <!--Anxious Controller-->
+        <scene sceneID="1Vl-By-fbZ">
+            <objects>
+                <controller id="BX1-st-hzA" userLabel="Anxious Controller"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-239"/>
+        </scene>
+        <!--Calm Controller-->
+        <scene sceneID="p4z-6i-OI0">
+            <objects>
+                <controller id="r45-Yi-vYA" userLabel="Calm Controller"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="37"/>
+        </scene>
+        <!--Happy Controller-->
+        <scene sceneID="OOc-4a-HPa">
+            <objects>
+                <controller id="ncd-JR-g0X" userLabel="Happy Controller"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-1049"/>
         </scene>
         <!--Setting Controller-->
         <scene sceneID="QKm-Hc-aeh">
@@ -39,12 +109,12 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="754" y="37"/>
+            <point key="canvasLocation" x="967" y="-44"/>
         </scene>
-        <!--Example Controller-->
+        <!--View1 Controller-->
         <scene sceneID="Gtk-kI-Y8y">
             <objects>
-                <controller id="Ilg-HL-J6Q" userLabel="Example Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
+                <controller id="Ilg-HL-J6Q" userLabel="View1 Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
                     <items>
                         <inlineMovie width="1" height="116" alignment="center" loops="YES" videoGravity="resizeAspectFill" id="816-Tz-Wtf"/>
                         <group width="1" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
@@ -65,7 +135,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="453" y="339"/>
+            <point key="canvasLocation" x="774" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
