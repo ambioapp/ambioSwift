@@ -11,6 +11,7 @@ import UIKit
 class ConnectionDetailViewController: UIViewController {
 
     var moodState = MyAppData.sharedData.moodTotal
+    let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     
     @IBAction func contact(_ sender: Any) {
         share()

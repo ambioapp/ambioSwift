@@ -231,7 +231,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="clM-aG-b6Y">
                     <connections>
-                        <segue destination="Sk2-w4-NqN" kind="show" id="fjG-ks-etF"/>
+                        <segue destination="Gac-S0-3RI" kind="showDetail" animates="NO" id="Tro-IM-XLs"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <tapGestureRecognizer id="7Wv-wZ-bF2">
@@ -275,7 +275,25 @@
                             <outletCollection property="gestureRecognizers" destination="6NP-jV-Wft" appends="YES" id="ccz-Qa-Fxt"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="vx1-4f-BVt"/>
+                    <navigationItem key="navigationItem" id="vcc-ER-qc4">
+                        <rightBarButtonItems>
+                            <barButtonItem image="plus-22" id="Yf0-oC-USS" userLabel="plusButton">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="Hid-Pa-YAv" kind="show" id="mHa-Qk-KEU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="display-icon-22" id="O6z-05-dMx" userLabel="displayButton">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem image="moods-icon" id="XTi-I9-h5F" userLabel="moodButton">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="80R-RC-d0W" kind="show" id="N87-OX-GHh"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="moodVideo" destination="djd-7f-q3k" id="MOD-dV-9WF"/>
                         <outlet property="nameLabel" destination="JBn-ub-doa" id="opd-GM-Ked"/>
@@ -290,10 +308,11 @@
                 <swipeGestureRecognizer direction="right" id="6NP-jV-Wft">
                     <connections>
                         <action selector="swipeRight:" destination="Sk2-w4-NqN" id="4cW-Sy-ZGK"/>
+                        <segue destination="hAe-Ej-Qbc" kind="showDetail" animates="NO" id="KEb-wY-SJj"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1879" y="613"/>
+            <point key="canvasLocation" x="4116" y="608.54572713643188"/>
         </scene>
         <!--Record View Controller-->
         <scene sceneID="4Q9-KM-UQz">
@@ -630,6 +649,24 @@
             </objects>
             <point key="canvasLocation" x="1878" y="1450"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pdH-ye-oXV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gac-S0-3RI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltr-Rc-Gzx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sk2-w4-NqN" kind="relationship" relationship="rootViewController" id="FA7-7X-tYB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrs-li-Tur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3176.8000000000002" y="608.54572713643188"/>
+        </scene>
     </scenes>
     <resources>
         <image name="angry2" width="310" height="82"/>
@@ -654,4 +691,8 @@
         <image name="stressed1" width="310" height="82"/>
         <image name="woeful2" width="310" height="82"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="N87-OX-GHh"/>
+        <segue reference="mHa-Qk-KEU"/>
+    </inferredMetricsTieBreakers>
 </document>

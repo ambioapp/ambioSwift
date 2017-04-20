@@ -15,14 +15,14 @@ class Connection2ViewController: UIViewController{
     
     var session: WCSession!
     var moodState = MyAppData.sharedData.moodTotal
-    let ambioPurple = UIColor(red: 144/255, green: 13/255, blue: 254/255, alpha: 1)
+    let whiteBar = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     
     @IBOutlet weak var moodVideo: UIWebView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBAction func swipeRight(_ sender: Any) {
+    /*@IBAction func swipeRight(_ sender: Any) {
          _ = self.navigationController?.popToRootViewController(animated: true)
-    }
+    }*/
 
    
     
@@ -30,16 +30,23 @@ class Connection2ViewController: UIViewController{
         super.viewDidLoad()
         
         //logo title and set color of nav
-        let titleView = UIView(frame: CGRect(x:0, y:0, width: 100, height:40))
+        let titleView = UIView(frame: CGRect(x:0, y:0, width: 125, height:50))
         let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
-        titleImageView.frame = CGRect(x:0, y:0, width:titleView.frame.width, height:titleView.frame.height)
+        titleImageView.frame = CGRect(x:-90, y:0, width:titleView.frame.width, height:titleView.frame.height)
         titleView.addSubview(titleImageView)
         navigationItem.titleView = titleView
         //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
-        self.navigationController?.navigationBar.tintColor = UIColor.white;
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         self.view.backgroundColor = UIColor.black
         
+        // nav border bottom
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
+        
+        //nav
+        self.navigationController?.navigationBar.tintColor = UIColor.white;
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
         
         //check which mood to display
@@ -143,6 +150,7 @@ class Connection2ViewController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
+
         //watchMood()
     }
     

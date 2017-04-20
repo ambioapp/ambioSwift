@@ -52,6 +52,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
         
         //nav
+        self.navigationController?.navigationBar.tintColor = UIColor.white;
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
         
@@ -157,6 +158,7 @@ class ViewController: UIViewController, WCSessionDelegate{
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
         watchMood()
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
     }
     
     //protocals for watch session
