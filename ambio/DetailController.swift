@@ -121,6 +121,7 @@ class DetailController: UIViewController {
         activityVC.excludedActivityTypes = [UIActivityType.print]
         self.present(activityVC, animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 
