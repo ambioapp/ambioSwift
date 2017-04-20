@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1308394E1EA84C8D00062CD6 /* CalmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308394D1EA84C8D00062CD6 /* CalmInterfaceController.swift */; };
+		130839501EA861D600062CD6 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308394F1EA861D600062CD6 /* DetailInterfaceController.swift */; };
 		131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131CF9721E82F6CC00E0D240 /* MyAppData.swift */; };
 		132095021EA50B270062CCC0 /* Connection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132095011EA50B270062CCC0 /* Connection2ViewController.swift */; };
 		132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281611EA42A9F000E3D16 /* AnxiousViewController.swift */; };
@@ -20,6 +22,10 @@
 		132281711EA44282000E3D16 /* CalmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281701EA44282000E3D16 /* CalmViewController.swift */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
+		1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */; };
+		1345CB231EA845FA00BF22BA /* MadInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB221EA845FA00BF22BA /* MadInterfaceController.swift */; };
+		1345CB251EA8485600BF22BA /* SadInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB241EA8485600BF22BA /* SadInterfaceController.swift */; };
+		1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB261EA8497400BF22BA /* AnxiousInterfaceController.swift */; };
 		135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */; };
 		135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135BC77D1EA1650A00CF90F9 /* Assets.xcassets */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
@@ -41,7 +47,6 @@
 		13B2EC4F1E5DEF2700E6CDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC4D1E5DEF2700E6CDC7 /* LaunchScreen.storyboard */; };
 		13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */; };
 		13B2EC5B1E5DF01D00E6CDC7 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */; };
-		13B85D081E9DBBE00052A4C2 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B85D071E9DBBE00052A4C2 /* ExampleController.swift */; };
 		13B85D0B1E9DC1120052A4C2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0A1E9DC1120052A4C2 /* gear.png */; };
 		13B85D0F1E9DC4130052A4C2 /* weath.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0E1E9DC4130052A4C2 /* weath.png */; };
 		13B85D111E9DC5970052A4C2 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D101E9DC5970052A4C2 /* tv.png */; };
@@ -91,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1308394D1EA84C8D00062CD6 /* CalmInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalmInterfaceController.swift; sourceTree = "<group>"; };
+		1308394F1EA861D600062CD6 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		131CF9721E82F6CC00E0D240 /* MyAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
 		132095011EA50B270062CCC0 /* Connection2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2ViewController.swift; sourceTree = "<group>"; };
 		132281611EA42A9F000E3D16 /* AnxiousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnxiousViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +107,10 @@
 		132281701EA44282000E3D16 /* CalmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalmViewController.swift; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
+		1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyInterfaceController.swift; sourceTree = "<group>"; };
+		1345CB221EA845FA00BF22BA /* MadInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadInterfaceController.swift; sourceTree = "<group>"; };
+		1345CB241EA8485600BF22BA /* SadInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SadInterfaceController.swift; sourceTree = "<group>"; };
+		1345CB261EA8497400BF22BA /* AnxiousInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnxiousInterfaceController.swift; sourceTree = "<group>"; };
 		135BC7751EA152E900CF90F9 /* SFText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Semibold.otf"; sourceTree = "<group>"; };
 		135BC7761EA152F100CF90F9 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
 		135BC7771EA155BA00CF90F9 /* SFText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Bold.otf"; sourceTree = "<group>"; };
@@ -130,7 +141,6 @@
 		13B2EC501E5DEF2700E6CDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = ../RecordViewController.swift; sourceTree = "<group>"; };
 		13B2EC591E5DF01D00E6CDC7 /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecordViewController.xib; path = ../RecordViewController.xib; sourceTree = "<group>"; };
-		13B85D071E9DBBE00052A4C2 /* ExampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleController.swift; path = Assets.xcassets/ExampleController.swift; sourceTree = "<group>"; };
 		13B85D0A1E9DC1120052A4C2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		13B85D0E1E9DC4130052A4C2 /* weath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weath.png; sourceTree = "<group>"; };
 		13B85D101E9DC5970052A4C2 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
@@ -199,6 +209,18 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
+		1345CB1F1EA83FAA00BF22BA /* moodVC */ = {
+			isa = PBXGroup;
+			children = (
+				1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */,
+				1345CB221EA845FA00BF22BA /* MadInterfaceController.swift */,
+				1345CB241EA8485600BF22BA /* SadInterfaceController.swift */,
+				1345CB261EA8497400BF22BA /* AnxiousInterfaceController.swift */,
+				1308394D1EA84C8D00062CD6 /* CalmInterfaceController.swift */,
+			);
+			name = moodVC;
+			sourceTree = "<group>";
+		};
 		135BC7741EA152AB00CF90F9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,12 +246,13 @@
 		1374F8781E95C83E005E4A2A /* ambioWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1345CB1F1EA83FAA00BF22BA /* moodVC */,
 				139CC9A91E9C0A6400F8B894 /* moodMov */,
 				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
-				13B85D071E9DBBE00052A4C2 /* ExampleController.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
 				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
+				1308394F1EA861D600062CD6 /* DetailInterfaceController.swift */,
 				1374F8811E95C83E005E4A2A /* Assets.xcassets */,
 				1374F8831E95C83E005E4A2A /* Info.plist */,
 				1374F8791E95C83E005E4A2A /* Supporting Files */,
@@ -531,10 +554,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1308394E1EA84C8D00062CD6 /* CalmInterfaceController.swift in Sources */,
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
+				1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */,
+				130839501EA861D600062CD6 /* DetailInterfaceController.swift in Sources */,
+				1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */,
 				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
-				13B85D081E9DBBE00052A4C2 /* ExampleController.swift in Sources */,
+				1345CB251EA8485600BF22BA /* SadInterfaceController.swift in Sources */,
+				1345CB231EA845FA00BF22BA /* MadInterfaceController.swift in Sources */,
 				139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

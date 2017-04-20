@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jeq-7D-zuy">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,128 +14,273 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="moodLabel" id="iGo-qp-Qks"/>
                         <inlineMovie width="1" height="100" alignment="left" loops="YES" videoGravity="resizeAspectFill" id="Eh3-fH-h2e"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="TeC-h3-zIq">
+                            <connections>
+                                <segue destination="4Mr-rK-ql9" kind="modal" id="24W-SP-Axi"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="moodLabel" destination="iGo-qp-Qks" id="sWz-vD-z0W"/>
                         <outlet property="moodVideo" destination="Eh3-fH-h2e" id="OE4-ey-kYR"/>
-                        <segue destination="Ilg-HL-J6Q" kind="relationship" relationship="nextPage" id="1xf-Xe-2sx"/>
+                        <outlet property="nameButton" destination="TeC-h3-zIq" id="dPR-XA-asn"/>
+                        <segue destination="jeq-7D-zuy" kind="relationship" relationship="nextPage" id="s1W-Dr-O7o"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="-513" y="-194"/>
         </scene>
         <!--Guide Controller-->
         <scene sceneID="YP7-6Z-TTh">
             <objects>
-                <controller id="jeq-7D-zuy" userLabel="Guide Controller">
+                <controller title="Guide" id="jeq-7D-zuy" userLabel="Guide Controller">
                     <items>
                         <button width="1" alignment="left" backgroundImage="happyColor" id="RoA-2L-55o">
                             <connections>
-                                <segue destination="ncd-JR-g0X" kind="push" id="5iW-xs-837"/>
+                                <segue destination="ncd-JR-g0X" kind="modal" id="T33-Jx-Yqu"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" backgroundImage="madColor" id="bdE-Ng-boz">
                             <connections>
-                                <segue destination="ngg-AK-WxZ" kind="push" id="ZnQ-RG-3at"/>
+                                <segue destination="ngg-AK-WxZ" kind="modal" id="41P-Mo-ouD"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" backgroundImage="sadColor" id="8ar-mD-rw2">
                             <connections>
-                                <segue destination="NFp-cA-7cp" kind="push" id="NJu-Mb-Atb"/>
+                                <segue destination="NFp-cA-7cp" kind="modal" id="8AT-JG-QTo"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" backgroundImage="anxiousColor" id="WtC-nm-Pfd">
                             <connections>
-                                <segue destination="BX1-st-hzA" kind="push" id="yP6-gd-GTs"/>
+                                <segue destination="BX1-st-hzA" kind="modal" id="S0b-IM-F1x"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" backgroundImage="calmColor" id="bpN-m9-REF">
                             <connections>
-                                <segue destination="r45-Yi-vYA" kind="push" id="I7n-Fb-hte"/>
+                                <segue destination="r45-Yi-vYA" kind="modal" id="v71-N4-5pe"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="258" y="-311"/>
+            <point key="canvasLocation" x="111" y="-193"/>
         </scene>
         <!--Mad Controller-->
         <scene sceneID="5Rs-4L-XsT">
             <objects>
-                <controller id="ngg-AK-WxZ" userLabel="Mad Controller"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="-787"/>
-        </scene>
-        <!--Sad Controller-->
-        <scene sceneID="RSq-pD-Gh0">
-            <objects>
-                <controller id="NFp-cA-7cp" userLabel="Sad Controller"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="-513"/>
-        </scene>
-        <!--Anxious Controller-->
-        <scene sceneID="1Vl-By-fbZ">
-            <objects>
-                <controller id="BX1-st-hzA" userLabel="Anxious Controller"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="-239"/>
-        </scene>
-        <!--Calm Controller-->
-        <scene sceneID="p4z-6i-OI0">
-            <objects>
-                <controller id="r45-Yi-vYA" userLabel="Calm Controller"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="37"/>
-        </scene>
-        <!--Happy Controller-->
-        <scene sceneID="OOc-4a-HPa">
-            <objects>
-                <controller id="ncd-JR-g0X" userLabel="Happy Controller"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="-1049"/>
-        </scene>
-        <!--Setting Controller-->
-        <scene sceneID="QKm-Hc-aeh">
-            <objects>
-                <controller id="Cqv-r0-k6o" userLabel="Setting Controller">
+                <controller id="ngg-AK-WxZ" userLabel="Mad Controller" customClass="MadInterfaceController" customModule="ambioWatch_Extension">
                     <items>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="iBW-GL-blb"/>
-                        <label alignment="center" text="Adjust Privacy" id="VNN-Ka-1kg"/>
-                        <separator alignment="left" verticalAlignment="center" id="Sb5-mE-fZ5"/>
-                        <button width="31" height="33" alignment="center" verticalAlignment="bottom" alpha="0.69999999999999996" backgroundImage="tv" id="TiW-1v-chY"/>
-                        <label height="20" alignment="center" verticalAlignment="bottom" text="Airplay" id="Mb7-AQ-fh5"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="967" y="-44"/>
-        </scene>
-        <!--View1 Controller-->
-        <scene sceneID="Gtk-kI-Y8y">
-            <objects>
-                <controller id="Ilg-HL-J6Q" userLabel="View1 Controller" customClass="ExampleController" customModule="ambioWatch_Extension">
-                    <items>
-                        <inlineMovie width="1" height="116" alignment="center" loops="YES" videoGravity="resizeAspectFill" id="816-Tz-Wtf"/>
-                        <group width="1" height="21" alignment="left" verticalAlignment="bottom" id="Pkv-cf-VS3">
+                        <inlineMovie width="1" height="100" alignment="left" id="GQA-Qi-5NL"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="wkR-JA-u8f">
                             <items>
-                                <button width="20" height="20" alignment="left" verticalAlignment="bottom" alpha="0.80000000000000004" backgroundImage="gear" id="ngk-2l-8Wy">
+                                <button width="66" height="26" alignment="left" verticalAlignment="bottom" backgroundImage="frustrated1" id="gZW-EN-xmJ">
                                     <connections>
-                                        <segue destination="Cqv-r0-k6o" kind="modal" id="DiS-4Z-hpu"/>
+                                        <action selector="frustratedPress" destination="ngg-AK-WxZ" id="S5q-6r-GIA"/>
                                     </connections>
                                 </button>
-                                <label width="53" alignment="center" verticalAlignment="bottom" text="Name" textAlignment="center" id="Mir-1R-JDL"/>
-                                <button width="21" height="24" alignment="right" verticalAlignment="bottom" backgroundImage="weath" id="1GJ-3h-7Zs"/>
+                                <button width="66" height="26" alignment="left" backgroundImage="angry2" id="J3T-kD-77d">
+                                    <connections>
+                                        <action selector="angryPress" destination="ngg-AK-WxZ" id="I7h-g0-RVP"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="moodVideo" destination="816-Tz-Wtf" id="7bg-50-gw2"/>
-                        <outlet property="nameLabel" destination="Mir-1R-JDL" id="MnK-s3-6fu"/>
+                        <outlet property="angryButton" destination="J3T-kD-77d" id="aAU-Tg-1y9"/>
+                        <outlet property="frustratedButton" destination="gZW-EN-xmJ" id="lG4-g1-BcK"/>
+                        <outlet property="moodVideo" destination="GQA-Qi-5NL" id="vIY-zt-XdP"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="774" y="345"/>
+            <point key="canvasLocation" x="601" y="-789"/>
+        </scene>
+        <!--Sad Controller-->
+        <scene sceneID="RSq-pD-Gh0">
+            <objects>
+                <controller id="NFp-cA-7cp" userLabel="Sad Controller" customClass="SadInterfaceController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" id="QYY-8T-ki0"/>
+                        <group width="1" height="40" alignment="left" verticalAlignment="bottom" id="pNv-cz-LST">
+                            <items>
+                                <button width="66" height="26" alignment="left" verticalAlignment="bottom" backgroundImage="gloomy1" id="0rY-xh-IDg">
+                                    <connections>
+                                        <action selector="gloomyPress" destination="NFp-cA-7cp" id="ERL-5b-08Q"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="26" alignment="left" verticalAlignment="bottom" backgroundImage="woeful2" id="rzc-jp-et0">
+                                    <connections>
+                                        <action selector="woefulPress" destination="NFp-cA-7cp" id="7gV-Fp-tdX"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="gloomyButton" destination="0rY-xh-IDg" id="aq6-Vb-EIk"/>
+                        <outlet property="moodVideo" destination="QYY-8T-ki0" id="6Zh-f4-aoV"/>
+                        <outlet property="woefulButton" destination="rzc-jp-et0" id="cf0-Gz-sjn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="-512"/>
+        </scene>
+        <!--Anxious Controller-->
+        <scene sceneID="1Vl-By-fbZ">
+            <objects>
+                <controller id="BX1-st-hzA" userLabel="Anxious Controller" customClass="AnxiousInterfaceController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" id="zhS-je-3aE"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="D99-zu-JcY">
+                            <items>
+                                <button width="66" height="26" alignment="left" backgroundImage="stressed1" id="UPM-DG-gOF">
+                                    <connections>
+                                        <action selector="stressedPressed" destination="BX1-st-hzA" id="orz-Wi-AMI"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="26" alignment="left" backgroundImage="restless2" id="McJ-BC-Equ">
+                                    <connections>
+                                        <action selector="restlessPressed" destination="BX1-st-hzA" id="anN-h3-fUf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodVideo" destination="zhS-je-3aE" id="vfA-wf-6YZ"/>
+                        <outlet property="restlessButton" destination="McJ-BC-Equ" id="c0p-jv-BVX"/>
+                        <outlet property="stressedButton" destination="UPM-DG-gOF" id="a9i-Hb-RiO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="-239"/>
+        </scene>
+        <!--Calm Controller-->
+        <scene sceneID="p4z-6i-OI0">
+            <objects>
+                <controller id="r45-Yi-vYA" userLabel="Calm Controller" customClass="CalmInterfaceController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" id="bb6-i0-AnF"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="awl-F6-kPR">
+                            <items>
+                                <button width="66" height="26" alignment="left" backgroundImage="relaxed1" id="2ym-pu-OMz">
+                                    <connections>
+                                        <action selector="relaxedPressed" destination="r45-Yi-vYA" id="Uhd-9x-hW5"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="26" alignment="left" backgroundImage="focused2" id="iob-r9-WcX">
+                                    <connections>
+                                        <action selector="focusedPressed" destination="r45-Yi-vYA" id="Ysp-am-wQq"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="focusedButton" destination="iob-r9-WcX" id="pmp-w6-OZC"/>
+                        <outlet property="moodVideo" destination="bb6-i0-AnF" id="hNz-bc-W1Q"/>
+                        <outlet property="relaxedButton" destination="2ym-pu-OMz" id="DdX-BG-bs2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="36"/>
+        </scene>
+        <!--Happy Controller-->
+        <scene sceneID="OOc-4a-HPa">
+            <objects>
+                <controller id="ncd-JR-g0X" userLabel="Happy Controller" customClass="HappyInterfaceController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" loops="YES" id="F1L-sE-V9b"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="Nwl-Ln-4P3">
+                            <items>
+                                <button width="66" height="26" alignment="left" verticalAlignment="bottom" backgroundImage="content1" id="C8s-ET-2H5">
+                                    <connections>
+                                        <action selector="contentPress" destination="ncd-JR-g0X" id="Yh5-1t-K1r"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="26" alignment="left" verticalAlignment="bottom" backgroundImage="joyful2" id="AFl-Nr-WgU">
+                                    <connections>
+                                        <action selector="joyfulPress" destination="ncd-JR-g0X" id="qnI-ed-HSF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="contentButton" destination="C8s-ET-2H5" id="KPf-1h-CHY"/>
+                        <outlet property="joyfullButton" destination="AFl-Nr-WgU" id="m20-7Z-e4K"/>
+                        <outlet property="moodVideo" destination="F1L-sE-V9b" id="Eks-ki-vC0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="-1062"/>
+        </scene>
+        <!--Adjust Controller-->
+        <scene sceneID="QKm-Hc-aeh">
+            <objects>
+                <controller id="Cqv-r0-k6o" userLabel="Adjust Controller">
+                    <items>
+                        <slider width="1" alignment="left" verticalAlignment="center" value="1" maximum="3" steps="3" id="iBW-GL-blb"/>
+                        <label alignment="center" verticalAlignment="center" text="Adjust Privacy" id="VNN-Ka-1kg"/>
+                        <separator alignment="left" verticalAlignment="center" id="Sb5-mE-fZ5"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Disconnect" id="cR1-w5-lxU"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="265" y="907"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="6z5-Hm-8Ii">
+            <objects>
+                <controller id="4Mr-rK-ql9" customClass="DetailInterfaceController" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="left" id="OnO-te-Oz4"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="Y9i-Yx-fe5">
+                            <items>
+                                <button width="30" height="30" alignment="left" backgroundImage="menu-icon" id="7Ci-VZ-qdM">
+                                    <connections>
+                                        <segue destination="BAD-DY-V32" kind="modal" id="Xoa-hg-K2q"/>
+                                    </connections>
+                                </button>
+                                <button width="30" height="30" alignment="right" backgroundImage="menu-icon" id="dFJ-l6-XHs"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodVideo" destination="OnO-te-Oz4" id="dVA-HF-vUj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-513" y="102"/>
+        </scene>
+        <!--Menu Interface Controller-->
+        <scene sceneID="suV-Jh-PXt">
+            <objects>
+                <controller id="BAD-DY-V32" userLabel="Menu Interface Controller">
+                    <items>
+                        <button width="52" height="69" alignment="center" verticalAlignment="center" backgroundImage="adjust-menu" id="jox-Ia-dRb">
+                            <connections>
+                                <segue destination="Cqv-r0-k6o" kind="modal" id="aQ7-9A-bd6"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="center" id="0lB-I9-LUf">
+                            <items>
+                                <button width="54" height="66" alignment="left" backgroundImage="contact-menu" id="cz4-7P-ySb">
+                                    <connections>
+                                        <segue destination="1ZC-BM-n66" kind="modal" id="8Pu-fc-3Dd"/>
+                                    </connections>
+                                </button>
+                                <button width="52" height="69" alignment="right" backgroundImage="menu-display" id="z1y-3P-yHy">
+                                    <connections>
+                                        <segue destination="nKp-4f-Zxd" kind="modal" id="SH0-UK-pwv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-264" y="503"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -151,14 +296,41 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="-513" y="503"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ambioWatch" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="-513" y="907"/>
+        </scene>
+        <!--Contact Interface Controller-->
+        <scene sceneID="yAu-u6-h2z">
+            <objects>
+                <controller title="&lt;Contact" id="1ZC-BM-n66" userLabel="Contact Interface Controller">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Message" id="Lau-OE-pJh"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Call" id="fEL-Xs-hbR"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Messenger" id="vKd-l3-kL1"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-264" y="907"/>
+        </scene>
+        <!--Display Interface Controller-->
+        <scene sceneID="d8g-ux-949">
+            <objects>
+                <controller title="&lt;Display" id="nKp-4f-Zxd" userLabel="Display Interface Controller">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Apple TV" id="4HM-Gi-lB1"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Chromecast" id="ni4-b2-cbL"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Phillips Hue" id="ijg-Wc-1Z3"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-6" y="907"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

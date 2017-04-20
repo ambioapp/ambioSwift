@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     //url for video
     var url2 = Bundle.main.url(forResource: "default", withExtension: "mov")
     
-    @IBOutlet var moodLabel: WKInterfaceLabel!
+    @IBOutlet var nameButton: WKInterfaceButton!
     @IBOutlet weak var moodVideo: WKInterfaceInlineMovie!
     
     override func awake(withContext context: Any?) {
@@ -41,11 +41,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             print("WCSession activated")
         }
         
+        setURL()
         //setURL()
         playVideo()
         
         //load last mood label
-        self.moodLabel.setText(watchAppData.sharedData.moodTotal)
+        nameButton.setTitle("Conner")
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -75,7 +76,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void){
         let mood = message["Mood"] as? String
         watchAppData.sharedData.moodTotal = mood!
-        self.moodLabel.setText(watchAppData.sharedData.moodTotal)
+        moodState = watchAppData.sharedData.moodTotal
+        setURL()
         playVideo()
     }
     

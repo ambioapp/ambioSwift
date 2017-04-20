@@ -1,74 +1,39 @@
 //
-//  ExampleController.swift
+//  DetailInterfaceController.swift
 //  ambio
 //
-//  Created by Conner Hasbrouck on 4/11/17.
-//  Copyright © 2017 Conner Hasbrouck. All rights reserved.
-//
-
-//
-//  InterfaceController.swift
-//  ambioWatch Extension
-//
-//  Created by Conner Hasbrouck on 4/5/17.
+//  Created by Conner Hasbrouck on 4/19/17.
 //  Copyright © 2017 Conner Hasbrouck. All rights reserved.
 //
 
 import WatchKit
 import Foundation
-import WatchConnectivity
 
-class ExampleController: WKInterfaceController, WCSessionDelegate {
-    
-    //session for iphone connection
-    var session : WCSession!
-    
-    @IBOutlet var moodVideo: WKInterfaceInlineMovie!
-    @IBOutlet var nameLabel: WKInterfaceLabel!
+
+class DetailInterfaceController: WKInterfaceController {
     
     //app state saving
     var moodState = watchAppData.sharedData.moodTotal
-    
-    //url for video
     var url2 = Bundle.main.url(forResource: "default", withExtension: "mov")
     
+    @IBOutlet var moodVideo: WKInterfaceInlineMovie!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
     }
-    
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        
-        if WCSession.isSupported() {
-            let session = WCSession.default()
-            session.delegate = self
-            session.activate()
-            print("WCSession activated")
-        }
-        
-        //setURL()
+        setURL()
         playVideo()
-        
-        //load last mood label
-        self.nameLabel.setText("Conner")
+        setTitle("<Conner")
     }
-    
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void){
-        let mood = message["Mood"] as? String
-        watchAppData.sharedData.moodTotal = mood!
-        playVideo()
     }
     
     func setURL() {
@@ -115,10 +80,11 @@ class ExampleController: WKInterfaceController, WCSessionDelegate {
     
     func playVideo() {
         //setURL()
-        url2 = Bundle.main.url(forResource: "p_sad", withExtension: "mov")
+        url2 = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)
         moodVideo.play()
     }
+
 }
