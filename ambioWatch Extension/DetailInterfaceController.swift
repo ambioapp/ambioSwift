@@ -38,49 +38,49 @@ class DetailInterfaceController: WKInterfaceController {
     
     func setURL() {
         if (moodState == "angry"){
-            url2 = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_mad-1", withExtension: "mov")
         }
         if (moodState == "content")
         {
-            url2 = Bundle.main.url(forResource: "p_content", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_happy-1", withExtension: "mov")
         }
         if (moodState == "depressed")
         {
-            url2 = Bundle.main.url(forResource: "p_depressed", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_sad-1", withExtension: "mov")
         }
         if (moodState == "focused")
         {
-            url2 = Bundle.main.url(forResource: "p_focused", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_energetic-2", withExtension: "mov")
         }
         if (moodState == "fustrated")
         {
-            url2 = Bundle.main.url(forResource: "p_fustrated", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_mad-2", withExtension: "mov")
         }
         if (moodState == "inconsolable")
         {
-            url2 = Bundle.main.url(forResource: "p_inconsolable", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_sad-2", withExtension: "mov")
         }
         if (moodState == "joyful")
         {
-            url2 = Bundle.main.url(forResource: "p_joyful", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_happy-2", withExtension: "mov")
         }
         if (moodState == "relaxed")
         {
-            url2 = Bundle.main.url(forResource: "p_relaxed", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_energetic-1", withExtension: "mov")
         }
         if (moodState == "restless")
         {
-            url2 = Bundle.main.url(forResource: "p_restless", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_anxious-1", withExtension: "mov")
         }
         if (moodState == "stressed")
         {
-            url2 = Bundle.main.url(forResource: "p_stressed", withExtension: "mov")
+            url2 = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
         }
     }
     
     func playVideo() {
         //setURL()
-        url2 = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url2 = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)

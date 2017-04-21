@@ -12,7 +12,7 @@ import Foundation
 
 class CalmInterfaceController: WKInterfaceController {
     
-    var url = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+    var url = Bundle.main.url(forResource: "p_energetic-1", withExtension: "mov")
     
     @IBOutlet var moodVideo: WKInterfaceInlineMovie!
     @IBOutlet var relaxedButton: WKInterfaceButton!
@@ -20,6 +20,7 @@ class CalmInterfaceController: WKInterfaceController {
         relaxed()
     }
     @IBOutlet var focusedButton: WKInterfaceButton!
+    
     @IBAction func focusedPressed() {
         focused()
     }
@@ -41,13 +42,13 @@ class CalmInterfaceController: WKInterfaceController {
     }
     
     func relaxed(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_energetic-1", withExtension: "mov")
         relaxedButton.setBackgroundImageNamed("relaxed1.png")
         focusedButton.setBackgroundImageNamed("focused2.png")
         playVideo()
     }
     func focused(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_energetic-2", withExtension: "mov")
         relaxedButton.setBackgroundImageNamed("relaxed2.png")
         focusedButton.setBackgroundImageNamed("focused1.png")
         playVideo()

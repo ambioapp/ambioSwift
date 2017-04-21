@@ -13,7 +13,7 @@ import Foundation
 class SadInterfaceController: WKInterfaceController {
     
     @IBOutlet var moodVideo: WKInterfaceInlineMovie!
-    var url = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+    var url = Bundle.main.url(forResource: "p_sad-1", withExtension: "mov")
     
     @IBOutlet var gloomyButton: WKInterfaceButton!
     @IBAction func gloomyPress() {
@@ -41,13 +41,13 @@ class SadInterfaceController: WKInterfaceController {
     }
     
     func gloomy(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_sad-1", withExtension: "mov")
         gloomyButton.setBackgroundImageNamed("gloomy1.png")
         woefulButton.setBackgroundImageNamed("woeful2.png")
         playVideo()
     }
     func woeful(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_sad-2", withExtension: "mov")
         gloomyButton.setBackgroundImageNamed("gloomy2.png")
         woefulButton.setBackgroundImageNamed("woeful1.png")
         playVideo()

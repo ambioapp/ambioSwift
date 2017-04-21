@@ -12,7 +12,7 @@ import Foundation
 
 class MadInterfaceController: WKInterfaceController {
     
-    var url = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+    var url = Bundle.main.url(forResource: "p_mad-1", withExtension: "mov")
     
     @IBOutlet var moodVideo: WKInterfaceInlineMovie!
     @IBOutlet var frustratedButton: WKInterfaceButton!
@@ -42,19 +42,18 @@ class MadInterfaceController: WKInterfaceController {
     }
     
     func frustrated(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_mad-1", withExtension: "mov")
         frustratedButton.setBackgroundImageNamed("frustrated1.png")
         angryButton.setBackgroundImageNamed("angry2.png")
         playVideo()
     }
     func angry(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_mad-2", withExtension: "mov")
         frustratedButton.setBackgroundImageNamed("frustrated2.png")
         angryButton.setBackgroundImageNamed("angry1.png")
         playVideo()
     }
     func playVideo() {
-        //setURL()
         moodVideo.setMovieURL(url!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)

@@ -20,6 +20,16 @@
 		1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816A1EA43E01000E3D16 /* SadViewController.swift */; };
 		1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322816E1EA440D6000E3D16 /* MadViewController.swift */; };
 		132281711EA44282000E3D16 /* CalmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132281701EA44282000E3D16 /* CalmViewController.swift */; };
+		132E04411EA99D83005F6257 /* p_anxious-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04371EA99D83005F6257 /* p_anxious-1.mov */; };
+		132E04421EA99D83005F6257 /* p_anxious-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04381EA99D83005F6257 /* p_anxious-2.mov */; };
+		132E04431EA99D83005F6257 /* p_energetic-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04391EA99D83005F6257 /* p_energetic-1.mov */; };
+		132E04441EA99D83005F6257 /* p_energetic-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043A1EA99D83005F6257 /* p_energetic-2.mov */; };
+		132E04451EA99D83005F6257 /* p_happy-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043B1EA99D83005F6257 /* p_happy-1.mov */; };
+		132E04461EA99D83005F6257 /* p_happy-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043C1EA99D83005F6257 /* p_happy-2.mov */; };
+		132E04471EA99D83005F6257 /* p_mad-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043D1EA99D83005F6257 /* p_mad-1.mov */; };
+		132E04481EA99D83005F6257 /* p_mad-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043E1EA99D83005F6257 /* p_mad-2.mov */; };
+		132E04491EA99D83005F6257 /* p_sad-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043F1EA99D83005F6257 /* p_sad-1.mov */; };
+		132E044A1EA99D83005F6257 /* p_sad-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04401EA99D83005F6257 /* p_sad-2.mov */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
 		1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */; };
@@ -36,10 +46,6 @@
 		1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87F1E95C83E005E4A2A /* NotificationController.swift */; };
 		1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F8811E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8861E95C83E005E4A2A /* ambioWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1374F8681E95C83E005E4A2A /* ambioWatch.app */; };
-		139CC9A21E9C012300F8B894 /* l_angry.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC99E1E9C012300F8B894 /* l_angry.mov */; };
-		139CC9A31E9C012300F8B894 /* l_sad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC99F1E9C012300F8B894 /* l_sad.mov */; };
-		139CC9A41E9C012300F8B894 /* p_angry.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC9A01E9C012300F8B894 /* p_angry.mov */; };
-		139CC9A51E9C012300F8B894 /* p_sad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 139CC9A11E9C012300F8B894 /* p_sad.mov */; };
 		139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CC9A61E9C035D00F8B894 /* watchAppData.swift */; };
 		13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */; };
 		13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */; };
@@ -105,6 +111,16 @@
 		1322816A1EA43E01000E3D16 /* SadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
 		1322816E1EA440D6000E3D16 /* MadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadViewController.swift; sourceTree = "<group>"; };
 		132281701EA44282000E3D16 /* CalmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalmViewController.swift; sourceTree = "<group>"; };
+		132E04371EA99D83005F6257 /* p_anxious-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_anxious-1.mov"; sourceTree = "<group>"; };
+		132E04381EA99D83005F6257 /* p_anxious-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_anxious-2.mov"; sourceTree = "<group>"; };
+		132E04391EA99D83005F6257 /* p_energetic-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_energetic-1.mov"; sourceTree = "<group>"; };
+		132E043A1EA99D83005F6257 /* p_energetic-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_energetic-2.mov"; sourceTree = "<group>"; };
+		132E043B1EA99D83005F6257 /* p_happy-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_happy-1.mov"; sourceTree = "<group>"; };
+		132E043C1EA99D83005F6257 /* p_happy-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_happy-2.mov"; sourceTree = "<group>"; };
+		132E043D1EA99D83005F6257 /* p_mad-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_mad-1.mov"; sourceTree = "<group>"; };
+		132E043E1EA99D83005F6257 /* p_mad-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_mad-2.mov"; sourceTree = "<group>"; };
+		132E043F1EA99D83005F6257 /* p_sad-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-1.mov"; sourceTree = "<group>"; };
+		132E04401EA99D83005F6257 /* p_sad-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-2.mov"; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
 		1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyInterfaceController.swift; sourceTree = "<group>"; };
@@ -128,10 +144,6 @@
 		1374F87F1E95C83E005E4A2A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1374F8811E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1374F8831E95C83E005E4A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		139CC99E1E9C012300F8B894 /* l_angry.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = l_angry.mov; sourceTree = "<group>"; };
-		139CC99F1E9C012300F8B894 /* l_sad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = l_sad.mov; sourceTree = "<group>"; };
-		139CC9A01E9C012300F8B894 /* p_angry.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = p_angry.mov; sourceTree = "<group>"; };
-		139CC9A11E9C012300F8B894 /* p_sad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = p_sad.mov; sourceTree = "<group>"; };
 		139CC9A61E9C035D00F8B894 /* watchAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = watchAppData.swift; sourceTree = "<group>"; };
 		13B2EC411E5DEF2700E6CDC7 /* ambio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -279,10 +291,16 @@
 		139CC9A91E9C0A6400F8B894 /* moodMov */ = {
 			isa = PBXGroup;
 			children = (
-				139CC99E1E9C012300F8B894 /* l_angry.mov */,
-				139CC99F1E9C012300F8B894 /* l_sad.mov */,
-				139CC9A01E9C012300F8B894 /* p_angry.mov */,
-				139CC9A11E9C012300F8B894 /* p_sad.mov */,
+				132E04371EA99D83005F6257 /* p_anxious-1.mov */,
+				132E04381EA99D83005F6257 /* p_anxious-2.mov */,
+				132E04391EA99D83005F6257 /* p_energetic-1.mov */,
+				132E043A1EA99D83005F6257 /* p_energetic-2.mov */,
+				132E043B1EA99D83005F6257 /* p_happy-1.mov */,
+				132E043C1EA99D83005F6257 /* p_happy-2.mov */,
+				132E043D1EA99D83005F6257 /* p_mad-1.mov */,
+				132E043E1EA99D83005F6257 /* p_mad-2.mov */,
+				132E043F1EA99D83005F6257 /* p_sad-1.mov */,
+				132E04401EA99D83005F6257 /* p_sad-2.mov */,
 			);
 			name = moodMov;
 			sourceTree = "<group>";
@@ -476,11 +494,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139CC9A31E9C012300F8B894 /* l_sad.mov in Resources */,
+				132E04431EA99D83005F6257 /* p_energetic-1.mov in Resources */,
 				1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */,
-				139CC9A51E9C012300F8B894 /* p_sad.mov in Resources */,
-				139CC9A41E9C012300F8B894 /* p_angry.mov in Resources */,
-				139CC9A21E9C012300F8B894 /* l_angry.mov in Resources */,
+				132E04471EA99D83005F6257 /* p_mad-1.mov in Resources */,
+				132E04441EA99D83005F6257 /* p_energetic-2.mov in Resources */,
+				132E04411EA99D83005F6257 /* p_anxious-1.mov in Resources */,
+				132E044A1EA99D83005F6257 /* p_sad-2.mov in Resources */,
+				132E04451EA99D83005F6257 /* p_happy-1.mov in Resources */,
+				132E04461EA99D83005F6257 /* p_happy-2.mov in Resources */,
+				132E04481EA99D83005F6257 /* p_mad-2.mov in Resources */,
+				132E04491EA99D83005F6257 /* p_sad-1.mov in Resources */,
+				132E04421EA99D83005F6257 /* p_anxious-2.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

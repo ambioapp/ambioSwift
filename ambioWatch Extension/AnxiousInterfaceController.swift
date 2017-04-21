@@ -12,7 +12,7 @@ import Foundation
 
 class AnxiousInterfaceController: WKInterfaceController {
     
-    var url = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+    var url = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
     
     
     @IBOutlet var stressedButton: WKInterfaceButton!
@@ -44,13 +44,13 @@ class AnxiousInterfaceController: WKInterfaceController {
     }
     
     func restless(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_anxious-1", withExtension: "mov")
         restlessButton.setBackgroundImageNamed("restless1.png")
         stressedButton.setBackgroundImageNamed("stressed2.png")
         playVideo()
     }
     func stressed(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
         restlessButton.setBackgroundImageNamed("restless2.png")
         stressedButton.setBackgroundImageNamed("stressed1.png")
         playVideo()

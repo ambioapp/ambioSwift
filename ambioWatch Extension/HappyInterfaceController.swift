@@ -13,7 +13,7 @@ import Foundation
 class HappyInterfaceController: WKInterfaceController {
 
     
-    var url = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+    var url = Bundle.main.url(forResource: "p_happy-1", withExtension: "mov")
     
     @IBOutlet var moodVideo: WKInterfaceInlineMovie!
     @IBOutlet var joyfullButton: WKInterfaceButton!
@@ -45,13 +45,13 @@ class HappyInterfaceController: WKInterfaceController {
     }
     
     func joyful(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_happy-2", withExtension: "mov")
         joyfullButton.setBackgroundImageNamed("joyful1.png")
         contentButton.setBackgroundImageNamed("content2.png")
         playVideo()
     }
     func content(){
-        _ = Bundle.main.url(forResource: "p_angry", withExtension: "mov")
+        url = Bundle.main.url(forResource: "p_happy-1", withExtension: "mov")
         joyfullButton.setBackgroundImageNamed("joyful2.png")
         contentButton.setBackgroundImageNamed("content1.png")
         playVideo()
