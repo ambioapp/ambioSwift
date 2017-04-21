@@ -46,10 +46,6 @@ class CalmViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
     
     func relaxed(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/relaxed")

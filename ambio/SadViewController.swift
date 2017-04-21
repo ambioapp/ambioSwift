@@ -45,11 +45,6 @@ class SadViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     func gloomy(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/depressed")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)

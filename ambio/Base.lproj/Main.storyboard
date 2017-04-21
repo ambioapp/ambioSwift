@@ -205,16 +205,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="xGp-c5-CES">
                         <rightBarButtonItems>
-                            <barButtonItem image="plus-22" id="pBf-HS-sbn">
+                            <barButtonItem image="plus-22" id="pBf-HS-sbn" userLabel="plusButton">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="Hid-Pa-YAv" kind="show" id="gdC-LL-Ujs"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="display-icon-22" id="fp5-yH-fDB">
+                            <barButtonItem image="display-icon-22" id="fp5-yH-fDB" userLabel="displayButton">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </barButtonItem>
-                            <barButtonItem image="moods-icon" id="xbI-pq-n4x">
+                            <barButtonItem image="moods-icon" id="xbI-pq-n4x" userLabel="guideButton">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="80R-RC-d0W" kind="show" id="Xtz-oE-YRG"/>
@@ -222,7 +222,6 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="moodVideo" destination="uED-ED-7rd" id="F0S-i8-Yr2"/>
                         <outlet property="nameLabel" destination="C8G-tX-mqj" id="1x2-G0-Rbt"/>
@@ -331,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ1-tF-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="1450"/>
+            <point key="canvasLocation" x="2476" y="1450"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ki2-Mm-YeS">
@@ -583,7 +582,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="gear-ios-22"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LK-Sf-ip4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJW-0d-Btp" userLabel="displayButton">
                                 <rect key="frame" x="69" y="617" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="display-icon"/>
@@ -599,7 +598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dh-wL-rq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="1450"/>
+            <point key="canvasLocation" x="1076" y="1449.6251874062971"/>
         </scene>
         <!--Connection Detail View Controller-->
         <scene sceneID="mqQ-V1-Zhg">
@@ -647,14 +646,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SL0-MO-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878" y="1450"/>
+            <point key="canvasLocation" x="4084" y="1450"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pdH-ye-oXV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gac-S0-3RI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltr-Rc-Gzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ltr-Rc-Gzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -692,7 +691,7 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N87-OX-GHh"/>
-        <segue reference="mHa-Qk-KEU"/>
+        <segue reference="Xtz-oE-YRG"/>
+        <segue reference="gdC-LL-Ujs"/>
     </inferredMetricsTieBreakers>
 </document>

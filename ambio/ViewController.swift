@@ -149,11 +149,6 @@ class ViewController: UIViewController, WCSessionDelegate{
         }
     }
     
-    //hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()

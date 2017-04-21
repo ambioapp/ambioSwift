@@ -266,10 +266,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     
-    //hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
     
     func showActivity(){
         let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)

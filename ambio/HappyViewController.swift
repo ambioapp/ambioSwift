@@ -47,11 +47,6 @@ class HappyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //hide status bar
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     func content(){
         let myURL = URL(string: "http://chasbrouck.io/moodNoise/content")
         let myURLRequest:URLRequest = URLRequest(url: myURL!)
