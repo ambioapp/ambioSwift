@@ -187,6 +187,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PA5-9q-cBI" appends="YES" id="eZx-db-DOQ"/>
+                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
                                 <rect key="frame" x="111" y="608" width="153" height="39"/>
@@ -238,6 +241,11 @@
                         <segue destination="kZO-RC-4q3" kind="show" id="sEN-9n-4L0"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="PA5-9q-cBI">
+                    <connections>
+                        <segue destination="kZO-RC-4q3" kind="show" id="3zA-KA-pha"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="609"/>
         </scene>
@@ -258,6 +266,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="w2h-cA-R0v" appends="YES" id="CCd-PW-yWH"/>
+                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
                                 <rect key="frame" x="111" y="608" width="153" height="41"/>
@@ -310,6 +321,11 @@
                         <segue destination="hAe-Ej-Qbc" kind="showDetail" animates="NO" id="KEb-wY-SJj"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="w2h-cA-R0v">
+                    <connections>
+                        <segue destination="uY8-gE-Svm" kind="show" id="XEb-yK-tiF"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4116" y="608.54572713643188"/>
         </scene>
@@ -337,7 +353,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -653,7 +669,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gac-S0-3RI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ltr-Rc-Gzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltr-Rc-Gzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -691,7 +707,9 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xtz-oE-YRG"/>
         <segue reference="gdC-LL-Ujs"/>
+        <segue reference="Xtz-oE-YRG"/>
+        <segue reference="sEN-9n-4L0"/>
+        <segue reference="Yjg-Z4-cnc"/>
     </inferredMetricsTieBreakers>
 </document>

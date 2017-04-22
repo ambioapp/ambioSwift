@@ -79,8 +79,7 @@ class DetailInterfaceController: WKInterfaceController {
     }
     
     func playVideo() {
-        //setURL()
-        url2 = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
+        setURL()
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)

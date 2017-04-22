@@ -31,7 +31,7 @@ class watchAppData{
         if let s = defaults.object(forKey: moodKey){
             moodTotal = s as! String
         }else{
-            moodTotal = "default"
+            moodTotal = "content"
         }
         
     }

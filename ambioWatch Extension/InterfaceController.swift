@@ -122,8 +122,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func playVideo() {
-        //setURL()
-        url2 = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
+        setURL()
+        //url2 = Bundle.main.url(forResource: "p_anxious-2", withExtension: "mov")
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)
