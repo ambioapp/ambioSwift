@@ -30,6 +30,7 @@
 		132E04481EA99D83005F6257 /* p_mad-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043E1EA99D83005F6257 /* p_mad-2.mov */; };
 		132E04491EA99D83005F6257 /* p_sad-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043F1EA99D83005F6257 /* p_sad-1.mov */; };
 		132E044A1EA99D83005F6257 /* p_sad-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04401EA99D83005F6257 /* p_sad-2.mov */; };
+		133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
 		1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */; };
@@ -56,6 +57,7 @@
 		13B85D0B1E9DC1120052A4C2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0A1E9DC1120052A4C2 /* gear.png */; };
 		13B85D0F1E9DC4130052A4C2 /* weath.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D0E1E9DC4130052A4C2 /* weath.png */; };
 		13B85D111E9DC5970052A4C2 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B85D101E9DC5970052A4C2 /* tv.png */; };
+		13FDE8EC1EB21A5300B2C422 /* Connection2DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FDE8EB1EB21A5300B2C422 /* Connection2DetailController.swift */; };
 		7318D5B4372814DDB4D8EC86 /* Pods_ambio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E90A5B24F39B6E00970398 /* Pods_ambio.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,7 @@
 		132E043E1EA99D83005F6257 /* p_mad-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_mad-2.mov"; sourceTree = "<group>"; };
 		132E043F1EA99D83005F6257 /* p_sad-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-1.mov"; sourceTree = "<group>"; };
 		132E04401EA99D83005F6257 /* p_sad-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-2.mov"; sourceTree = "<group>"; };
+		133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2Controller.swift; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
 		1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyInterfaceController.swift; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 		13B85D0A1E9DC1120052A4C2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		13B85D0E1E9DC4130052A4C2 /* weath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weath.png; sourceTree = "<group>"; };
 		13B85D101E9DC5970052A4C2 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
+		13FDE8EB1EB21A5300B2C422 /* Connection2DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2DetailController.swift; sourceTree = "<group>"; };
 		45E90A5B24F39B6E00970398 /* Pods_ambio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ambio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7442E1865041C5AD583571CC /* Pods-ambio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.debug.xcconfig"; sourceTree = "<group>"; };
 		C4E00306F4256531E4A2A505 /* Pods-ambio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ambio/Pods-ambio.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +266,8 @@
 				139CC9A91E9C0A6400F8B894 /* moodMov */,
 				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
+				13FDE8EB1EB21A5300B2C422 /* Connection2DetailController.swift */,
+				133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
 				1374F87F1E95C83E005E4A2A /* NotificationController.swift */,
 				1308394F1EA861D600062CD6 /* DetailInterfaceController.swift */,
@@ -579,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1308394E1EA84C8D00062CD6 /* CalmInterfaceController.swift in Sources */,
+				133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */,
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
 				1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */,
@@ -588,6 +595,7 @@
 				1345CB251EA8485600BF22BA /* SadInterfaceController.swift in Sources */,
 				1345CB231EA845FA00BF22BA /* MadInterfaceController.swift in Sources */,
 				139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */,
+				13FDE8EC1EB21A5300B2C422 /* Connection2DetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
