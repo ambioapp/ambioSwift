@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
-                        <inlineMovie width="1" height="100" alignment="left" loops="YES" videoGravity="resizeAspectFill" id="Eh3-fH-h2e"/>
+                        <inlineMovie width="1" height="100" alignment="left" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="Eh3-fH-h2e"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="TeC-h3-zIq">
                             <connections>
                                 <segue destination="4Mr-rK-ql9" kind="modal" id="24W-SP-Axi"/>
@@ -231,7 +231,7 @@
             <objects>
                 <controller id="4Mr-rK-ql9" customClass="DetailInterfaceController" customModule="ambioWatch_Extension">
                     <items>
-                        <inlineMovie width="1" height="100" alignment="left" id="OnO-te-Oz4"/>
+                        <inlineMovie width="1" height="100" alignment="left" verticalAlignment="bottom" id="OnO-te-Oz4"/>
                         <group width="1" alignment="left" verticalAlignment="bottom" id="Y9i-Yx-fe5">
                             <items>
                                 <button width="30" height="30" alignment="left" backgroundImage="menu-icon" id="7Ci-VZ-qdM">
