@@ -18,7 +18,7 @@ class Connection2DetailController: WKInterfaceController {
         
         // Configure interface objects here.
         playVideo()
-        setTitle("<Julianne")
+        setTitle("< Julianne")
     }
 
     override func willActivate() {
