@@ -70,7 +70,7 @@
                                         <segue destination="BAD-DY-V32" kind="modal" id="He5-YG-9a6"/>
                                     </connections>
                                 </button>
-                                <button width="30" height="30" alignment="right" backgroundImage="menu-icon" id="187-k8-WHm"/>
+                                <button width="30" height="30" alignment="right" backgroundImage="weather-icon-cloudy" id="187-k8-WHm"/>
                             </items>
                         </group>
                     </items>
@@ -273,6 +273,7 @@
                     <items>
                         <imageView height="140" alignment="left" verticalAlignment="center" image="adjustImage" contentMode="scaleAspectFit" id="SGC-wC-DBs"/>
                     </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="188" y="911"/>
@@ -294,7 +295,7 @@
                                         <segue destination="BAD-DY-V32" kind="modal" id="Xoa-hg-K2q"/>
                                     </connections>
                                 </button>
-                                <button width="30" height="30" alignment="right" backgroundImage="menu-icon" id="dFJ-l6-XHs"/>
+                                <button width="30" height="30" alignment="right" backgroundImage="weather-icon-cloudy" id="dFJ-l6-XHs"/>
                             </items>
                         </group>
                     </items>
@@ -332,6 +333,7 @@
                     </items>
                     <string key="title">&lt; Cancel
 </string>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-235" y="569"/>
@@ -369,6 +371,7 @@
                         <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="MessengerButton" id="vKd-l3-kL1"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" backgroundImage="emailButton" id="lgz-hO-82E"/>
                     </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-285" y="909"/>
@@ -382,6 +385,7 @@
                         <button width="1" alignment="left" title="Chromecast" id="ni4-b2-cbL"/>
                         <button width="1" alignment="left" title="Phillips Hue" id="ijg-Wc-1Z3"/>
                     </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-53" y="907"/>

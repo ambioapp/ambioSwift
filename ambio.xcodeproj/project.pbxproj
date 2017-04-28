@@ -39,6 +39,7 @@
 		1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB261EA8497400BF22BA /* AnxiousInterfaceController.swift */; };
 		135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */; };
 		135BC77E1EA1650A00CF90F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135BC77D1EA1650A00CF90F9 /* Assets.xcassets */; };
+		1364C7B41EB3BBEB00D5C74C /* AdjustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364C7B31EB3BBEB00D5C74C /* AdjustViewController.swift */; };
 		1374F86C1E95C83E005E4A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86A1E95C83E005E4A2A /* Interface.storyboard */; };
 		1374F86E1E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F86D1E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8751E95C83E005E4A2A /* ambioWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1374F8741E95C83E005E4A2A /* ambioWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -136,6 +137,7 @@
 		135BC7781EA1567200CF90F9 /* SFText-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Heavy.otf"; sourceTree = "<group>"; };
 		135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		135BC77D1EA1650A00CF90F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1364C7B31EB3BBEB00D5C74C /* AdjustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustViewController.swift; sourceTree = "<group>"; };
 		1374F8681E95C83E005E4A2A /* ambioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1374F86B1E95C83E005E4A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1374F86D1E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				135BC7791EA15B2E00CF90F9 /* SettingsViewController.swift */,
 				1345CB1B1EA804DF00BF22BA /* DetailController.swift */,
 				1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */,
+				1364C7B31EB3BBEB00D5C74C /* AdjustViewController.swift */,
 			);
 			name = vc;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				1322816B1EA43E01000E3D16 /* SadViewController.swift in Sources */,
 				132281621EA42A9F000E3D16 /* AnxiousViewController.swift in Sources */,
 				1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */,
+				1364C7B41EB3BBEB00D5C74C /* AdjustViewController.swift in Sources */,
 				132281711EA44282000E3D16 /* CalmViewController.swift in Sources */,
 				1322816F1EA440D6000E3D16 /* MadViewController.swift in Sources */,
 				13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */,

@@ -12,8 +12,12 @@ class ConnectionDetailViewController: UIViewController {
 
     var moodState = MyAppData.sharedData.moodTotal
     let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+    let greenColor = UIColor(red: 0, green: 1, blue: 0, alpha: 1)
     
     @IBAction func contact(_ sender: Any) {
+        share()
+    }
+    @IBAction func displayButton(_ sender: Any) {
         share()
     }
     @IBOutlet weak var moodVideo: UIWebView!
@@ -23,6 +27,11 @@ class ConnectionDetailViewController: UIViewController {
         //logo title and set color of nav
         
         self.navigationController?.navigationBar.tintColor = UIColor.white;
+        var image = UIImage(named: "weather-icon-rainy.png")
+        image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem?.isEnabled = false;
+        self.navigationItem.rightBarButtonItem?.tintColor = greenColor;
         
         //check which mood to display
         loadMood()
