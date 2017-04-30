@@ -157,7 +157,10 @@ class ViewController: UIViewController, WCSessionDelegate{
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
-        watchMood()
+        if (WCSession.isSupported()) {
+            watchMood()
+            print("watch")
+        }
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
     }
     

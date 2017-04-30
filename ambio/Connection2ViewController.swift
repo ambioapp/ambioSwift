@@ -179,5 +179,13 @@ class Connection2ViewController: UIViewController{
 
 
     }*/
+    func share(){
+        let textToShare = "Hey I see your feeling \(moodState)."
+        let objectsToShare:[AnyObject] = [textToShare as AnyObject]
+        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        activityVC.excludedActivityTypes = [UIActivityType.print]
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
 }
 
