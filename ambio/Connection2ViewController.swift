@@ -13,6 +13,9 @@ import WatchConnectivity
 
 class Connection2ViewController: UIViewController{
     
+    @IBAction func displayButton(_ sender: Any) {
+        share()
+    }
     var session: WCSession!
     var moodState = MyAppData.sharedData.moodTotal
     let whiteBar = UIColor(red: 1, green: 1, blue: 1, alpha: 1)

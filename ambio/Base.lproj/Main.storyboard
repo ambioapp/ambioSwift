@@ -132,18 +132,18 @@
                         <viewControllerLayoutGuide type="bottom" id="u6u-Me-7zp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zls-ej-wi8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="295-ig-5su">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="9jw-sd-hRb"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-6f-7u0">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="1v2-Tx-uw8"/>
                                     <constraint firstAttribute="width" constant="155" id="w0S-TC-BLK"/>
@@ -156,7 +156,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-Is-9kM">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Hkc-Tf-nbk"/>
                                     <constraint firstAttribute="width" constant="155" id="ogd-LP-B40"/>
@@ -207,9 +207,6 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="539"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="PA5-9q-cBI" appends="YES" id="eZx-db-DOQ"/>
-                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
                                 <rect key="frame" x="127" y="606" width="121.5" height="41"/>
@@ -272,11 +269,6 @@
                         <segue destination="kZO-RC-4q3" kind="show" id="sEN-9n-4L0"/>
                     </connections>
                 </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="PA5-9q-cBI">
-                    <connections>
-                        <segue destination="kZO-RC-4q3" kind="show" id="3zA-KA-pha"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="609"/>
         </scene>
@@ -296,9 +288,6 @@
                                 <rect key="frame" x="0.0" y="59" width="375" height="549"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="w2h-cA-R0v" appends="YES" id="CCd-PW-yWH"/>
-                                </connections>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
                                 <rect key="frame" x="117.5" y="608" width="140.5" height="41"/>
@@ -332,6 +321,9 @@
                             </barButtonItem>
                             <barButtonItem image="display-icon-22" id="O6z-05-dMx" userLabel="displayButton">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="displayButton:" destination="Sk2-w4-NqN" id="bWY-GE-Qu1"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="moods-icon" id="XTi-I9-h5F" userLabel="moodButton">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -352,11 +344,6 @@
                         <segue destination="uY8-gE-Svm" kind="show" id="Yjg-Z4-cnc"/>
                     </connections>
                 </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="w2h-cA-R0v">
-                    <connections>
-                        <segue destination="uY8-gE-Svm" kind="show" id="XEb-yK-tiF"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="qVJ-hx-J3L">
                     <connections>
                         <segue destination="hAe-Ej-Qbc" kind="show" animates="NO" id="JBN-ec-cU9"/>
@@ -464,18 +451,18 @@
                         <viewControllerLayoutGuide type="bottom" id="X5M-zx-eZD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b6U-w0-OTb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-ap-ONT">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="oat-da-RMC"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58b-2q-ITE">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="GUK-wV-yGz"/>
                                     <constraint firstAttribute="height" constant="41" id="mQo-fq-XeP"/>
@@ -488,7 +475,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="ifT-fM-ESa"/>
                                     <constraint firstAttribute="width" constant="155" id="izv-Jw-h6K"/>
@@ -532,18 +519,18 @@
                         <viewControllerLayoutGuide type="bottom" id="6af-tv-L5H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cOK-HK-jFU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O6-N9-4eb">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="xzJ-XT-szK"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-Xc-qBG">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="WLJ-Rb-Obx"/>
                                     <constraint firstAttribute="width" constant="155" id="WRh-RW-pXy"/>
@@ -556,7 +543,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="0SZ-ml-Wb7"/>
                                     <constraint firstAttribute="width" constant="155" id="r0P-Pt-Zbe"/>
@@ -600,18 +587,18 @@
                         <viewControllerLayoutGuide type="bottom" id="CUy-XG-1FQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dGm-Qi-5cU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQo-uq-ax0">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="knG-cp-UjJ"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P87-rO-sgF">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="0Qr-TP-yls"/>
                                     <constraint firstAttribute="width" constant="155" id="S3h-Oe-9oD"/>
@@ -622,7 +609,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urO-ja-ih6">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="XFQ-vI-gjW"/>
                                     <constraint firstAttribute="height" constant="41" id="dJn-xd-4BT"/>
@@ -664,18 +651,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Csd-Ck-a86"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zxg-a6-Yff">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saB-u4-UYh">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="uyW-xX-pdX"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-di-8xF">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="91I-wL-Hbm"/>
                                     <constraint firstAttribute="height" constant="41" id="gez-q7-aIb"/>
@@ -688,7 +675,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-Yx-0D5">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="NTb-fs-geg"/>
                                     <constraint firstAttribute="width" constant="155" id="oKh-Wd-Doo"/>
@@ -775,6 +762,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="bottom" secondItem="QG6-Ko-XbE" secondAttribute="bottom" id="7Ot-ze-M5U"/>
                             <constraint firstAttribute="bottom" secondItem="qJW-0d-Btp" secondAttribute="bottom" constant="20" symbolic="YES" id="BfA-6F-VNj"/>
@@ -857,6 +845,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="3qD-Mb-7r8" firstAttribute="bottom" secondItem="C9Z-pT-FUZ" secondAttribute="bottom" id="GrA-Yv-nmQ"/>
                             <constraint firstItem="C9Z-pT-FUZ" firstAttribute="leading" secondItem="0OF-fh-3Tq" secondAttribute="trailing" constant="62" id="Hsr-3z-AI9"/>
@@ -925,10 +914,8 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N87-OX-GHh"/>
-        <segue reference="mHa-Qk-KEU"/>
-        <segue reference="sEN-9n-4L0"/>
+        <segue reference="Xtz-oE-YRG"/>
+        <segue reference="gdC-LL-Ujs"/>
         <segue reference="s54-PI-jGM"/>
-        <segue reference="XEb-yK-tiF"/>
     </inferredMetricsTieBreakers>
 </document>
