@@ -289,8 +289,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
-                                <rect key="frame" x="127.5" y="608" width="121.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
+                                <rect key="frame" x="117" y="608" width="141" height="41"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -861,7 +861,7 @@
                             <constraint firstItem="3qD-Mb-7r8" firstAttribute="leading" secondItem="C9Z-pT-FUZ" secondAttribute="trailing" constant="64" id="yo7-Ts-jcT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Conner" id="nxz-1b-8mR"/>
+                    <navigationItem key="navigationItem" title="Julianne" id="nxz-1b-8mR"/>
                     <connections>
                         <outlet property="moodVideo" destination="Zac-Zt-13L" id="ym6-0G-hcj"/>
                     </connections>
@@ -914,8 +914,8 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xtz-oE-YRG"/>
-        <segue reference="gdC-LL-Ujs"/>
-        <segue reference="Bfu-Dw-bBf"/>
+        <segue reference="mHa-Qk-KEU"/>
+        <segue reference="N87-OX-GHh"/>
+        <segue reference="s54-PI-jGM"/>
     </inferredMetricsTieBreakers>
 </document>
