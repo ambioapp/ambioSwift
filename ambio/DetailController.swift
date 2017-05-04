@@ -28,7 +28,7 @@ class DetailController: UIViewController {
         
         
         //logo title and set color of nav
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 23)!, NSForegroundColorAttributeName: UIColor.white]
         
         var image = UIImage(named: "weather-icon-cloudy.png")
         image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
