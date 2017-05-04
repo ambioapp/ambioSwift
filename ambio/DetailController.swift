@@ -41,7 +41,10 @@ class DetailController: UIViewController {
         //time
         let date = Date()
         let calendar = Calendar.current
-        let hour = ((calendar.component(.hour, from: date)) - 1)
+        var hour = ((calendar.component(.hour, from: date)) - 1)
+        if (hour < 0) {
+            hour = 0
+        }
         let minutes = calendar.component(.minute, from: date)
         _ = calendar.component(.second, from: date)
         let fulltime = "\(hour):\(minutes)"

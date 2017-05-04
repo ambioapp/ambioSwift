@@ -15,7 +15,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ambioWatch" customModuleProvider="target">
                     <items>
                         <inlineMovie width="1" height="100" alignment="center" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="Eh3-fH-h2e"/>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="TeC-h3-zIq">
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Rachel" id="TeC-h3-zIq">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="4Mr-rK-ql9" kind="modal" id="24W-SP-Axi"/>
@@ -29,15 +29,15 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-513" y="-194"/>
+            <point key="canvasLocation" x="-998" y="-194"/>
         </scene>
         <!--Connection 2 Controller-->
         <scene sceneID="yTS-62-R3v">
             <objects>
                 <controller id="sHm-J2-MzR" userLabel="Connection 2 Controller" customClass="Connection2Controller" customModule="ambioWatch_Extension">
                     <items>
-                        <inlineMovie width="1" height="100" alignment="right" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="VnZ-Wh-PRT"/>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Julianne" id="WCv-Qs-GOy">
+                        <inlineMovie width="1" height="100" alignment="center" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="VnZ-Wh-PRT"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Jacob" id="WCv-Qs-GOy">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="SlM-dr-Pq5" kind="modal" id="R5a-EQ-afV"/>
@@ -47,18 +47,40 @@
                     <connections>
                         <outlet property="moodVideo" destination="VnZ-Wh-PRT" id="XBO-lM-CTs"/>
                         <outlet property="nameButton" destination="WCv-Qs-GOy" id="RYf-qh-kIh"/>
-                        <segue destination="jeq-7D-zuy" kind="relationship" relationship="nextPage" id="Xrw-Ls-kM4"/>
+                        <segue destination="gJm-0Z-REe" kind="relationship" relationship="nextPage" id="Lao-6x-7ql"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-204" y="-194"/>
+            <point key="canvasLocation" x="-689" y="-194"/>
+        </scene>
+        <!--Connection 3 Controller-->
+        <scene sceneID="12J-2G-W1b">
+            <objects>
+                <controller id="gJm-0Z-REe" userLabel="Connection 3 Controller" customClass="Connection3Controller" customModule="ambioWatch_Extension">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="center" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="a81-ai-Oq4"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Mom" id="Kgp-B2-zE1">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="j4Z-3g-hRQ" kind="modal" id="JzY-RB-eyK"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="moodVideo" destination="a81-ai-Oq4" id="XXW-2r-EW6"/>
+                        <outlet property="nameButton" destination="Kgp-B2-zE1" id="fl7-wl-aKB"/>
+                        <segue destination="jeq-7D-zuy" kind="relationship" relationship="nextPage" id="zCh-ip-r0s"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-402" y="-194"/>
         </scene>
         <!--Connection2 Detail Controller-->
         <scene sceneID="MsQ-5K-br9">
             <objects>
                 <controller id="SlM-dr-Pq5" customClass="Connection2DetailController" customModule="ambioWatch_Extension">
                     <items>
-                        <label height="17" alignment="right" text="+2h" textAlignment="right" id="tO4-cO-qOb">
+                        <label height="17" alignment="right" text="-1h" textAlignment="right" id="tO4-cO-qOb">
                             <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
@@ -70,7 +92,7 @@
                                         <segue destination="BAD-DY-V32" kind="modal" id="He5-YG-9a6"/>
                                     </connections>
                                 </button>
-                                <button width="30" height="30" alignment="right" backgroundImage="weather-icon-cloudy" id="187-k8-WHm"/>
+                                <button width="30" height="30" alignment="right" backgroundImage="weather-icon-rainy" id="187-k8-WHm"/>
                             </items>
                         </group>
                     </items>
@@ -79,7 +101,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-204" y="165"/>
+            <point key="canvasLocation" x="-689" y="165"/>
         </scene>
         <!--Guide Controller-->
         <scene sceneID="YP7-6Z-TTh">
@@ -276,14 +298,14 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="188" y="911"/>
+            <point key="canvasLocation" x="-304" y="909"/>
         </scene>
         <!--Detail Interface Controller-->
         <scene sceneID="6z5-Hm-8Ii">
             <objects>
                 <controller id="4Mr-rK-ql9" customClass="DetailInterfaceController" customModule="ambioWatch_Extension">
                     <items>
-                        <label alignment="right" text="+0h" id="dCd-T8-0tJ">
+                        <label alignment="right" text="-2h" id="dCd-T8-0tJ">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
@@ -304,7 +326,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-513" y="165"/>
+            <point key="canvasLocation" x="-998" y="165"/>
         </scene>
         <!--Menu Interface Controller-->
         <scene sceneID="suV-Jh-PXt">
@@ -336,7 +358,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-235" y="569"/>
+            <point key="canvasLocation" x="-720" y="569"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -352,14 +374,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="-513" y="585"/>
+            <point key="canvasLocation" x="-998" y="585"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ambioWatch" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="907"/>
+            <point key="canvasLocation" x="-998" y="907"/>
         </scene>
         <!--Contact Interface Controller-->
         <scene sceneID="yAu-u6-h2z">
@@ -374,7 +396,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-285" y="909"/>
+            <point key="canvasLocation" x="-770" y="909"/>
         </scene>
         <!--Display Interface Controller-->
         <scene sceneID="d8g-ux-949">
@@ -388,11 +410,39 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-53" y="907"/>
+            <point key="canvasLocation" x="-538" y="907"/>
+        </scene>
+        <!--Connection3 Detail Controller-->
+        <scene sceneID="X0x-4b-xTn">
+            <objects>
+                <controller id="j4Z-3g-hRQ" userLabel="Connection3 Detail Controller" customClass="Connection3DetailController" customModule="ambioWatch_Extension">
+                    <items>
+                        <label height="17" alignment="right" text="-4h" textAlignment="right" id="OYo-XK-jVC">
+                            <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <inlineMovie width="1" height="94" alignment="center" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="NL8-pK-88A"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="jVE-xV-6mq">
+                            <items>
+                                <button width="30" height="30" alignment="left" backgroundImage="menu-icon" id="YM8-47-f5h">
+                                    <connections>
+                                        <segue destination="BAD-DY-V32" kind="modal" id="87s-of-vs2"/>
+                                    </connections>
+                                </button>
+                                <button width="30" height="30" alignment="right" backgroundImage="weather-icon-rainy" id="UGF-PZ-pF0"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodVideo" destination="NL8-pK-88A" id="Skg-dV-9pc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-387" y="165"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="He5-YG-9a6"/>
+        <segue reference="87s-of-vs2"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

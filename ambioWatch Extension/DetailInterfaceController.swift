@@ -28,7 +28,7 @@ class DetailInterfaceController: WKInterfaceController {
         super.willActivate()
         setURL()
         playVideo()
-        setTitle("< Conner")
+        setTitle("< Rachel")
     }
 
     override func didDeactivate() {

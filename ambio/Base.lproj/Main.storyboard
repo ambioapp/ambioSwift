@@ -135,18 +135,18 @@
                         <viewControllerLayoutGuide type="bottom" id="u6u-Me-7zp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zls-ej-wi8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="295-ig-5su">
-                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="9jw-sd-hRb"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-6f-7u0">
-                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="187" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="1v2-Tx-uw8"/>
                                     <constraint firstAttribute="width" constant="155" id="w0S-TC-BLK"/>
@@ -159,7 +159,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jE-Is-9kM">
-                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="33" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Hkc-Tf-nbk"/>
                                     <constraint firstAttribute="width" constant="155" id="ogd-LP-B40"/>
@@ -437,7 +437,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -460,18 +460,18 @@
                         <viewControllerLayoutGuide type="bottom" id="X5M-zx-eZD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b6U-w0-OTb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-ap-ONT">
-                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="oat-da-RMC"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58b-2q-ITE">
-                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="187" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="GUK-wV-yGz"/>
                                     <constraint firstAttribute="height" constant="41" id="mQo-fq-XeP"/>
@@ -484,7 +484,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-Qf-vb0">
-                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="33" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="ifT-fM-ESa"/>
                                     <constraint firstAttribute="width" constant="155" id="izv-Jw-h6K"/>
@@ -596,18 +596,18 @@
                         <viewControllerLayoutGuide type="bottom" id="CUy-XG-1FQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dGm-Qi-5cU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQo-uq-ax0">
-                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="knG-cp-UjJ"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P87-rO-sgF">
-                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="33" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="0Qr-TP-yls"/>
                                     <constraint firstAttribute="width" constant="155" id="S3h-Oe-9oD"/>
@@ -618,7 +618,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urO-ja-ih6">
-                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="187" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="XFQ-vI-gjW"/>
                                     <constraint firstAttribute="height" constant="41" id="dJn-xd-4BT"/>
@@ -660,18 +660,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Csd-Ck-a86"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zxg-a6-Yff">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saB-u4-UYh">
-                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="uyW-xX-pdX"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-di-8xF">
-                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="33" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="91I-wL-Hbm"/>
                                     <constraint firstAttribute="height" constant="41" id="gez-q7-aIb"/>
@@ -684,7 +684,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-Yx-0D5">
-                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
+                                <rect key="frame" x="187" y="586" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="NTb-fs-geg"/>
                                     <constraint firstAttribute="width" constant="155" id="oKh-Wd-Doo"/>
@@ -902,7 +902,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gac-S0-3RI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ltr-Rc-Gzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltr-Rc-Gzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -933,7 +933,7 @@
                                 <gestureRecognizers/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TP-BC-ZOX">
-                                <rect key="frame" x="147" y="608" width="82.5" height="41"/>
+                                <rect key="frame" x="149" y="609" width="78.5" height="40"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -998,10 +998,9 @@
         <!--Navigation 3 Controller-->
         <scene sceneID="QYN-P1-1TF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iah-OP-ogO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lOG-0g-xEI" userLabel="Navigation 3 Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="npq-6b-yeR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="npq-6b-yeR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1010,6 +1009,7 @@
                         <segue destination="hSa-ms-Vqw" kind="relationship" relationship="rootViewController" id="zhM-95-2yn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iah-OP-ogO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5225" y="609"/>
         </scene>

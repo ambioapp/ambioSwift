@@ -43,8 +43,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
         playVideo()
         
-        //load last mood label
-        nameButton.setTitle("Conner")
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {

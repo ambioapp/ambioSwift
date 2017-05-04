@@ -10,17 +10,18 @@ import WatchKit
 import Foundation
 
 
-class Connection2Controller: WKInterfaceController {
+class Connection3Controller: WKInterfaceController {
 
-    @IBOutlet var moodVideo: WKInterfaceInlineMovie!
+
     
+  
     @IBOutlet var nameButton: WKInterfaceButton!
-    
+    @IBOutlet var moodVideo: WKInterfaceInlineMovie!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        nameButton.setTitle("Jacob")
+        nameButton.setTitle("Mom")
         playVideo()
     }
 
@@ -36,7 +37,7 @@ class Connection2Controller: WKInterfaceController {
     
     func playVideo() {
         //setURL()
-        let url2 = Bundle.main.url(forResource: "p_happy-2", withExtension: "mov")
+        let url2 = Bundle.main.url(forResource: "p_anxious-1", withExtension: "mov")
         moodVideo.setMovieURL(url2!)
         moodVideo.setAutoplays(true)
         moodVideo.setLoops(true)

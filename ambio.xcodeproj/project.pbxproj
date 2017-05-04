@@ -33,6 +33,8 @@
 		133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */; };
 		134347961EBAAB9100E60116 /* Connection3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */; };
 		134347971EBAAB9100E60116 /* Connection3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347951EBAAB9100E60116 /* Connection3ViewController.swift */; };
+		1343479A1EBAB6BB00E60116 /* Connection3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347981EBAB6BB00E60116 /* Connection3Controller.swift */; };
+		1343479B1EBAB6BB00E60116 /* Connection3DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347991EBAB6BB00E60116 /* Connection3DetailController.swift */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
 		1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */; };
@@ -129,6 +131,8 @@
 		133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2Controller.swift; sourceTree = "<group>"; };
 		134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3DetailViewController.swift; sourceTree = "<group>"; };
 		134347951EBAAB9100E60116 /* Connection3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3ViewController.swift; sourceTree = "<group>"; };
+		134347981EBAB6BB00E60116 /* Connection3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3Controller.swift; sourceTree = "<group>"; };
+		134347991EBAB6BB00E60116 /* Connection3DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3DetailController.swift; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
 		1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyInterfaceController.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 				139CC9A91E9C0A6400F8B894 /* moodMov */,
 				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
+				134347981EBAB6BB00E60116 /* Connection3Controller.swift */,
+				134347991EBAB6BB00E60116 /* Connection3DetailController.swift */,
 				13FDE8EB1EB21A5300B2C422 /* Connection2DetailController.swift */,
 				133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
@@ -594,10 +600,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1308394E1EA84C8D00062CD6 /* CalmInterfaceController.swift in Sources */,
+				1343479A1EBAB6BB00E60116 /* Connection3Controller.swift in Sources */,
 				133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */,
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
 				1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */,
+				1343479B1EBAB6BB00E60116 /* Connection3DetailController.swift in Sources */,
 				130839501EA861D600062CD6 /* DetailInterfaceController.swift in Sources */,
 				1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */,
 				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
