@@ -42,11 +42,12 @@ class Connection3DetailViewController: UIViewController {
         
         //time
         //time
+        let timeDifference = 4
         let date = Date()
         let calendar = Calendar.current
-        var hour = ((calendar.component(.hour, from: date)) - 4)
+        var hour = ((calendar.component(.hour, from: date)) - timeDifference)
         if (hour < 0) {
-            hour = 0
+            hour = ((24+(calendar.component(.hour, from: date))) - timeDifference)
         }
         let minutes = calendar.component(.minute, from: date)
         _ = calendar.component(.second, from: date)
