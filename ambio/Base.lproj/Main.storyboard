@@ -426,7 +426,7 @@
                             <constraint firstItem="LFd-BG-I9k" firstAttribute="top" secondItem="f54-aV-uhn" secondAttribute="bottom" constant="20" id="pH4-bb-uiL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sensativity" id="grm-ki-q7L"/>
+                    <navigationItem key="navigationItem" title="Sensitivity" id="grm-ki-q7L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQG-r1-FzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -992,7 +992,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5981.6000000000004" y="608.54572713643188"/>
+            <point key="canvasLocation" x="5982" y="609"/>
         </scene>
         <!--Navigation 3 Controller-->
         <scene sceneID="QYN-P1-1TF">
@@ -1117,7 +1117,7 @@
         <image name="relaxed1" width="310" height="82"/>
         <image name="restless2" width="310" height="82"/>
         <image name="sadColor" width="281" height="281"/>
-        <image name="sensativity" width="602" height="584"/>
+        <image name="sensativity" width="604" height="584"/>
         <image name="stressed1" width="310" height="82"/>
         <image name="woeful2" width="310" height="82"/>
     </resources>

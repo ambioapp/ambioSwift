@@ -40,6 +40,7 @@ class ConnectionDetailViewController: UIViewController {
         
         //time
         //time
+        
         let timeDifference = 1
         let date = Date()
         let calendar = Calendar.current
