@@ -71,5 +71,12 @@ class MadViewController: UIViewController {
         image = UIImage(named: "angry2.png")
         angryButton.setBackgroundImage(image, for: UIControlState.normal)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // nav border bottom
+        let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: blackBar)
+    }
 
 }

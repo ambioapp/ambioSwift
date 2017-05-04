@@ -10,6 +10,9 @@ import UIKit
 
 class DetailController: UIViewController {
     
+    //time
+    @IBOutlet weak var timeLabel: UILabel!
+    
     var moodState = MyAppData.sharedData.moodTotal
     let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     
@@ -23,8 +26,10 @@ class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //logo title and set color of nav
-        self.navigationController?.navigationBar.tintColor = UIColor.white;
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "SF UI Text", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
+        
         var image = UIImage(named: "weather-icon-cloudy.png")
         image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -32,6 +37,20 @@ class DetailController: UIViewController {
         
         loadMood()
         // Do any additional setup after loading the view.
+        
+        //time
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = ((calendar.component(.hour, from: date)) - 1)
+        let minutes = calendar.component(.minute, from: date)
+        _ = calendar.component(.second, from: date)
+        let fulltime = "\(hour):\(minutes)"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "H:mm"
+        let date12 = dateFormatter.date(from: fulltime)!
+        dateFormatter.dateFormat = "h:mm a"
+        let date22 = dateFormatter.string(from: date12)
+        timeLabel.text = date22
     }
 
     override func didReceiveMemoryWarning() {
@@ -114,6 +133,8 @@ class DetailController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: blackBar)
     }
     
     func share(){

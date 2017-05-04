@@ -41,10 +41,10 @@ class ViewController: UIViewController, WCSessionDelegate{
         
         //logo title and set color of nav
         
-        let titleView = UIView(frame: CGRect(x:0, y:0, width: 125, height:57.2))
-        let widthLeft = (((self.view.frame.width/2)*(-1))+(0.75*titleView.frame.width))
-        let titleImageView = UIImageView(image: UIImage(named: "logo-white.png"))
-        titleImageView.frame = CGRect(x:widthLeft, y:0, width:titleView.frame.width, height:titleView.frame.height)
+        let titleView = UIView(frame: CGRect(x:0, y:0, width: 96.25, height:28))
+        let widthLeft = (((self.view.frame.width/2)*(-1))+(0.90*titleView.frame.width))
+        let titleImageView = UIImageView(image: UIImage(named: "logo.png"))
+        titleImageView.frame = CGRect(x:widthLeft, y:(-4), width:titleView.frame.width, height:titleView.frame.height)
         titleView.addSubview(titleImageView)
         navigationItem.titleView = titleView
         //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecording))

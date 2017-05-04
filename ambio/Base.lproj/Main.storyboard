@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SFText-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
         <array key="SFText-Regular.otf">
             <string>SFUIText-Regular</string>
         </array>
@@ -115,7 +118,7 @@
                             <constraint firstItem="exP-D8-9k8" firstAttribute="bottom" secondItem="a3l-Kz-cEy" secondAttribute="top" id="zYA-V4-jD4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Guide" id="uxm-rb-7ZW"/>
+                    <navigationItem key="navigationItem" id="uxm-rb-7ZW"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1300"/>
                 </viewController>
@@ -208,9 +211,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
-                                <rect key="frame" x="127" y="606" width="122" height="41"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rachel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
+                                <rect key="frame" x="129.5" y="606" width="116" height="41"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -240,7 +243,7 @@
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="display-icon-22" id="fp5-yH-fDB" userLabel="displayButton">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="displayButton:" destination="BYZ-38-t0r" id="An2-I2-cYe"/>
                                 </connections>
@@ -289,8 +292,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Julianne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
-                                <rect key="frame" x="117" y="608" width="141" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-ub-doa">
+                                <rect key="frame" x="147" y="608" width="82.5" height="41"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -722,6 +725,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:55 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7T-PU-jOU">
+                                <rect key="frame" x="153" y="0.0" width="68.5" height="21"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-pg-tOu">
                                 <rect key="frame" x="0.0" y="59" width="375" height="549"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -767,9 +776,12 @@
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="bottom" secondItem="QG6-Ko-XbE" secondAttribute="bottom" id="7Ot-ze-M5U"/>
                             <constraint firstAttribute="bottom" secondItem="qJW-0d-Btp" secondAttribute="bottom" constant="20" symbolic="YES" id="BfA-6F-VNj"/>
                             <constraint firstItem="QG6-Ko-XbE" firstAttribute="centerX" secondItem="V5t-PD-Z6h" secondAttribute="centerX" id="Kxf-5f-TXw"/>
+                            <constraint firstItem="d7T-PU-jOU" firstAttribute="top" secondItem="faC-UF-oVi" secondAttribute="bottom" id="Mgv-wV-71B"/>
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="baseline" secondItem="JuT-Vu-Tb3" secondAttribute="baseline" id="OtM-RD-t9K"/>
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="top" secondItem="JuT-Vu-Tb3" secondAttribute="top" id="S8F-dE-Z0n"/>
+                            <constraint firstItem="d7T-PU-jOU" firstAttribute="centerX" secondItem="V5t-PD-Z6h" secondAttribute="centerX" id="SgE-lK-IHg"/>
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="firstBaseline" secondItem="JuT-Vu-Tb3" secondAttribute="firstBaseline" id="U4K-Kv-nPC"/>
+                            <constraint firstItem="bXX-pg-tOu" firstAttribute="top" secondItem="faC-UF-oVi" secondAttribute="bottom" constant="59" id="Wxg-ct-uza"/>
                             <constraint firstItem="bXX-pg-tOu" firstAttribute="centerY" secondItem="V5t-PD-Z6h" secondAttribute="centerY" id="aHp-Hu-Dqb"/>
                             <constraint firstItem="JuT-Vu-Tb3" firstAttribute="baseline" secondItem="qJW-0d-Btp" secondAttribute="baseline" id="cM8-hQ-aW4"/>
                             <constraint firstItem="JuT-Vu-Tb3" firstAttribute="firstBaseline" secondItem="qJW-0d-Btp" secondAttribute="firstBaseline" id="cvI-Yy-CoE"/>
@@ -778,15 +790,15 @@
                             <constraint firstItem="bXX-pg-tOu" firstAttribute="leading" secondItem="V5t-PD-Z6h" secondAttribute="leading" id="mpC-7F-Reg"/>
                             <constraint firstItem="qJW-0d-Btp" firstAttribute="bottom" secondItem="JuT-Vu-Tb3" secondAttribute="bottom" id="omo-qC-WqC"/>
                             <constraint firstItem="QG6-Ko-XbE" firstAttribute="centerX" secondItem="V5t-PD-Z6h" secondAttribute="centerX" id="sgv-tD-3Zt"/>
-                            <constraint firstItem="bXX-pg-tOu" firstAttribute="top" secondItem="faC-UF-oVi" secondAttribute="bottom" constant="59" id="vk3-ZG-s6R"/>
                             <constraint firstItem="JuT-Vu-Tb3" firstAttribute="leading" secondItem="QG6-Ko-XbE" secondAttribute="trailing" constant="64" id="xPa-0g-k1k"/>
                             <constraint firstItem="QG6-Ko-XbE" firstAttribute="leading" secondItem="qJW-0d-Btp" secondAttribute="trailing" constant="60" id="zUZ-a0-lUf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Conner" id="47J-JU-lxQ"/>
+                    <navigationItem key="navigationItem" title="Rachel" id="47J-JU-lxQ"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="moodVideo" destination="bXX-pg-tOu" id="NdH-Yj-Te0"/>
+                        <outlet property="timeLabel" destination="d7T-PU-jOU" id="hgp-Eg-rUV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dh-wL-rq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -843,15 +855,23 @@
                                     <action selector="displayButton:" destination="uY8-gE-Svm" eventType="touchUpInside" id="fuu-MG-i1a"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:55 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acW-6h-dxU">
+                                <rect key="frame" x="154.5" y="20" width="66.5" height="21"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="acW-6h-dxU" firstAttribute="top" secondItem="nvY-9e-U4b" secondAttribute="bottom" id="7tB-rC-xFF"/>
                             <constraint firstItem="3qD-Mb-7r8" firstAttribute="bottom" secondItem="C9Z-pT-FUZ" secondAttribute="bottom" id="GrA-Yv-nmQ"/>
                             <constraint firstItem="C9Z-pT-FUZ" firstAttribute="leading" secondItem="0OF-fh-3Tq" secondAttribute="trailing" constant="62" id="Hsr-3z-AI9"/>
                             <constraint firstItem="Zac-Zt-13L" firstAttribute="top" secondItem="nvY-9e-U4b" secondAttribute="bottom" constant="39" id="IzY-Gt-bD2"/>
                             <constraint firstItem="C9Z-pT-FUZ" firstAttribute="centerX" secondItem="PtG-Pl-Cy6" secondAttribute="centerX" id="Nos-Q2-6IB"/>
                             <constraint firstItem="C9Z-pT-FUZ" firstAttribute="centerX" secondItem="PtG-Pl-Cy6" secondAttribute="centerX" id="OI3-A4-2NZ"/>
+                            <constraint firstItem="acW-6h-dxU" firstAttribute="centerX" secondItem="PtG-Pl-Cy6" secondAttribute="centerX" id="QBp-Ah-Czc"/>
                             <constraint firstItem="Zac-Zt-13L" firstAttribute="centerY" secondItem="PtG-Pl-Cy6" secondAttribute="centerY" id="UML-fJ-lQA"/>
                             <constraint firstItem="OzJ-7w-8Ee" firstAttribute="top" secondItem="C9Z-pT-FUZ" secondAttribute="bottom" constant="20" id="fco-yD-2Nl"/>
                             <constraint firstItem="Zac-Zt-13L" firstAttribute="centerX" secondItem="PtG-Pl-Cy6" secondAttribute="centerX" id="nDG-qT-5SG"/>
@@ -861,14 +881,15 @@
                             <constraint firstItem="3qD-Mb-7r8" firstAttribute="leading" secondItem="C9Z-pT-FUZ" secondAttribute="trailing" constant="64" id="yo7-Ts-jcT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Julianne" id="nxz-1b-8mR"/>
+                    <navigationItem key="navigationItem" title="Mom" id="nxz-1b-8mR"/>
                     <connections>
                         <outlet property="moodVideo" destination="Zac-Zt-13L" id="ym6-0G-hcj"/>
+                        <outlet property="timeLabel" destination="acW-6h-dxU" id="gb8-uy-jyH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SL0-MO-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4084" y="1450"/>
+            <point key="canvasLocation" x="4084" y="1449.6251874062971"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pdH-ye-oXV">
@@ -914,8 +935,8 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mHa-Qk-KEU"/>
         <segue reference="N87-OX-GHh"/>
+        <segue reference="mHa-Qk-KEU"/>
         <segue reference="s54-PI-jGM"/>
     </inferredMetricsTieBreakers>
 </document>

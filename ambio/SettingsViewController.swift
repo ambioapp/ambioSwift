@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    let whiteBar = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,11 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        // nav border bottom
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
+    }
     
 
 }
