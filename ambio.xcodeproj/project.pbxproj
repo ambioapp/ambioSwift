@@ -31,6 +31,8 @@
 		132E04491EA99D83005F6257 /* p_sad-1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E043F1EA99D83005F6257 /* p_sad-1.mov */; };
 		132E044A1EA99D83005F6257 /* p_sad-2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 132E04401EA99D83005F6257 /* p_sad-2.mov */; };
 		133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */; };
+		134347961EBAAB9100E60116 /* Connection3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */; };
+		134347971EBAAB9100E60116 /* Connection3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347951EBAAB9100E60116 /* Connection3ViewController.swift */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
 		1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */; };
@@ -125,6 +127,8 @@
 		132E043F1EA99D83005F6257 /* p_sad-1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-1.mov"; sourceTree = "<group>"; };
 		132E04401EA99D83005F6257 /* p_sad-2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "p_sad-2.mov"; sourceTree = "<group>"; };
 		133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2Controller.swift; sourceTree = "<group>"; };
+		134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3DetailViewController.swift; sourceTree = "<group>"; };
+		134347951EBAAB9100E60116 /* Connection3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3ViewController.swift; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
 		1345CB201EA83FEB00BF22BA /* HappyInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyInterfaceController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 		132FA9B01E82EC7B0067EE2F /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */,
+				134347951EBAAB9100E60116 /* Connection3ViewController.swift */,
 				13B2EC581E5DF01D00E6CDC7 /* RecordViewController.swift */,
 				13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */,
 				132095011EA50B270062CCC0 /* Connection2ViewController.swift */,
@@ -618,7 +624,9 @@
 				13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */,
 				13B2EC5A1E5DF01D00E6CDC7 /* RecordViewController.swift in Sources */,
 				1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */,
+				134347971EBAAB9100E60116 /* Connection3ViewController.swift in Sources */,
 				135BC77A1EA15B2E00CF90F9 /* SettingsViewController.swift in Sources */,
+				134347961EBAAB9100E60116 /* Connection3DetailViewController.swift in Sources */,
 				131CF9731E82F6CC00E0D240 /* MyAppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

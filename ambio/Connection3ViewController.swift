@@ -11,17 +11,17 @@ import WatchConnectivity
 
 
 
-class Connection2ViewController: UIViewController{
+class Connection3ViewController: UIViewController{
     
+
     @IBAction func displayButton(_ sender: Any) {
         share()
     }
-    var session: WCSession!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var moodVideo: UIWebView!
     var moodState = MyAppData.sharedData.moodTotal
     let whiteBar = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-    
-    @IBOutlet weak var moodVideo: UIWebView!
-    @IBOutlet weak var nameLabel: UILabel!
+
     
     /*@IBAction func swipeRight(_ sender: Any) {
          _ = self.navigationController?.popToRootViewController(animated: true)
@@ -75,7 +75,7 @@ class Connection2ViewController: UIViewController{
     }
     
     func loadMood(){
-        moodState = "joyful"
+        moodState = "restless"
         //let myWebView:UIWebView = UIWebView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height:UIScreen.main.bounds.height))
         //myWebView.scrollView.isScrollEnabled = false;
         //myWebView.scrollView.bounces = false;
