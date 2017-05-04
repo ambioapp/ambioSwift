@@ -20,6 +20,7 @@ class Connection3DetailViewController: UIViewController {
    
     var moodState = MyAppData.sharedData.moodTotal
     let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+    let clear = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
     let greenColor = UIColor(red: 0, green: 1, blue: 0, alpha: 1)
     
     @IBOutlet weak var moodVideo: UIWebView!
@@ -30,7 +31,7 @@ class Connection3DetailViewController: UIViewController {
         
         //logo title and set color of nav
         
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "SF UI Text", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
         var image = UIImage(named: "weather-icon-rainy.png")
         image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: nil, action: nil)
@@ -139,8 +140,8 @@ class Connection3DetailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
         // nav border bottom
-        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: blackBar)
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: clear), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: clear)
     }
     
     func share(){

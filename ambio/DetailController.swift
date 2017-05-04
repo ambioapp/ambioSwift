@@ -15,7 +15,7 @@ class DetailController: UIViewController {
     
     var moodState = MyAppData.sharedData.moodTotal
     let blackBar = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-    
+    let clear = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
     @IBAction func displayTo(_ sender: Any) {
         share()
     }
@@ -28,7 +28,7 @@ class DetailController: UIViewController {
         
         
         //logo title and set color of nav
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "SF UI Text", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 28)!, NSForegroundColorAttributeName: UIColor.white]
         
         var image = UIImage(named: "weather-icon-cloudy.png")
         image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
@@ -137,8 +137,8 @@ class DetailController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         loadMood()
-        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: blackBar)
+        navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: clear), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: clear)
     }
     
     func share(){
@@ -161,5 +161,8 @@ class DetailController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
 }
