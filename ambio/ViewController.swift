@@ -162,6 +162,7 @@ class ViewController: UIViewController, WCSessionDelegate{
             print("watch")
         }
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
     }
     
     //protocals for watch session

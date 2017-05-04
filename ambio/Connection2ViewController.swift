@@ -152,7 +152,7 @@ class Connection2ViewController: UIViewController{
         // nav border bottom
         navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .black), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: whiteBar)
-        //watchMood()
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
     }
     
     /*//protocals for watch session

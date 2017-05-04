@@ -212,7 +212,7 @@
                                 <gestureRecognizers/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rachel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-tX-mqj">
-                                <rect key="frame" x="129.5" y="606" width="116" height="41"/>
+                                <rect key="frame" x="130" y="606" width="116" height="41"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -409,7 +409,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sensativity" translatesAutoresizingMaskIntoConstraints="NO" id="hKp-fb-qdT">
-                                <rect key="frame" x="36" y="158.5" width="303" height="350"/>
+                                <rect key="frame" x="36" y="159" width="303" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="SDr-bw-R3Q"/>
                                     <constraint firstAttribute="width" constant="303" id="pC8-6l-d4z"/>
@@ -418,7 +418,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LFd-BG-I9k" firstAttribute="centerX" secondItem="6Gg-1R-VeD" secondAttribute="centerX" id="23m-FE-RNb"/>
+                            <constraint firstItem="LFd-BG-I9k" firstAttribute="centerX" secondItem="6Gg-1R-VeD" secondAttribute="centerX" constant="1" id="23m-FE-RNb"/>
                             <constraint firstItem="hKp-fb-qdT" firstAttribute="centerX" secondItem="6Gg-1R-VeD" secondAttribute="centerX" id="Ezk-H5-k61"/>
                             <constraint firstItem="xGc-UL-TT7" firstAttribute="centerX" secondItem="6Gg-1R-VeD" secondAttribute="centerX" id="WK6-Pj-Mlj"/>
                             <constraint firstItem="hKp-fb-qdT" firstAttribute="centerY" secondItem="6Gg-1R-VeD" secondAttribute="centerY" id="cPG-b4-mwZ"/>
@@ -437,7 +437,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAe-Ej-Qbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NPK-GH-hnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NPK-GH-hnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -528,18 +528,18 @@
                         <viewControllerLayoutGuide type="bottom" id="6af-tv-L5H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cOK-HK-jFU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O6-N9-4eb">
-                                <rect key="frame" x="0.0" y="66" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="370"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="xzJ-XT-szK"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-Xc-qBG">
-                                <rect key="frame" x="187" y="586" width="155" height="41"/>
+                                <rect key="frame" x="187" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="WLJ-Rb-Obx"/>
                                     <constraint firstAttribute="width" constant="155" id="WRh-RW-pXy"/>
@@ -552,7 +552,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-jJ-M1k">
-                                <rect key="frame" x="33" y="586" width="155" height="41"/>
+                                <rect key="frame" x="33" y="1219" width="155" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="0SZ-ml-Wb7"/>
                                     <constraint firstAttribute="width" constant="155" id="r0P-Pt-Zbe"/>
@@ -732,8 +732,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:55 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7T-PU-jOU">
-                                <rect key="frame" x="153.5" y="15" width="68.5" height="19.5"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="16"/>
+                                <rect key="frame" x="163" y="15" width="49" height="15"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -861,8 +861,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:55 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acW-6h-dxU">
-                                <rect key="frame" x="155" y="15" width="66.5" height="19.5"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="16"/>
+                                <rect key="frame" x="164" y="15" width="47" height="15"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -901,7 +901,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gac-S0-3RI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ltr-Rc-Gzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltr-Rc-Gzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -932,7 +932,7 @@
                                 <gestureRecognizers/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TP-BC-ZOX">
-                                <rect key="frame" x="147" y="608" width="82.5" height="41"/>
+                                <rect key="frame" x="146" y="608" width="83" height="41"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -999,7 +999,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lOG-0g-xEI" userLabel="Navigation 3 Controller" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="npq-6b-yeR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="npq-6b-yeR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1052,8 +1052,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:55 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxX-TQ-NQc">
-                                <rect key="frame" x="155" y="15" width="66.5" height="19.5"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="16"/>
+                                <rect key="frame" x="164" y="15" width="47" height="15"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1122,9 +1122,9 @@
         <image name="woeful2" width="310" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xwY-UL-fHf"/>
-        <segue reference="u2t-OJ-uT2"/>
-        <segue reference="LM3-1y-eir"/>
-        <segue reference="Bfu-Dw-bBf"/>
+        <segue reference="Tro-IM-XLs"/>
+        <segue reference="gdC-LL-Ujs"/>
+        <segue reference="Xtz-oE-YRG"/>
+        <segue reference="Cok-jd-3yg"/>
     </inferredMetricsTieBreakers>
 </document>

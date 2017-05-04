@@ -143,6 +143,7 @@ class Connection3DetailViewController: UIViewController {
         // nav border bottom
         navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: clear), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: clear)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: false)
     }
     
     func share(){

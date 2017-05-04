@@ -139,7 +139,11 @@ class DetailController: UIViewController {
         loadMood()
         navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: clear), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage.imageWithColor(color: clear)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: false)
     }
+
+    
+    
     
     func share(){
         let textToShare = "Hey I see your feeling \(moodState)."
