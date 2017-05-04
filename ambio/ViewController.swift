@@ -112,7 +112,7 @@ class ViewController: UIViewController, WCSessionDelegate{
         }
         if (moodState == "focused")
         {
-            let myURL = URL(string: "http://chasbrouck.io/moodNoise/focus")
+            let myURL = URL(string: "http://chasbrouck.io/moodNoise/focused")
             let myURLRequest:URLRequest = URLRequest(url: myURL!)
             moodVideo.loadRequest(myURLRequest)
         }
