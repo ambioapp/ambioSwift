@@ -47,33 +47,31 @@
                     <connections>
                         <outlet property="moodVideo" destination="VnZ-Wh-PRT" id="XBO-lM-CTs"/>
                         <outlet property="nameButton" destination="WCv-Qs-GOy" id="RYf-qh-kIh"/>
-                        <segue destination="gJm-0Z-REe" kind="relationship" relationship="nextPage" id="Lao-6x-7ql"/>
+                        <segue destination="63I-pO-lyx" kind="relationship" relationship="nextPage" id="dg5-iW-qXY"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-689" y="-194"/>
         </scene>
-        <!--Connection 3 Controller-->
-        <scene sceneID="12J-2G-W1b">
+        <!--Connection3Interface Controller-->
+        <scene sceneID="Ydo-rd-M0A">
             <objects>
-                <controller id="gJm-0Z-REe" userLabel="Connection 3 Controller" customClass="Connection3Controller" customModule="ambioWatch_Extension">
+                <controller id="63I-pO-lyx" userLabel="Connection3Interface Controller">
                     <items>
-                        <inlineMovie width="1" height="100" alignment="center" verticalAlignment="bottom" loops="YES" videoGravity="resizeAspectFill" id="a81-ai-Oq4"/>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Mom" id="Kgp-B2-zE1">
+                        <inlineMovie width="1" height="100" alignment="center" verticalAlignment="bottom" id="hxF-AU-NKq"/>
+                        <button width="1" height="38" alignment="center" verticalAlignment="bottom" title="Mom" id="tg3-Ga-ecZ">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="j4Z-3g-hRQ" kind="modal" id="JzY-RB-eyK"/>
+                                <segue destination="j4Z-3g-hRQ" kind="modal" id="n4Z-2k-nQc"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="moodVideo" destination="a81-ai-Oq4" id="XXW-2r-EW6"/>
-                        <outlet property="nameButton" destination="Kgp-B2-zE1" id="fl7-wl-aKB"/>
-                        <segue destination="jeq-7D-zuy" kind="relationship" relationship="nextPage" id="zCh-ip-r0s"/>
+                        <segue destination="jeq-7D-zuy" kind="relationship" relationship="nextPage" id="WKa-T4-Hbe"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-402" y="-194"/>
+            <point key="canvasLocation" x="-391" y="-192"/>
         </scene>
         <!--Connection2 Detail Controller-->
         <scene sceneID="MsQ-5K-br9">

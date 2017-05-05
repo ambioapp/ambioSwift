@@ -15,21 +15,27 @@ class Connection3Controller: WKInterfaceController {
 
     
   
-    @IBOutlet var nameButton: WKInterfaceButton!
     @IBOutlet var moodVideo: WKInterfaceInlineMovie!
+    @IBOutlet var nameButton: WKInterfaceButton!
+   
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
         nameButton.setTitle("Mom")
         playVideo()
+        let url2 = Bundle.main.url(forResource: "p_anxious-1", withExtension: "mov")
+        moodVideo.setMovieURL(url2!)
+        moodVideo.setAutoplays(true)
+        moodVideo.setLoops(true)
+        moodVideo.play()
     }
-
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
-
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()

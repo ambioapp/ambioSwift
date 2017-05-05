@@ -33,7 +33,6 @@
 		133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */; };
 		134347961EBAAB9100E60116 /* Connection3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */; };
 		134347971EBAAB9100E60116 /* Connection3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347951EBAAB9100E60116 /* Connection3ViewController.swift */; };
-		1343479A1EBAB6BB00E60116 /* Connection3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347981EBAB6BB00E60116 /* Connection3Controller.swift */; };
 		1343479B1EBAB6BB00E60116 /* Connection3DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134347991EBAB6BB00E60116 /* Connection3DetailController.swift */; };
 		1345CB1C1EA804DF00BF22BA /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1B1EA804DF00BF22BA /* DetailController.swift */; };
 		1345CB1E1EA8104300BF22BA /* ConnectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */; };
@@ -52,6 +51,7 @@
 		1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374F87F1E95C83E005E4A2A /* NotificationController.swift */; };
 		1374F8821E95C83E005E4A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1374F8811E95C83E005E4A2A /* Assets.xcassets */; };
 		1374F8861E95C83E005E4A2A /* ambioWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1374F8681E95C83E005E4A2A /* ambioWatch.app */; };
+		137C85BE1EBBF69F00170246 /* Conn3InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137C85BD1EBBF69F00170246 /* Conn3InterfaceController.swift */; };
 		139CC9A71E9C035D00F8B894 /* watchAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CC9A61E9C035D00F8B894 /* watchAppData.swift */; };
 		13B2EC451E5DEF2700E6CDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */; };
 		13B2EC471E5DEF2700E6CDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2EC461E5DEF2700E6CDC7 /* ViewController.swift */; };
@@ -131,7 +131,6 @@
 		133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection2Controller.swift; sourceTree = "<group>"; };
 		134347941EBAAB9100E60116 /* Connection3DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3DetailViewController.swift; sourceTree = "<group>"; };
 		134347951EBAAB9100E60116 /* Connection3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3ViewController.swift; sourceTree = "<group>"; };
-		134347981EBAB6BB00E60116 /* Connection3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3Controller.swift; sourceTree = "<group>"; };
 		134347991EBAB6BB00E60116 /* Connection3DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection3DetailController.swift; sourceTree = "<group>"; };
 		1345CB1B1EA804DF00BF22BA /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		1345CB1D1EA8104300BF22BA /* ConnectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +156,7 @@
 		1374F87F1E95C83E005E4A2A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		1374F8811E95C83E005E4A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1374F8831E95C83E005E4A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		137C85BD1EBBF69F00170246 /* Conn3InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conn3InterfaceController.swift; path = Assets.xcassets/Conn3InterfaceController.swift; sourceTree = "<group>"; };
 		139CC9A61E9C035D00F8B894 /* watchAppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = watchAppData.swift; sourceTree = "<group>"; };
 		13B2EC411E5DEF2700E6CDC7 /* ambio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ambio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B2EC441E5DEF2700E6CDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -279,8 +279,8 @@
 				139CC9A91E9C0A6400F8B894 /* moodMov */,
 				139CC9A81E9C03B100F8B894 /* lib */,
 				1374F87B1E95C83E005E4A2A /* InterfaceController.swift */,
-				134347981EBAB6BB00E60116 /* Connection3Controller.swift */,
 				134347991EBAB6BB00E60116 /* Connection3DetailController.swift */,
+				137C85BD1EBBF69F00170246 /* Conn3InterfaceController.swift */,
 				13FDE8EB1EB21A5300B2C422 /* Connection2DetailController.swift */,
 				133CC0FD1EB19E3C00505DC0 /* Connection2Controller.swift */,
 				1374F87D1E95C83E005E4A2A /* ExtensionDelegate.swift */,
@@ -600,13 +600,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1308394E1EA84C8D00062CD6 /* CalmInterfaceController.swift in Sources */,
-				1343479A1EBAB6BB00E60116 /* Connection3Controller.swift in Sources */,
 				133CC0FE1EB19E3C00505DC0 /* Connection2Controller.swift in Sources */,
 				1374F8801E95C83E005E4A2A /* NotificationController.swift in Sources */,
 				1374F87E1E95C83E005E4A2A /* ExtensionDelegate.swift in Sources */,
 				1345CB271EA8497400BF22BA /* AnxiousInterfaceController.swift in Sources */,
 				1343479B1EBAB6BB00E60116 /* Connection3DetailController.swift in Sources */,
 				130839501EA861D600062CD6 /* DetailInterfaceController.swift in Sources */,
+				137C85BE1EBBF69F00170246 /* Conn3InterfaceController.swift in Sources */,
 				1345CB211EA83FEB00BF22BA /* HappyInterfaceController.swift in Sources */,
 				1374F87C1E95C83E005E4A2A /* InterfaceController.swift in Sources */,
 				1345CB251EA8485600BF22BA /* SadInterfaceController.swift in Sources */,
